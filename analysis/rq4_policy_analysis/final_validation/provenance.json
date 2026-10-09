@@ -1,0 +1,16 @@
+{
+  "analysis_type": "offline read-only scientific postprocessing",
+  "authoritative_outputs_overwritten": false,
+  "feasible_action_outcomes": 256,
+  "hardware_jobs": 0,
+  "authoritative_source_results_modified": false,
+  "scenario_count": 160,
+  "simulation_executions": 0,
+  "source_artifacts": {
+    "analysis/rq4_policy_analysis/scripts/generate_rq4_policy_analysis.py": "sha256:3868e008a1cd799adb5292959ff3993ba3d5e44b3a0cf492262522b080b47be1",
+    "analyze_rq4_discriminability.py": "sha256:80c97b3848f8a5f7b50ec9ba36e1cb87548ed2766cdfbda6aaf388fad9ecc166",
+    "outputs/sigmetrics/continuation_calibration_repair_v2/planner/processed/records.jsonl": "sha256:9201a6bb434c182672fd325b4719e6dc39efc86d43c06e0b00429c3221cd9843",
+    "outputs/sigmetrics/continuation_calibration_repair_v2/rq4_fresh/analysis/confirmation_summary.json": "sha256:53554f6e51d60ead912b9b0b682796c39fb108f3d06f2b7831f07ff87ee570f2",
+    "outputs/sigmetrics/continuation_calibration_repair_v2/rq4_fresh/processed/records.jsonl": "sha256:0a7c4da376d8a630a7a6635c13815664151a2e72217303eb8feaf49f40e94f32"
+  }
+}

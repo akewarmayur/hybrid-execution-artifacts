@@ -1,0 +1,20 @@
+{
+  "case_count": 3,
+  "config_path": "additional_hardware_experiments/configs/ablation_spotcheck.yaml",
+  "description": "Tiny hardware attribution check for migration. These cases are intentionally few: they are meant to probe whether missing backend or measurement state changes restore behavior on live hardware.\n",
+  "experiment_name": "ablation_spotcheck",
+  "hardware_windows": [
+    "2026-03-17T02:09:22Z"
+  ],
+  "notes": [
+    "Live IBM Runtime jobs were submitted for 2 supplemental cases."
+  ],
+  "outputs": {
+    "output_dir": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/ablation_spotcheck/outputs",
+    "processed_csv": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/ablation_spotcheck/processed/records.csv",
+    "processed_jsonl": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/ablation_spotcheck/processed/records.jsonl",
+    "raw_jsonl": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/ablation_spotcheck/raw/events.jsonl"
+  },
+  "processed_rows": 12,
+  "results_subdir": "ablation_spotcheck"
+}

@@ -1,0 +1,9 @@
+case_id,case_label,family,hardware_window,save_backend,restore_backend,restore_decision,success,stable_continuation,post_restore_objective_gap,hellinger_distance,gradient_disagreement,live_execution_used,live_job_id
+lih_b3_replay_pittsburgh,LiH B3 replay,resume_spotcheck,2026-03-16T20:00:00Z,ibm_pittsburgh,ibm_pittsburgh,replay,False,False,0.0097518319670903,0.0781099617586622,0.0100402761317193,False,
+lih_b3_replay_pittsburgh,LiH B3 replay,resume_spotcheck,2026-03-16T20:52:51Z,ibm_pittsburgh,ibm_pittsburgh,replay,True,False,0.0610070021616255,0.1678194108078287,0.011294799371279,True,d6s6ramsh9gc73dh52m0
+lih_b5_replay_pittsburgh,LiH B5 replay,resume_spotcheck,2026-03-16T20:00:00Z,ibm_pittsburgh,ibm_pittsburgh,replay,False,False,0.0107776872995719,0.0598646622205977,0.0111385257094505,False,
+lih_b5_replay_pittsburgh,LiH B5 replay,resume_spotcheck,2026-03-16T20:52:51Z,ibm_pittsburgh,ibm_pittsburgh,replay,True,False,0.0133276558686823,0.1393721922164504,0.0109698720615685,True,d6s765v90okc73erumo0
+h2_b3_replay_marrakesh,H2 B3 replay,resume_spotcheck,2026-03-16T20:00:00Z,ibm_marrakesh,ibm_marrakesh,replay,False,False,0.0090273762789836,0.0484150440282106,0.0162132298299301,False,
+h2_b3_replay_marrakesh,H2 B3 replay,resume_spotcheck,2026-03-16T20:52:51Z,ibm_marrakesh,ibm_marrakesh,replay,True,False,0.0240107944139933,0.1107787616954988,0.0163905900248547,True,d6s76ef90okc73erun1g
+h2_b5_replay_marrakesh,H2 B5 replay,resume_spotcheck,2026-03-16T20:00:00Z,ibm_marrakesh,ibm_marrakesh,replay,False,False,0.0201535748006418,0.184426651830145,0.1064792458863037,False,
+h2_b5_replay_marrakesh,H2 B5 replay,resume_spotcheck,2026-03-16T20:52:51Z,ibm_marrakesh,ibm_marrakesh,replay,False,False,0.0879573632237891,0.0777448072759644,0.0922642882745666,True,d6s76h3bjfas73fo3k0g

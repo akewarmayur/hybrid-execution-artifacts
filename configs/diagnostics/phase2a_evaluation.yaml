@@ -1,0 +1,20 @@
+setting: noisy
+evaluation_question: phase2a_diagnostic
+benchmark_profile: reduced
+workloads:
+  - lih_vqe
+  - h2_vqe
+  - adapt_vqe
+  - qaoa_maxcut
+boundaries: [B5]
+cadences: [1]
+seeds: [101]
+save_backend: ibm_kyiv
+restore_backend: ibm_kyiv
+budget_B: 4
+delays: [1.0]
+scenarios: [same_backend_replay]
+baselines: [full_contract]
+backend_pairs: []
+optimizer_iterations: 4
+shots_per_group: 512

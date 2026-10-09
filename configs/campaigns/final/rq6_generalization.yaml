@@ -1,0 +1,46 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-rq6-generalization-final-v1
+status: planned
+profile: review_large
+rqs: [RQ6]
+repetition_role: evaluation
+output_root: outputs/sigmetrics/rq6_generalization
+optional_targeted_workloads:
+  - workload: qml_vqc
+    campaign_config: configs/campaigns/qml/qml_targeted_evaluation.yaml
+    inclusion_semantics: opt-in targeted generalization only; do not cross with the RQ1-RQ5 matrix
+expected_checkpoint_count_per_run: 2
+shots_per_group: 512
+axes:
+  workload: [h2_vqe, lih_vqe, adapt_vqe, qaoa_maxcut]
+  workload_profile: [reduced, paper, review_large]
+  execution_mode: [ideal_sim, noisy_sim]
+  checkpoint_boundary: [B5]
+  policy: [resq, classical_application_checkpoint]
+  continuation_horizon_B: [4]
+  stable_window_steps: [2]
+  seed: [1501, 1502, 1503]
+seed_roles:
+  smoke_seeds: [6]
+  calibration_seeds: [3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009, 3010, 3011, 3012]
+  planner_calibration_seeds: [3201, 3202, 3203, 3204, 3205, 3206, 3207, 3208]
+  evaluation_seeds: [1501, 1502, 1503]
+dependencies:
+  - role: continuation_envelope
+    campaign_id: sigmetrics-continuation-calibration-final-v1
+    config_hash: sha256:bf88ee31bb9b2db7d465fbf4495ddd2a85582cae9e815e6298e009b61402232e
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [h2_vqe, lih_vqe, adapt_vqe, qaoa_maxcut]
+    execution_modes: [ideal_sim, noisy_sim]
+  - role: planner_operating_point
+    campaign_id: sigmetrics-planner-calibration-final-v1
+    config_hash: sha256:e6a06faed51f4ea9d810727b1ea3911d1b8a4fb2958afda0cd601ccaed306d7a
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [h2_vqe, lih_vqe, adapt_vqe, qaoa_maxcut]
+    execution_modes: [ideal_sim, noisy_sim]
+persistence_targets: {}
+budgets:
+  max_runs: 500
+  max_simulation_shots: 15000000
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

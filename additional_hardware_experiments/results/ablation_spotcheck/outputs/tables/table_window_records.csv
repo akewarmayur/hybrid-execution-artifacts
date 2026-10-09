@@ -1,0 +1,13 @@
+case_id,case_label,family,hardware_window,save_backend,restore_backend,restore_decision,success,stable_continuation,post_restore_objective_gap,hellinger_distance,gradient_disagreement,live_execution_used,live_job_id
+lih_full_contract_migration,Full contract,ablation_spotcheck,2026-03-16T22:09:10Z,ibm_pittsburgh,ibm_marrakesh,migration,True,False,0.0472490754303303,0.1373345423426813,0.0422047949028051,True,d6s7v3bbjfas73fo4f90
+lih_full_contract_migration,Full contract,ablation_spotcheck,2026-03-17T01:36:10Z,ibm_pittsburgh,ibm_marrakesh,migration,True,False,0.0009757310609588,0.107348192619666,0.0431846335968475,True,d6sb04esh9gc73dh9p9g
+lih_full_contract_migration,Full contract,ablation_spotcheck,2026-03-17T01:42:53Z,ibm_pittsburgh,ibm_marrakesh,migration,True,False,0.0025088247021738,0.1450637767525554,0.0415808662303536,True,d6sb393bjfas73fo88ug
+lih_full_contract_migration,Full contract,ablation_spotcheck,2026-03-17T02:09:22Z,ibm_pittsburgh,ibm_marrakesh,migration,True,False,0.0349276998862109,0.1539428644341094,0.042421459889985,True,d6sbfmbbjfas73fo8nf0
+lih_no_backend_snapshot,No backend snapshot,ablation_spotcheck,2026-03-16T22:09:10Z,ibm_pittsburgh,ibm_marrakesh,migration,False,False,0.0310751234119139,0.206769402890488,0.3025175776358102,True,d6s7v5vgtkcc73cl7n10
+lih_no_backend_snapshot,No backend snapshot,ablation_spotcheck,2026-03-17T01:36:10Z,ibm_pittsburgh,ibm_marrakesh,migration,False,False,0.0555867689390394,0.1678138930110972,0.2857002885385893,True,d6sb0bjbjfas73fo85a0
+lih_no_backend_snapshot,No backend snapshot,ablation_spotcheck,2026-03-17T01:42:53Z,ibm_pittsburgh,ibm_marrakesh,migration,False,False,0.0844463247021751,0.1369558925246925,0.3025190072873501,True,d6sb3bush9gc73dh9tb0
+lih_no_backend_snapshot,No backend snapshot,ablation_spotcheck,2026-03-17T02:09:22Z,ibm_pittsburgh,ibm_marrakesh,migration,False,False,0.0411568665528783,0.177999684712089,0.2842402051638047,True,d6sbfqbbjfas73fo8njg
+lih_no_measurement_ledger,No measurement ledger,ablation_spotcheck,2026-03-16T22:09:10Z,ibm_pittsburgh,ibm_marrakesh,block,False,False,1.0,1.0,1.0,False,
+lih_no_measurement_ledger,No measurement ledger,ablation_spotcheck,2026-03-17T01:36:10Z,ibm_pittsburgh,ibm_marrakesh,block,False,False,1.0,1.0,1.0,False,
+lih_no_measurement_ledger,No measurement ledger,ablation_spotcheck,2026-03-17T01:42:53Z,ibm_pittsburgh,ibm_marrakesh,block,False,False,1.0,1.0,1.0,False,
+lih_no_measurement_ledger,No measurement ledger,ablation_spotcheck,2026-03-17T02:09:22Z,ibm_pittsburgh,ibm_marrakesh,block,False,False,1.0,1.0,1.0,False,

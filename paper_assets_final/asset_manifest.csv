@@ -1,0 +1,22 @@
+asset_id,rq,asset_type,filename,location,status,simulation_or_hardware,primary_or_secondary,width_in,height_in,source_files,caption_id,include_recommendation
+fig_rq1_boundary_value,RQ1,figure,fig_rq1_boundary_value.pdf,main_paper/figures,MAIN,simulation + hardware,primary,6.4,2.1,fig_rq1_boundary_value_hw.csv; fig_rq1_boundary_value_sim.csv,fig_rq1_boundary_value,Include
+fig_rq2_overhead_scaling,RQ2,figure,fig_rq2_overhead_scaling.pdf,main_paper/figures,MAIN,simulation + hardware,primary,6.4,2.35,fig_rq2_overhead_scaling_hw.csv; fig_rq2_overhead_scaling_sim.csv,fig_rq2_overhead_scaling,Include
+fig_rq3_exact_work,RQ3,figure,fig_rq3_exact_work.pdf,main_paper/figures,MAIN,simulation + hardware,primary,6.4,2.1,fig_rq3_exact_work_hw.csv; fig_rq3_exact_work_sim.csv,fig_rq3_exact_work,Include
+fig_rq4_decision_quality,RQ4,figure,fig_rq4_decision_quality.pdf,main_paper/figures,MAIN,simulation,primary,6.4,2.2,fig_rq4_decision_quality_operating_points.csv; fig_rq4_decision_quality_paired.csv,fig_rq4_decision_quality,Include
+fig_rq5_evidence_sufficiency,RQ5,figure,fig_rq5_evidence_sufficiency.pdf,main_paper/figures,MAIN,simulation,primary,6.4,2.2,fig_rq5_evidence_sufficiency.csv,fig_rq5_evidence_sufficiency,Include
+fig_rq6_generalization_hardware,RQ6,figure,fig_rq6_generalization_hardware.pdf,main_paper/figures,MAIN,simulation + hardware,primary,6.4,2.75,,fig_rq6_generalization_hardware,Include
+table_evaluation_summary_optional,RQ1-RQ6,table,table_evaluation_summary_optional.tex,main_paper/tables,OPTIONAL,simulation + hardware,primary,,,validated main figure data,table_evaluation_summary_optional,Include only if space permits
+fig_hw_overhead_distribution,RQ2/RQ4/RQ5/RQ6,figure,fig_hw_overhead_distribution.pdf,appendix/figures,APPENDIX,hardware,primary/supporting,6.4,2.35,fig_hw_overhead_distribution.csv,fig_hw_overhead_distribution,Appendix
+fig_hw_qualification_full,RQ2/RQ4/RQ5/RQ6,figure,fig_hw_qualification_full.pdf,appendix/figures,APPENDIX,hardware,primary/supporting,6.4,2.4,fig_hw_qualification_full.csv,fig_hw_qualification_full,Appendix
+fig_hw_temporal_drift,RQ2/RQ4/RQ5/RQ6,figure,fig_hw_temporal_drift.pdf,appendix/figures,APPENDIX,hardware,primary/supporting,6.4,2.35,fig_hw_temporal_drift.csv,fig_hw_temporal_drift,Appendix
+fig_hw_rq5_ablation,RQ2/RQ4/RQ5/RQ6,figure,fig_hw_rq5_ablation.pdf,appendix/figures,APPENDIX,hardware,primary/supporting,6.4,3.25,fig_hw_rq5_ablation.csv,fig_hw_rq5_ablation,Appendix
+fig_rq4_score_discrimination,RQ2/RQ4/RQ5/RQ6,figure,fig_rq4_score_discrimination.pdf,appendix/figures,APPENDIX,simulation,secondary,6.4,2.25,fig_rq4_score_discrimination.csv,fig_rq4_score_discrimination,Appendix
+fig_rq4_calibration_diagnostics,RQ2/RQ4/RQ5/RQ6,figure,fig_rq4_calibration_diagnostics.pdf,appendix/figures,APPENDIX,simulation,secondary,6.4,2.25,fig_rq4_calibration_diagnostics.csv,fig_rq4_calibration_diagnostics,Appendix
+table_calibration_populations,supporting,table,table_calibration_populations.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_calibration_populations.csv,table_calibration_populations,Appendix
+table_hw_qualification_details,supporting,table,table_hw_qualification_details.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_hw_qualification_details.csv,table_hw_qualification_details,Appendix
+table_hw_resource_accounting,supporting,table,table_hw_resource_accounting.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_hw_resource_accounting.csv,table_hw_resource_accounting,Appendix
+table_hw_rq4_secondary,supporting,table,table_hw_rq4_secondary.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_hw_rq4_secondary.csv,table_hw_rq4_secondary,Appendix
+table_hw_rq5_ablation,supporting,table,table_hw_rq5_ablation.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_hw_rq5_ablation.csv,table_hw_rq5_ablation,Appendix
+table_rq1_matched_placement_details,supporting,table,table_rq1_matched_placement_details.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_rq1_matched_placement_details.csv,table_rq1_matched_placement_details,Appendix
+table_vqc_targeted_results,supporting,table,table_vqc_targeted_results.tex,appendix/tables,APPENDIX,simulation or hardware as labeled,supporting,,,table_vqc_targeted_results.csv,table_vqc_targeted_results,Appendix
+retired_assets,N/A,registry,README.md,retired_do_not_use,RETIRED,both,N/A,,,original evidence retained in place,N/A,Do not use

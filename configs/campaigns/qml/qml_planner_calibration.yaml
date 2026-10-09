@@ -1,0 +1,36 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-qml-planner-calibration-final-v1
+status: planned
+profile: paper_small
+rqs: [RQ6]
+repetition_role: planner_calibration
+output_root: outputs/sigmetrics/qml_planner_calibration
+shots_per_evaluation: 64
+estimated_evaluations_per_run: 80
+axes:
+  workload: [qml_vqc]
+  workload_profile: [reduced]
+  execution_mode: [noisy_sim]
+  changed_context_class: [no_change, same_backend_delay, cross_backend, safe_change, high_change]
+  policy_calibration_mode: [threshold_sweep_from_shared_counterfactuals]
+  continuation_horizon_B: [2]
+  stable_window_steps: [1]
+  seed: [5201, 5202, 5203, 5204]
+seed_roles:
+  smoke_seeds: []
+  calibration_seeds: []
+  planner_calibration_seeds: [5201, 5202, 5203, 5204]
+  evaluation_seeds: []
+dependencies:
+  - role: qml_continuation_envelope
+    campaign_id: sigmetrics-qml-continuation-calibration-final-v1
+    config_hash: sha256:a7f4feec4cd75d0bc7f1bd766cc230ae4bc3cce11c0c37908174c441df11d213
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [qml_vqc]
+    execution_modes: [noisy_sim]
+persistence_targets: {}
+budgets:
+  max_runs: 20
+  max_simulation_shots: 102400
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

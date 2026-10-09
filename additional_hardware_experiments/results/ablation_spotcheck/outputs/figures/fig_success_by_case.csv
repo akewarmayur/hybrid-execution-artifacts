@@ -1,0 +1,4 @@
+case_id,case_label,rate_success,ci_low_success,ci_high_success
+lih_full_contract_migration,Full contract,1.0,0.5101091635454028,0.9999999999999999
+lih_no_backend_snapshot,No backend snapshot,0.0,0.0,0.48989083645459713
+lih_no_measurement_ledger,No measurement ledger,0.0,0.0,0.48989083645459713

@@ -1,0 +1,4 @@
+case_id,case_label,median_post_restore_objective_gap,iqr_low_post_restore_objective_gap,iqr_high_post_restore_objective_gap,median_hellinger_distance,iqr_low_hellinger_distance,iqr_high_hellinger_distance
+lih_full_contract_migration,Full contract,0.01871826229419235,0.0021255512918700497,0.03800804377224075,0.14119915954761836,0.12983795491192748,0.1472835486729439
+lih_no_backend_snapshot,No backend snapshot,0.04837181774595885,0.038636430767637196,0.06280165787982332,0.1729067888615931,0.16009939288949604,0.18519211425668874
+lih_no_measurement_ledger,No measurement ledger,1.0,1.0,1.0,1.0,1.0,1.0

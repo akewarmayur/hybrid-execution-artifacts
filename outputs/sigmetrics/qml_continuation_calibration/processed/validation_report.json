@@ -1,0 +1,15 @@
+{
+  "accepted_count": 12,
+  "campaign_id": "sigmetrics-qml-continuation-calibration-final-v1",
+  "config_hash": "sha256:a7f4feec4cd75d0bc7f1bd766cc230ae4bc3cce11c0c37908174c441df11d213",
+  "duplicate_run_count": 0,
+  "expected_run_count": 12,
+  "issues": [],
+  "missing_run_ids": [],
+  "observed_run_count": 12,
+  "processed_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/qml_continuation_calibration/processed/records.jsonl",
+  "quarantined_count": 0,
+  "unexpected_run_ids": [],
+  "valid": true,
+  "validation_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/qml_continuation_calibration/processed/validation_report.json"
+}

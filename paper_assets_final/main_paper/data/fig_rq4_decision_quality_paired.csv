@@ -1,0 +1,5 @@
+outcome,count,denominator,denominator_meaning
+Unsafe continuations avoided,64,160,all fresh scenarios
+Successful continuations retained,63,63,successful tau=0.15 continuations
+Successful continuations lost,0,63,successful tau=0.15 continuations
+Migration to block,64,64,tau=0.15 migrations

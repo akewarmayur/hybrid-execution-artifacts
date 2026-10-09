@@ -1,0 +1,50 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-rq5-evidence-sufficiency-final-v1
+status: planned
+profile: paper_main
+rqs: [RQ5]
+repetition_role: evaluation
+output_root: outputs/sigmetrics/rq5_evidence_sufficiency
+expected_checkpoint_count_per_run: 1
+shots_per_group: 512
+axes:
+  workload: [h2_vqe, lih_vqe, adapt_vqe, qaoa_maxcut]
+  workload_profile: [paper]
+  execution_mode: [noisy_sim]
+  checkpoint_boundary: [B5]
+  evidence_subset:
+    - full
+    - full_minus_semantic_identity
+    - full_minus_progress_cost
+    - full_minus_compilation_portability
+    - full_minus_backend_environment
+    - full_minus_estimator_mitigation
+    - full_minus_continuation_optimizer
+    - s0_semantic
+    - s1_semantic_backend
+    - s2_add_portability
+    - s3_add_estimator
+    - s4_add_continuation
+    - s5_add_progress
+  changed_context_class: [no_change, same_backend_delay, cross_backend, high_change]
+  continuation_horizon_B: [4]
+  stable_window_steps: [2]
+  seed: [1401, 1402, 1403]
+seed_roles:
+  smoke_seeds: [5]
+  calibration_seeds: []
+  planner_calibration_seeds: [3201, 3202, 3203, 3204, 3205, 3206, 3207, 3208]
+  evaluation_seeds: [1401, 1402, 1403]
+dependencies:
+  - role: planner_operating_point
+    campaign_id: sigmetrics-planner-calibration-final-v1
+    config_hash: sha256:e6a06faed51f4ea9d810727b1ea3911d1b8a4fb2958afda0cd601ccaed306d7a
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [h2_vqe, lih_vqe, adapt_vqe, qaoa_maxcut]
+    execution_modes: [noisy_sim]
+persistence_targets: {}
+budgets:
+  max_runs: 1700
+  max_simulation_shots: 25000000
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

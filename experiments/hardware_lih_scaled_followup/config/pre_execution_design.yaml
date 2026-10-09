@@ -1,0 +1,92 @@
+schema_version: checkrcq-hardware-lih-scaled-followup-design-v1
+design_id: hardware-lih-scaled-followup-predeclared-v1
+campaign_id: hardware_lih_sigmetrics_2027_scaled_followup
+predecessor_campaign: hardware_lih_sigmetrics_2027
+predecessor_gate_result: failed
+declared_before_followup_scientific_execution: true
+
+backend_rule:
+  source: ibm_pittsburgh
+  primary_target: ibm_boston
+  target_c_preference: [ibm_kingston, ibm_fez]
+  proceed_without_target_c_if_neither_eligible: true
+  selection_uses_scientific_outcomes: false
+  eligibility:
+    - operational
+    - at_least_7_qubits
+    - required_instruction_support
+    - paper_profile_compiles
+    - review_large_profile_compiles
+    - SamplerV2_available
+    - queue_metadata_recorded
+
+calibration:
+  profiles: [paper, review_large]
+  fit_executions_per_backend: 8
+  heldout_executions_per_backend: 4
+  jobs_per_execution: 2
+  threshold_rule: empirical_quantile_higher
+  objective_quantile: 0.99
+  hellinger_quantile: 0.99
+  normalized_gradient_quantile: 0.99
+  gradient_noise_floor_quantile: 0.95
+  continuation_horizon_B: 2
+  stable_window_steps: 2
+  exactly_one_population_per_backend_and_profile: true
+
+qualification:
+  source_requires: Pittsburgh 4/4 held-out stable trajectories
+  each_target_requires: 4/4 held-out stable trajectories
+  minimum_qualified_migration_targets: 1
+  target_failures_remain_reported: true
+  target_failures_do_not_block_other_qualified_targets: true
+
+tiers:
+  - id: calibration_5q
+    priority: P0
+    maximum_jobs: 72
+    maximum_circuits: 1800
+  - id: evaluation_5q
+    priority: P0
+    blocks: 10
+    jobs_per_block_one_target: 13
+    jobs_per_block_two_targets: 15
+    maximum_jobs: 150
+    maximum_circuits: 2200
+  - id: marrakesh_diagnostic
+    priority: P1
+    trajectories: 20
+    jobs_per_trajectory: 2
+    jobs: 40
+    circuits: 1000
+    predecessor_frozen_envelope: true
+    qualification_effect: none
+  - id: calibration_7q
+    priority: P2
+    maximum_jobs: 72
+    maximum_circuits: 1800
+  - id: evaluation_7q
+    priority: P2
+    blocks: 5
+    jobs_per_block_one_target: 13
+    jobs_per_block_two_targets: 15
+    maximum_jobs: 75
+    maximum_circuits: 1100
+
+maximum_new_population:
+  jobs: 409
+  circuits: 7900
+  shots: 1516800
+
+budget:
+  project_hard_qpu_cap_seconds: 3000
+  includes_predecessor_durable_charge: true
+  checked_before_every_submission: true
+  queue_delay_included: false
+
+paper_claim_guards:
+  finite_hardware_frequencies_are_not_population_probabilities: true
+  one_lih_workload_does_not_establish_cross_algorithm_generality: true
+  modeled_group_durations_are_not_measured_qpu_savings: true
+  partial_tiers_are_excluded_from_completed_tier_claims: true
+

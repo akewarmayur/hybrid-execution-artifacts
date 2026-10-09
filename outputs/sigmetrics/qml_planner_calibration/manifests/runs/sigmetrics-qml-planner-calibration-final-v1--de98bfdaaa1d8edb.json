@@ -1,0 +1,16 @@
+{
+  "code_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "config_hash": "sha256:56f2bd3eff85b3ac824fd96de1fef9ca8dac946bb67bfadb99b58ba7ccc35160",
+  "dependency_hashes": {
+    "sigmetrics-qml-continuation-calibration-final-v1": "sha256:3813c4caa8cd42280125ae41e9c1f2f57fb289dfd6a1d72b021a812835d9300e"
+  },
+  "end_time_ns": 1790304664116304000,
+  "executor_type": "qml_planner_calibration",
+  "executor_version": "phase3a1-final-dispatcher-v1",
+  "result_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/qml_planner_calibration/raw/runs/sigmetrics-qml-planner-calibration-final-v1--de98bfdaaa1d8edb.json",
+  "result_sha256": "sha256:507ac44f293447d6889e6c09c836cd6e14b23b160bfbf5ef66468e5baa07e46e",
+  "run_id": "sigmetrics-qml-planner-calibration-final-v1--de98bfdaaa1d8edb",
+  "seed_or_window": "5202",
+  "start_time_ns": 1790304664042822000,
+  "terminal_state": "COMPLETED"
+}

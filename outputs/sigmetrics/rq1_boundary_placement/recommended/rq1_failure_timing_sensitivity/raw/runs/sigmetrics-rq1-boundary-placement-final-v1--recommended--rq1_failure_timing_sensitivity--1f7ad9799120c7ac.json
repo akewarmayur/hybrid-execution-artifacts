@@ -1,0 +1,1128 @@
+{
+  "baseline_type": "semantic_vs_periodic_equal_checkpoint_count",
+  "campaign_id": "sigmetrics-rq1-boundary-placement-final-v1--recommended--rq1_failure_timing_sensitivity",
+  "checkpoint": {
+    "count": 1,
+    "count_match": {
+      "mismatch": 0,
+      "periodic_count": 1,
+      "reason": null,
+      "semantic_count": 1
+    },
+    "cumulative_measured_overhead_s": {
+      "definition": "Sum of actual measured checkpoint save/commit latencies.",
+      "provenance": "derived",
+      "unit": "s",
+      "value": 0.003124166
+    },
+    "instances": [
+      {
+        "committed_bytes": {
+          "definition": "Payload, index/metadata, and commit-record logical bytes written for this checkpoint.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 19803
+        },
+        "cumulative_measured_overhead_s": {
+          "definition": "Sum of measured save/commit latencies through this checkpoint.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": 0.003124166
+        },
+        "decision_evidence_available": [
+          "identity",
+          "progress",
+          "backend",
+          "portability"
+        ],
+        "materialization_event": 9,
+        "materialization_time": {
+          "definition": "Modeled workflow timeline time.",
+          "provenance": "modeled",
+          "unit": "logical_s",
+          "value": 3.5629999999999997
+        },
+        "materialized_at_boundary": "B5",
+        "placement_policy": "semantic",
+        "protected_work": {
+          "boundary": "B5",
+          "classical": [
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "preprocessing",
+              "unit_id": "preprocessing:problem"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "grouping",
+              "unit_id": "grouping:pauli"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "shot_planning",
+              "unit_id": "planning:shots"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "circuit_build",
+              "unit_id": "circuit:bound"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "compilation",
+              "unit_id": "compilation:target"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "optimizer_iteration",
+              "unit_id": "optimizer:0"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "optimizer_iteration",
+              "unit_id": "optimizer:1"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "optimizer_iteration",
+              "unit_id": "optimizer:2"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "optimizer_iteration",
+              "unit_id": "optimizer:3"
+            }
+          ],
+          "external": [
+            {
+              "batch_job_id": null,
+              "circuit_id": "qaoa_maxcut:group:0",
+              "completed_shots": 4160,
+              "completion_state": "completed",
+              "count_provenance": "measured",
+              "duration_provenance": null,
+              "group_id": "group:0",
+              "measured_duration_s": null,
+              "requested_shots": 4160,
+              "retry_count": 0
+            }
+          ],
+          "metrics": {
+            "circuit_evaluations_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+              "provenance": "derived",
+              "unit": "circuit_evaluations",
+              "value": 0
+            },
+            "circuit_evaluations_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+              "provenance": "derived",
+              "unit": "circuit_evaluations",
+              "value": 0
+            },
+            "completed_stages_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+              "provenance": "derived",
+              "unit": "stages",
+              "value": 0
+            },
+            "completed_stages_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+              "provenance": "derived",
+              "unit": "stages",
+              "value": 0
+            },
+            "group_recovered_work_fraction": {
+              "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+              "provenance": "derived",
+              "unit": "fraction",
+              "value": null
+            },
+            "measurement_groups_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+              "provenance": "derived",
+              "unit": "measurement_groups",
+              "value": 0
+            },
+            "measurement_groups_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+              "provenance": "derived",
+              "unit": "measurement_groups",
+              "value": 0
+            },
+            "qpu_time_recovered_work_fraction": {
+              "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+              "provenance": "derived",
+              "unit": "fraction",
+              "value": null
+            },
+            "qpu_work_redone_s": {
+              "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+              "provenance": "derived",
+              "unit": "s",
+              "value": null
+            },
+            "qpu_work_reused_s": {
+              "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+              "provenance": "derived",
+              "unit": "s",
+              "value": null
+            },
+            "recomputation_time_s": {
+              "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+              "provenance": "derived",
+              "unit": "s",
+              "value": null
+            },
+            "shot_recovered_work_fraction": {
+              "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+              "provenance": "derived",
+              "unit": "fraction",
+              "value": null
+            },
+            "shots_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+              "provenance": "derived",
+              "unit": "shots",
+              "value": 0
+            },
+            "shots_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+              "provenance": "derived",
+              "unit": "shots",
+              "value": 0
+            }
+          },
+          "recovery": [],
+          "workload": "qaoa_maxcut"
+        },
+        "recovery_timing": {
+          "decision_evidence_deserialization_latency_s": {
+            "definition": "Deserialize planner evidence groups not already loaded.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 1.6708e-05
+          },
+          "identify_valid_boundary_latency_s": {
+            "definition": "Validate boundary and artifact-presence invariants.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 7.333e-06
+          },
+          "integrity_verification_latency_s": {
+            "definition": "Read referenced bytes and verify cryptographic hashes.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 0.000402083
+          },
+          "locate_candidate_commit_latency_s": {
+            "definition": "Locate and order candidate commit records.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 7.8375e-05
+          },
+          "recovery_deserialization_latency_s": {
+            "definition": "Recovery-state plus decision-evidence deserialization.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 0.000231417
+          },
+          "recovery_reconstruction_latency_s": {
+            "definition": "Reconstruct the typed recovered-checkpoint representation.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 7.167e-06
+          },
+          "recovery_state_deserialization_latency_s": {
+            "definition": "Deserialize recovery-critical artifact groups.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 0.000214709
+          },
+          "recovery_total_latency_s": {
+            "definition": "Recovery invocation through reconstructed checkpoint availability.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 0.000813583
+          },
+          "recovery_validation_latency_s": {
+            "definition": "Locate, structure validation, integrity verification, and boundary selection.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 0.00057375
+          },
+          "validate_commit_structure_latency_s": {
+            "definition": "Parse and validate commit/index structure.",
+            "provenance": "measured",
+            "unit": "s",
+            "value": 8.5959e-05
+          }
+        },
+        "save_commit_latency_s": {
+          "definition": "Checkpoint invocation through durable commit publication on the configured backend.",
+          "provenance": "measured",
+          "unit": "s",
+          "value": 0.003124166
+        },
+        "state_policy": "resq_full",
+        "timer_due_event": null,
+        "timer_due_time": null,
+        "timer_slippage": null,
+        "trigger": "semantic_boundary"
+      }
+    ]
+  },
+  "checkpoint_placement_policy": "semantic",
+  "checkpoint_state_policy": "resq_full",
+  "classification": {
+    "audit_only_classes": [
+      "audit_provenance"
+    ],
+    "causal_failure_mode": "not_applicable",
+    "decision_critical_classes": [
+      "semantic_identity",
+      "progress_cost",
+      "compilation_portability",
+      "backend_environment"
+    ],
+    "recovery_critical_classes": [
+      "semantic_identity",
+      "progress_cost"
+    ],
+    "scenario_dependent_classes": []
+  },
+  "comparison": {
+    "action_flip": false,
+    "action_type_flip": false,
+    "evidence_comparison_group_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+    "target_flip": false
+  },
+  "config_hash": "sha256:aa7a55eb8c1806ccb8050097b396cd352596263c9683f63c7294e4ccc2b53f41",
+  "counterfactual_reference": {
+    "counterfactual_ids": [],
+    "shared_across_policies": false
+  },
+  "decision": {
+    "candidate_actions": [],
+    "planner_invoked": false,
+    "policy_name": "placement_only",
+    "selected_action": "not_applicable"
+  },
+  "evidence": {
+    "included_classes": [
+      "semantic_identity",
+      "progress_cost",
+      "compilation_portability",
+      "backend_environment"
+    ],
+    "omitted_classes": [],
+    "variant_id": "full",
+    "variant_type": "full"
+  },
+  "failure_scenario_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+  "git_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "outcome": {
+    "action_attempted": false,
+    "action_executed": false,
+    "continuation_evaluated": false,
+    "exact_work_reuse_redo": {
+      "boundary": "B4",
+      "classical": [
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "preprocessing",
+          "unit_id": "preprocessing:problem"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "grouping",
+          "unit_id": "grouping:pauli"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "shot_planning",
+          "unit_id": "planning:shots"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "circuit_build",
+          "unit_id": "circuit:bound"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "compilation",
+          "unit_id": "compilation:target"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "optimizer_iteration",
+          "unit_id": "optimizer:0"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "optimizer_iteration",
+          "unit_id": "optimizer:1"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "optimizer_iteration",
+          "unit_id": "optimizer:2"
+        }
+      ],
+      "external": [],
+      "metrics": {
+        "circuit_evaluations_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 0
+        },
+        "circuit_evaluations_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 0
+        },
+        "completed_stages_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 8
+        },
+        "completed_stages_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 0
+        },
+        "group_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "measurement_groups_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 0
+        },
+        "measurement_groups_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 0
+        },
+        "qpu_time_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "qpu_work_redone_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "qpu_work_reused_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "recomputation_time_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "shot_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "shots_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 0
+        },
+        "shots_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 0
+        }
+      },
+      "recovery": [
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "preprocessing:problem",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "grouping:pauli",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "planning:shots",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "circuit:bound",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "compilation:target",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "optimizer:0",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "optimizer:1",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "optimizer:2",
+          "unit_type": "classical_stage"
+        }
+      ],
+      "workload": "qaoa_maxcut"
+    }
+  },
+  "pair_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+  "parameters": {
+    "checkpoint_boundary": "B5",
+    "checkpoint_cadence": 1,
+    "continuation_horizon_B": 4,
+    "execution_mode": "noisy_sim",
+    "failure_timing": "optimizer_middle",
+    "persistence_target": "local_durable",
+    "placement_policy": "semantic",
+    "seed": 1002,
+    "stable_window_steps": 2,
+    "workload": "qaoa_maxcut",
+    "workload_profile": "paper"
+  },
+  "placement": {
+    "cadence": 1,
+    "failure_timing": "optimizer_middle",
+    "matching_mode": "semantic",
+    "paired_failure_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+    "policy": "semantic",
+    "timing_provenance": "measured checkpoint path; logical workflow schedule is modeled"
+  },
+  "provenance": {
+    "config_hash": "sha256:aa7a55eb8c1806ccb8050097b396cd352596263c9683f63c7294e4ccc2b53f41",
+    "execution": "noisy_sim",
+    "paper_usage": "final_plan_evaluation",
+    "scenario_builder": "checkrcq_eval.benchmarks.phase2b2._placement_record",
+    "scientific_executor_version": "phase2b2-placement-v1",
+    "scientific_implementation": "checkrcq_eval.benchmarks.phase2b2._placement_record",
+    "timeline_duration_provenance": "modeled"
+  },
+  "quality": {
+    "continuation_evaluated": false
+  },
+  "recovery": {
+    "checkpoint_bytes": {
+      "total_committed_checkpoint_bytes": null
+    },
+    "checkpoint_valid": true,
+    "exact_reuse_redo": {
+      "boundary": "B4",
+      "classical": [
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "preprocessing",
+          "unit_id": "preprocessing:problem"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "grouping",
+          "unit_id": "grouping:pauli"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "shot_planning",
+          "unit_id": "planning:shots"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "circuit_build",
+          "unit_id": "circuit:bound"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "compilation",
+          "unit_id": "compilation:target"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "optimizer_iteration",
+          "unit_id": "optimizer:0"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "optimizer_iteration",
+          "unit_id": "optimizer:1"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "optimizer_iteration",
+          "unit_id": "optimizer:2"
+        }
+      ],
+      "external": [],
+      "metrics": {
+        "circuit_evaluations_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 0
+        },
+        "circuit_evaluations_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 0
+        },
+        "completed_stages_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 8
+        },
+        "completed_stages_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 0
+        },
+        "group_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "measurement_groups_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 0
+        },
+        "measurement_groups_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 0
+        },
+        "qpu_time_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "qpu_work_redone_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "qpu_work_reused_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "recomputation_time_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "shot_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "shots_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 0
+        },
+        "shots_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 0
+        }
+      },
+      "recovery": [
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "preprocessing:problem",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "grouping:pauli",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "planning:shots",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "circuit:bound",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "compilation:target",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "optimizer:0",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "optimizer:1",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "redone",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "optimizer:2",
+          "unit_type": "classical_stage"
+        }
+      ],
+      "workload": "qaoa_maxcut"
+    },
+    "mechanically_recovered": true,
+    "most_recent_checkpoint_event": null,
+    "save_timing": {
+      "save_commit_latency_s": null
+    },
+    "timing": null,
+    "work_since_checkpoint": {
+      "classical_stages": 8,
+      "measurement_groups": 0,
+      "shots": 0
+    }
+  },
+  "repetition_role": "evaluation",
+  "run_id": "sigmetrics-rq1-boundary-placement-final-v1--recommended--rq1_failure_timing_sensitivity--1f7ad9799120c7ac",
+  "scenario": {
+    "checkpoint_boundary": "B5",
+    "checkpoint_contract_hash": "sha256:a7ef32135b6740625e09ab79e4508f53cde99713fd5a77da3609f37742466b11",
+    "checkpoint_state_hash": "sha256:a7ef32135b6740625e09ab79e4508f53cde99713fd5a77da3609f37742466b11",
+    "comparison_group_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+    "comparison_state_hash": "sha256:a7ef32135b6740625e09ab79e4508f53cde99713fd5a77da3609f37742466b11",
+    "evidence_comparison_group_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+    "failure_during_external_work": false,
+    "failure_event": 7,
+    "failure_scenario_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+    "failure_stage": "optimizer_iteration",
+    "mode": "noisy_sim",
+    "parameters": {
+      "checkpoint_boundary": "B5",
+      "checkpoint_cadence": 1,
+      "continuation_horizon_B": 4,
+      "execution_mode": "noisy_sim",
+      "failure_timing": "optimizer_middle",
+      "persistence_target": "local_durable",
+      "placement_policy": "semantic",
+      "seed": 1002,
+      "stable_window_steps": 2,
+      "workload": "qaoa_maxcut",
+      "workload_profile": "paper"
+    },
+    "restore_environment_hash": "sha256:268dcd091216722fdc5a49e6ebb77a1d42659308b95e3d9c7f8a02abd7e728bc",
+    "scenario_id": "sha256:a84ea8c3fead4022e4c7808a4570b4ee47c2aac7e312edabbf9b11096cf7b2a4",
+    "seed": 1002,
+    "workload": "qaoa_maxcut"
+  },
+  "schema_version": "sigmetrics-experiment-record-v4",
+  "status": "completed",
+  "timer": {
+    "matching": {
+      "acceptable_overhead_tolerance_percent": null,
+      "count_mismatch": 0,
+      "mismatch_reason": null,
+      "mode": "equal_checkpoint_count",
+      "overhead_mismatch_percent": null,
+      "periodic_count": 1,
+      "periodic_predicted_measured_overhead_s": null,
+      "selection_inputs": [
+        "timeline_total_time",
+        "checkpointable_hooks",
+        "semantic_checkpoint_count"
+      ],
+      "semantic_count": 1,
+      "semantic_measured_overhead_s": null,
+      "timer_config": {
+        "checkpoint_budget": 2,
+        "interval": 1.9596500000000001,
+        "maximum_count": 2,
+        "phase": 1.9596500000000001,
+        "scheduling_mode": "deferred_safe_hook"
+      }
+    },
+    "scheduling_mode": "not_applicable",
+    "slippage_s": null
+  },
+  "work_ledger": {
+    "boundary": "B4",
+    "classical": [
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "preprocessing",
+        "unit_id": "preprocessing:problem"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "grouping",
+        "unit_id": "grouping:pauli"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "shot_planning",
+        "unit_id": "planning:shots"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "circuit_build",
+        "unit_id": "circuit:bound"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "compilation",
+        "unit_id": "compilation:target"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "optimizer_iteration",
+        "unit_id": "optimizer:0"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "optimizer_iteration",
+        "unit_id": "optimizer:1"
+      },
+      {
+        "completion_state": "completed",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "stage": "optimizer_iteration",
+        "unit_id": "optimizer:2"
+      }
+    ],
+    "external": [],
+    "metrics": {
+      "circuit_evaluations_redone": {
+        "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+        "provenance": "derived",
+        "unit": "circuit_evaluations",
+        "value": 0
+      },
+      "circuit_evaluations_reused": {
+        "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+        "provenance": "derived",
+        "unit": "circuit_evaluations",
+        "value": 0
+      },
+      "completed_stages_redone": {
+        "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+        "provenance": "derived",
+        "unit": "stages",
+        "value": 8
+      },
+      "completed_stages_reused": {
+        "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+        "provenance": "derived",
+        "unit": "stages",
+        "value": 0
+      },
+      "group_recovered_work_fraction": {
+        "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+        "provenance": "derived",
+        "unit": "fraction",
+        "value": null
+      },
+      "measurement_groups_redone": {
+        "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+        "provenance": "derived",
+        "unit": "measurement_groups",
+        "value": 0
+      },
+      "measurement_groups_reused": {
+        "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+        "provenance": "derived",
+        "unit": "measurement_groups",
+        "value": 0
+      },
+      "qpu_time_recovered_work_fraction": {
+        "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+        "provenance": "derived",
+        "unit": "fraction",
+        "value": null
+      },
+      "qpu_work_redone_s": {
+        "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+        "provenance": "derived",
+        "unit": "s",
+        "value": null
+      },
+      "qpu_work_reused_s": {
+        "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+        "provenance": "derived",
+        "unit": "s",
+        "value": null
+      },
+      "recomputation_time_s": {
+        "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+        "provenance": "derived",
+        "unit": "s",
+        "value": null
+      },
+      "shot_recovered_work_fraction": {
+        "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+        "provenance": "derived",
+        "unit": "fraction",
+        "value": null
+      },
+      "shots_redone": {
+        "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+        "provenance": "derived",
+        "unit": "shots",
+        "value": 0
+      },
+      "shots_reused": {
+        "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+        "provenance": "derived",
+        "unit": "shots",
+        "value": 0
+      }
+    },
+    "recovery": [
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "preprocessing:problem",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "grouping:pauli",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "planning:shots",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "circuit:bound",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "compilation:target",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "optimizer:0",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "optimizer:1",
+        "unit_type": "classical_stage"
+      },
+      {
+        "disposition": "redone",
+        "duration_provenance": null,
+        "measured_duration_s": null,
+        "quantity": 1,
+        "unit": "stage",
+        "unit_id": "optimizer:2",
+        "unit_type": "classical_stage"
+      }
+    ],
+    "workload": "qaoa_maxcut"
+  }
+}

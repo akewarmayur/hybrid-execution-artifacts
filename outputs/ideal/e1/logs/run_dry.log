@@ -1,0 +1,2 @@
+2026-10-09 11:54:39,438 | INFO | Running ideal/e1 using configs/ideal/e1.yaml
+2026-10-09 11:54:39,438 | INFO | Wrote outputs to {"output_dir": "/Users/manu/Desktop/CheckRCQ/RES-Q-SIGMETRICS-2027-Artifact/outputs/ideal/e1", "processed_csv": "/Users/manu/Desktop/CheckRCQ/RES-Q-SIGMETRICS-2027-Artifact/data/processed/ideal/e1_records.csv", "processed_jsonl": "/Users/manu/Desktop/CheckRCQ/RES-Q-SIGMETRICS-2027-Artifact/data/processed/ideal/e1_records.jsonl", "raw_jsonl": "/Users/manu/Desktop/CheckRCQ/RES-Q-SIGMETRICS-2027-Artifact/data/raw/ideal/e1_events.jsonl"}

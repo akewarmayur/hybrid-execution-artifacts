@@ -1,0 +1,293 @@
+{
+  "finite_sample_descriptive_only": true,
+  "per_architecture": {
+    "heron-r2": {
+      "categorical_counts": {
+        "action": {
+          "migrate": 3,
+          "replay": 3
+        },
+        "continuation_success": {
+          "false": 1,
+          "true": 5
+        },
+        "pair_results_pooled": {
+          "false": 6
+        },
+        "stable_continuation": {
+          "false": 3,
+          "true": 3
+        }
+      },
+      "numeric_distributions": {
+        "gradient_noise_floor": {
+          "count": 6,
+          "max": 9.156279421814402,
+          "median": 8.485635869014104,
+          "min": 7.814992316213807,
+          "p95": 9.156279421814402
+        },
+        "hellinger_deviation": {
+          "count": 6,
+          "max": 0.24920156828975512,
+          "median": 0.18441931403639783,
+          "min": 0.17446016488779675,
+          "p95": 0.2360748299395517
+        },
+        "normalized_gradient_disagreement": {
+          "count": 6,
+          "max": 0.9055369615220094,
+          "median": 0.5019705507991543,
+          "min": 0.10674008151904926,
+          "p95": 0.8334456348318654
+        },
+        "objective_deviation": {
+          "count": 6,
+          "max": 0.0827187500000024,
+          "median": 0.02436979166666653,
+          "min": 0.00013541666666583296,
+          "p95": 0.08068489583333571
+        },
+        "stable_step_index": {
+          "count": 3,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p95": 0.0
+        }
+      },
+      "row_count": 6
+    },
+    "heron-r3": {
+      "categorical_counts": {
+        "action": {
+          "migrate": 3,
+          "replay": 3
+        },
+        "continuation_success": {
+          "false": 2,
+          "true": 4
+        },
+        "pair_results_pooled": {
+          "false": 6
+        },
+        "stable_continuation": {
+          "false": 2,
+          "true": 4
+        }
+      },
+      "numeric_distributions": {
+        "gradient_noise_floor": {
+          "count": 6,
+          "max": 9.156279421814402,
+          "median": 8.485635869014104,
+          "min": 7.814992316213807,
+          "p95": 9.156279421814402
+        },
+        "hellinger_deviation": {
+          "count": 6,
+          "max": 0.27148012930420884,
+          "median": 0.1695539980736202,
+          "min": 0.13348888952725094,
+          "p95": 0.2545679170319921
+        },
+        "normalized_gradient_disagreement": {
+          "count": 6,
+          "max": 0.8010913932597246,
+          "median": 0.35919422192567924,
+          "min": 0.07291129409431604,
+          "p95": 0.7289378134290566
+        },
+        "objective_deviation": {
+          "count": 6,
+          "max": 0.10496875000000117,
+          "median": 0.06845833333333529,
+          "min": 0.007906249999996007,
+          "p95": 0.1004869791666676
+        },
+        "stable_step_index": {
+          "count": 4,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p95": 0.0
+        }
+      },
+      "row_count": 6
+    }
+  },
+  "per_source": {
+    "ibm_fez": {
+      "categorical_counts": {
+        "action": {
+          "migrate": 3,
+          "replay": 3
+        },
+        "continuation_success": {
+          "false": 1,
+          "true": 5
+        },
+        "pair_results_pooled": {
+          "false": 6
+        },
+        "stable_continuation": {
+          "false": 3,
+          "true": 3
+        }
+      },
+      "numeric_distributions": {
+        "gradient_noise_floor": {
+          "count": 6,
+          "max": 9.156279421814402,
+          "median": 8.485635869014104,
+          "min": 7.814992316213807,
+          "p95": 9.156279421814402
+        },
+        "hellinger_deviation": {
+          "count": 6,
+          "max": 0.24920156828975512,
+          "median": 0.18441931403639783,
+          "min": 0.17446016488779675,
+          "p95": 0.2360748299395517
+        },
+        "normalized_gradient_disagreement": {
+          "count": 6,
+          "max": 0.9055369615220094,
+          "median": 0.5019705507991543,
+          "min": 0.10674008151904926,
+          "p95": 0.8334456348318654
+        },
+        "objective_deviation": {
+          "count": 6,
+          "max": 0.0827187500000024,
+          "median": 0.02436979166666653,
+          "min": 0.00013541666666583296,
+          "p95": 0.08068489583333571
+        },
+        "stable_step_index": {
+          "count": 3,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p95": 0.0
+        }
+      },
+      "row_count": 6
+    },
+    "ibm_pittsburgh": {
+      "categorical_counts": {
+        "action": {
+          "migrate": 3,
+          "replay": 3
+        },
+        "continuation_success": {
+          "false": 2,
+          "true": 4
+        },
+        "pair_results_pooled": {
+          "false": 6
+        },
+        "stable_continuation": {
+          "false": 2,
+          "true": 4
+        }
+      },
+      "numeric_distributions": {
+        "gradient_noise_floor": {
+          "count": 6,
+          "max": 9.156279421814402,
+          "median": 8.485635869014104,
+          "min": 7.814992316213807,
+          "p95": 9.156279421814402
+        },
+        "hellinger_deviation": {
+          "count": 6,
+          "max": 0.27148012930420884,
+          "median": 0.1695539980736202,
+          "min": 0.13348888952725094,
+          "p95": 0.2545679170319921
+        },
+        "normalized_gradient_disagreement": {
+          "count": 6,
+          "max": 0.8010913932597246,
+          "median": 0.35919422192567924,
+          "min": 0.07291129409431604,
+          "p95": 0.7289378134290566
+        },
+        "objective_deviation": {
+          "count": 6,
+          "max": 0.10496875000000117,
+          "median": 0.06845833333333529,
+          "min": 0.007906249999996007,
+          "p95": 0.1004869791666676
+        },
+        "stable_step_index": {
+          "count": 4,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p95": 0.0
+        }
+      },
+      "row_count": 6
+    }
+  },
+  "pooled": {
+    "categorical_counts": {
+      "action": {
+        "migrate": 6,
+        "replay": 6
+      },
+      "continuation_success": {
+        "false": 3,
+        "true": 9
+      },
+      "pair_results_pooled": {
+        "false": 12
+      },
+      "stable_continuation": {
+        "false": 5,
+        "true": 7
+      }
+    },
+    "numeric_distributions": {
+      "gradient_noise_floor": {
+        "count": 12,
+        "max": 9.156279421814402,
+        "median": 8.485635869014104,
+        "min": 7.814992316213807,
+        "p95": 9.156279421814402
+      },
+      "hellinger_deviation": {
+        "count": 12,
+        "max": 0.27148012930420884,
+        "median": 0.18362717598047598,
+        "min": 0.13348888952725094,
+        "p95": 0.2592269207462593
+      },
+      "normalized_gradient_disagreement": {
+        "count": 12,
+        "max": 0.9055369615220094,
+        "median": 0.4816689909271056,
+        "min": 0.07291129409431604,
+        "p95": 0.8480918989777526
+      },
+      "objective_deviation": {
+        "count": 12,
+        "max": 0.10496875000000117,
+        "median": 0.06246354166666723,
+        "min": 0.00013541666666583296,
+        "p95": 0.09510885416666731
+      },
+      "stable_step_index": {
+        "count": 7,
+        "max": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "p95": 0.0
+      }
+    },
+    "row_count": 12
+  },
+  "schema_version": "checkrcq-final-evidence-descriptive-summary-v1"
+}

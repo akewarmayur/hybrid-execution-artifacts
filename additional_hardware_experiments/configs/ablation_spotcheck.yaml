@@ -1,0 +1,56 @@
+experiment_name: ablation_spotcheck
+results_subdir: ablation_spotcheck
+description: >
+  Tiny hardware attribution check for migration. These cases are intentionally few:
+  they are meant to probe whether missing backend or measurement state changes
+  restore behavior on live hardware.
+benchmark_profile: paper
+hardware_windows:
+  - AUTO_UTC
+optimizer_iterations: 2
+shots_per_group: 768
+budget_B: 2
+use_mock_hardware: true
+use_live_hardware: true
+allow_live_fallback: true
+use_inline_account: true
+inline_channel: ibm_cloud
+inline_instance: "<REDACTED_IBM_INSTANCE>"
+inline_name: "<REDACTED_SAVED_ACCOUNT_NAME>"
+hardware_case_seeds:
+  - 5
+  - 11
+live_shots_per_job: 192
+max_live_cases: 3
+append_existing: true
+cases:
+  - case_id: lih_full_contract_migration
+    case_label: Full contract
+    family: ablation_spotcheck
+    workload_name: lih_vqe
+    boundary: B5
+    scenario: ablation_restore
+    baseline_or_ablation: full_contract
+    save_backend: ibm_pittsburgh
+    restore_backend: ibm_marrakesh
+    delay: 0.5
+  - case_id: lih_no_backend_snapshot
+    case_label: No backend snapshot
+    family: ablation_spotcheck
+    workload_name: lih_vqe
+    boundary: B5
+    scenario: ablation_restore
+    baseline_or_ablation: no_backend_snapshot
+    save_backend: ibm_pittsburgh
+    restore_backend: ibm_marrakesh
+    delay: 0.5
+  - case_id: lih_no_measurement_ledger
+    case_label: No measurement ledger
+    family: ablation_spotcheck
+    workload_name: lih_vqe
+    boundary: B5
+    scenario: ablation_restore
+    baseline_or_ablation: no_measurement_ledger
+    save_backend: ibm_pittsburgh
+    restore_backend: ibm_marrakesh
+    delay: 0.5

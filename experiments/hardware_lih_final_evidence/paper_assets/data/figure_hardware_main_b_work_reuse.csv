@@ -1,0 +1,4 @@
+policy,label,cases,groups_reused,groups_reissued,groups_total,shots_reused,shots_reissued,shots_total
+semantic_b5,Semantic B5,18,72,0,72,13824,0,13824
+periodic_equal_count,Periodic equal count,18,48,24,72,9216,4608,13824
+periodic_equal_overhead,Periodic equal overhead,18,0,72,72,0,13824,13824

@@ -1,0 +1,36 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-phase2c-infrastructure-smoke-v1
+status: smoke
+profile: smoke
+rqs: [RQ1, RQ2, RQ3, RQ4, RQ5, RQ6]
+repetition_role: smoke
+output_root: outputs/diagnostics/phase2c/sigmetrics-phase2c-infrastructure-smoke-v1
+expected_checkpoint_count_per_run: 2
+shots_per_group: 64
+axes:
+  workload: [h2_vqe, qaoa_maxcut]
+  workload_profile: [reduced]
+  execution_mode: [ideal_sim]
+  checkpoint_boundary: [B5]
+  checkpoint_cadence: [1, 2]
+  failure_timing: [optimizer_middle, external_middle]
+  continuation_horizon_B: [2, 4]
+  stable_window_steps: [1, 2]
+  persistence_target: [temporary_test]
+  seed: [17]
+seed_roles:
+  smoke_seeds: [17]
+  calibration_seeds: [117]
+  planner_calibration_seeds: [217]
+  evaluation_seeds: [1017]
+dependencies: []
+persistence_targets:
+  temporary_test:
+    type: temporary_test_filesystem
+    path: /private/tmp/checkrcq-phase2c-smoke
+    durability_semantics: process-local test durability only; not a network filesystem
+budgets:
+  max_runs: 40
+  max_simulation_shots: 100000
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

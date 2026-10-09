@@ -1,0 +1,5 @@
+case_id,case_label,rate_success,ci_low_success,ci_high_success
+lih_b3_replay_pittsburgh,LiH B3 replay,0.5,0.09453120573423074,0.9054687942657693
+lih_b5_replay_pittsburgh,LiH B5 replay,0.5,0.09453120573423074,0.9054687942657693
+h2_b3_replay_marrakesh,H2 B3 replay,0.5,0.09453120573423074,0.9054687942657693
+h2_b5_replay_marrakesh,H2 B5 replay,0.0,0.0,0.6576197724933468

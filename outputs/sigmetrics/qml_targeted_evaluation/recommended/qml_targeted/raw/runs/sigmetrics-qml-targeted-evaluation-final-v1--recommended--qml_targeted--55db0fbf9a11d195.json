@@ -1,0 +1,1184 @@
+{
+  "campaign_id": "sigmetrics-qml-targeted-evaluation-final-v1--recommended--qml_targeted",
+  "classification": {
+    "causal_failure_mode": "not_applicable"
+  },
+  "comparison": {
+    "action_flip": false,
+    "action_type_flip": false,
+    "evidence_comparison_group_id": "qml:same_backend_replay:seed6101",
+    "target_flip": false
+  },
+  "config_hash": "sha256:b5b6a9e898984e56492feecea88f8431b2ed4f67cffba8147a5d41e9427284e6",
+  "counterfactual_reference": {
+    "counterfactual_ids": [
+      "cf-eb295796fcafe4991c76"
+    ],
+    "counterfactual_outcomes": {
+      "replay:ibm_kyiv": {
+        "action": "replay",
+        "action_attempted": true,
+        "action_executed": true,
+        "action_id": "replay:ibm_kyiv",
+        "continuation_evaluated": true,
+        "continuation_metrics": {
+          "absolute_gradient_difference": 0.0,
+          "comparisons": [
+            {
+              "absolute_gradient_difference": 0.0,
+              "gradient_direction_disagreement": null,
+              "gradient_noise_floor": 0.23129155951813585,
+              "hellinger_deviation": 0.0,
+              "normalized_gradient_disagreement": 0.0,
+              "objective_deviation": 0.0,
+              "reference_gradient_norm": 0.11606931404399695,
+              "step_index": 0,
+              "within_envelope": true
+            },
+            {
+              "absolute_gradient_difference": 0.0,
+              "gradient_direction_disagreement": 0.0,
+              "gradient_noise_floor": 0.23129155951813585,
+              "hellinger_deviation": 0.0,
+              "normalized_gradient_disagreement": 0.0,
+              "objective_deviation": 0.0,
+              "reference_gradient_norm": 1.3156780644807242,
+              "step_index": 1,
+              "within_envelope": true
+            }
+          ],
+          "continuation_success": true,
+          "first_step_overshoot": 0.0,
+          "gradient_direction_disagreement": 0.0,
+          "gradient_noise_floor": 0.23129155951813585,
+          "hellinger_deviation": 0.0,
+          "normalized_gradient_disagreement": 0.0,
+          "objective_deviation": 0.0,
+          "reference_gradient_norm": 1.3156780644807242,
+          "stable_continuation": true,
+          "stable_step_index": 0
+        },
+        "continuation_success": true,
+        "counterfactual_id": "cf-eb295796fcafe4991c76",
+        "mechanically_recovered": true,
+        "quality": {
+          "continuation_success": true,
+          "gradient_deviation": 0.0,
+          "parameter_deviation": 0.0,
+          "prediction_accuracy": 0.5,
+          "prediction_distribution_deviation": 0.0,
+          "reference_validation_loss": 1.2171927942001268,
+          "stable_continuation": true,
+          "training_loss": 0.8012762530789693,
+          "training_loss_deviation": 0.0,
+          "validation_loss": 1.2171927942001268
+        },
+        "stable_continuation": true,
+        "target_backend": "ibm_kyiv",
+        "work_ledger": {
+          "boundary": "B5",
+          "classical": [
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "qml_dataset_preprocess",
+              "unit_id": "qml:dataset"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "qml_batch_plan",
+              "unit_id": "qml:batch_plan"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "qml_compilation",
+              "unit_id": "qml:compiled_classifier"
+            },
+            {
+              "completion_state": "completed",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "stage": "qml_training_step",
+              "unit_id": "qml:training_step:0"
+            }
+          ],
+          "external": [
+            {
+              "batch_job_id": "batch:1",
+              "circuit_id": "qml-eval:1:7:50:ibm_kyiv",
+              "completed_shots": 64,
+              "completion_state": "completed",
+              "count_provenance": "measured",
+              "duration_provenance": null,
+              "group_id": "qml:sample:7",
+              "measured_duration_s": null,
+              "requested_shots": 64,
+              "retry_count": 0
+            },
+            {
+              "batch_job_id": "batch:1",
+              "circuit_id": "qml-eval:1:22:50:ibm_kyiv",
+              "completed_shots": 64,
+              "completion_state": "completed",
+              "count_provenance": "measured",
+              "duration_provenance": null,
+              "group_id": "qml:sample:22",
+              "measured_duration_s": null,
+              "requested_shots": 64,
+              "retry_count": 0
+            }
+          ],
+          "metrics": {
+            "circuit_evaluations_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+              "provenance": "derived",
+              "unit": "circuit_evaluations",
+              "value": 0
+            },
+            "circuit_evaluations_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+              "provenance": "derived",
+              "unit": "circuit_evaluations",
+              "value": 2
+            },
+            "completed_stages_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+              "provenance": "derived",
+              "unit": "stages",
+              "value": 0
+            },
+            "completed_stages_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+              "provenance": "derived",
+              "unit": "stages",
+              "value": 4
+            },
+            "group_recovered_work_fraction": {
+              "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+              "provenance": "derived",
+              "unit": "fraction",
+              "value": 1.0
+            },
+            "measurement_groups_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+              "provenance": "derived",
+              "unit": "measurement_groups",
+              "value": 0
+            },
+            "measurement_groups_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+              "provenance": "derived",
+              "unit": "measurement_groups",
+              "value": 2
+            },
+            "qpu_time_recovered_work_fraction": {
+              "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+              "provenance": "derived",
+              "unit": "fraction",
+              "value": null
+            },
+            "qpu_work_redone_s": {
+              "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+              "provenance": "derived",
+              "unit": "s",
+              "value": null
+            },
+            "qpu_work_reused_s": {
+              "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+              "provenance": "derived",
+              "unit": "s",
+              "value": null
+            },
+            "recomputation_time_s": {
+              "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+              "provenance": "derived",
+              "unit": "s",
+              "value": null
+            },
+            "shot_recovered_work_fraction": {
+              "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+              "provenance": "derived",
+              "unit": "fraction",
+              "value": 1.0
+            },
+            "shots_redone": {
+              "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+              "provenance": "derived",
+              "unit": "shots",
+              "value": 0
+            },
+            "shots_reused": {
+              "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+              "provenance": "derived",
+              "unit": "shots",
+              "value": 128
+            }
+          },
+          "recovery": [
+            {
+              "disposition": "reused",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "quantity": 1,
+              "unit": "stage",
+              "unit_id": "qml:dataset",
+              "unit_type": "classical_stage"
+            },
+            {
+              "disposition": "reused",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "quantity": 1,
+              "unit": "stage",
+              "unit_id": "qml:batch_plan",
+              "unit_type": "classical_stage"
+            },
+            {
+              "disposition": "reused",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "quantity": 1,
+              "unit": "stage",
+              "unit_id": "qml:compiled_classifier",
+              "unit_type": "classical_stage"
+            },
+            {
+              "disposition": "reused",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "quantity": 1,
+              "unit": "stage",
+              "unit_id": "qml:training_step:0",
+              "unit_type": "classical_stage"
+            },
+            {
+              "disposition": "reused",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "quantity": 1,
+              "unit": "qml_sample_evaluation",
+              "unit_id": "qml:sample:7",
+              "unit_type": "measurement_group"
+            },
+            {
+              "disposition": "reused",
+              "duration_provenance": null,
+              "measured_duration_s": null,
+              "quantity": 1,
+              "unit": "qml_sample_evaluation",
+              "unit_id": "qml:sample:22",
+              "unit_type": "measurement_group"
+            }
+          ],
+          "workload": "qml_vqc"
+        },
+        "work_reuse": {
+          "batches_redone": 0,
+          "batches_reused": 1,
+          "circuit_evaluations_redone": 0,
+          "circuit_evaluations_reused": 2,
+          "samples_redone": 0,
+          "samples_reused": 2,
+          "shots_redone": 0,
+          "shots_reused": 128,
+          "training_steps_redone": 0,
+          "training_steps_reused": 1
+        }
+      }
+    },
+    "selected_counterfactual_id": "cf-eb295796fcafe4991c76",
+    "shared_across_policies": true
+  },
+  "decision": {
+    "all_policy_decisions": [
+      {
+        "candidate_actions": [
+          {
+            "action_id": "replay:ibm_kyiv",
+            "action_type": "replay",
+            "backend_pair": "ibm_kyiv->ibm_kyiv",
+            "infeasibility_reason": null,
+            "target_backend": "ibm_kyiv",
+            "technically_feasible": true
+          }
+        ],
+        "checkpoint_contract_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+        "configuration": {
+          "risk_evaluation": false
+        },
+        "decision_latency_s": 0.0010618749999999999,
+        "failure_scenario_id": "qml-partial-batch:qml:same_backend_replay:seed6101",
+        "feature_extraction_latency_s": 0.001060042,
+        "observable_feature_hash": "sha256:ed1324f4d966f618e7432c3ccedd0098925a98312d21c314b8c4b4f4ec51cc44",
+        "observable_risk_scores": {},
+        "operating_point": null,
+        "policy": "blind_replay",
+        "policy_version": "phase2b3-policy-v1",
+        "rationale": "original-backend replay is technically feasible",
+        "restore_environment_hash": "sha256:aaa2a6445a4af58fa9181008cd0d7df00711c319de7c72dfda61e2db3382447e",
+        "scenario_id": "qml:same_backend_replay:seed6101",
+        "selected_action": "replay",
+        "selected_target": "ibm_kyiv",
+        "selection_latency_s": 1.833e-06,
+        "technically_feasible": true
+      },
+      {
+        "candidate_actions": [
+          {
+            "action_id": "replay:ibm_kyiv",
+            "action_type": "replay",
+            "backend_pair": "ibm_kyiv->ibm_kyiv",
+            "infeasibility_reason": null,
+            "target_backend": "ibm_kyiv",
+            "technically_feasible": true
+          }
+        ],
+        "checkpoint_contract_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+        "configuration": {
+          "migration_target_order": []
+        },
+        "decision_latency_s": 0.001061208,
+        "failure_scenario_id": "qml-partial-batch:qml:same_backend_replay:seed6101",
+        "feature_extraction_latency_s": 0.001060042,
+        "observable_feature_hash": "sha256:ed1324f4d966f618e7432c3ccedd0098925a98312d21c314b8c4b4f4ec51cc44",
+        "observable_risk_scores": {},
+        "operating_point": null,
+        "policy": "replay_then_migrate",
+        "policy_version": "phase2b3-policy-v1",
+        "rationale": "deterministic rule prefers feasible replay",
+        "restore_environment_hash": "sha256:aaa2a6445a4af58fa9181008cd0d7df00711c319de7c72dfda61e2db3382447e",
+        "scenario_id": "qml:same_backend_replay:seed6101",
+        "selected_action": "replay",
+        "selected_target": "ibm_kyiv",
+        "selection_latency_s": 1.166e-06,
+        "technically_feasible": true
+      },
+      {
+        "candidate_actions": [
+          {
+            "action_id": "replay:ibm_kyiv",
+            "action_type": "replay",
+            "backend_pair": "ibm_kyiv->ibm_kyiv",
+            "infeasibility_reason": null,
+            "target_backend": "ibm_kyiv",
+            "technically_feasible": true
+          }
+        ],
+        "checkpoint_contract_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+        "configuration": {
+          "change_rule": "identity/basis/estimator change or configured delay threshold",
+          "delay_threshold": 0.5
+        },
+        "decision_latency_s": 0.001061292,
+        "failure_scenario_id": "qml-partial-batch:qml:same_backend_replay:seed6101",
+        "feature_extraction_latency_s": 0.001060042,
+        "observable_feature_hash": "sha256:ed1324f4d966f618e7432c3ccedd0098925a98312d21c314b8c4b4f4ec51cc44",
+        "observable_risk_scores": {},
+        "operating_point": null,
+        "policy": "block_on_change",
+        "policy_version": "phase2b3-policy-v1",
+        "rationale": "no configured nontrivial context change",
+        "restore_environment_hash": "sha256:aaa2a6445a4af58fa9181008cd0d7df00711c319de7c72dfda61e2db3382447e",
+        "scenario_id": "qml:same_backend_replay:seed6101",
+        "selected_action": "replay",
+        "selected_target": "ibm_kyiv",
+        "selection_latency_s": 1.25e-06,
+        "technically_feasible": true
+      },
+      {
+        "candidate_actions": [
+          {
+            "action_id": "replay:ibm_kyiv",
+            "action_type": "replay",
+            "backend_pair": "ibm_kyiv->ibm_kyiv",
+            "infeasibility_reason": null,
+            "target_backend": "ibm_kyiv",
+            "technically_feasible": true
+          }
+        ],
+        "checkpoint_contract_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+        "configuration": {
+          "maximum_observable_risk": 0.55
+        },
+        "decision_latency_s": 0.001070417,
+        "failure_scenario_id": "qml-partial-batch:qml:same_backend_replay:seed6101",
+        "feature_extraction_latency_s": 0.001060042,
+        "observable_feature_hash": "sha256:ed1324f4d966f618e7432c3ccedd0098925a98312d21c314b8c4b4f4ec51cc44",
+        "observable_risk_scores": {
+          "replay:ibm_kyiv": 0.0
+        },
+        "operating_point": 0.55,
+        "policy": "resq",
+        "policy_version": "phase2b3-policy-v1",
+        "rationale": "observable replay risk is within the calibrated operating point",
+        "restore_environment_hash": "sha256:aaa2a6445a4af58fa9181008cd0d7df00711c319de7c72dfda61e2db3382447e",
+        "scenario_id": "qml:same_backend_replay:seed6101",
+        "selected_action": "replay",
+        "selected_target": "ibm_kyiv",
+        "selection_latency_s": 1.0375e-05,
+        "technically_feasible": true
+      }
+    ],
+    "candidate_actions": [
+      {
+        "action_id": "replay:ibm_kyiv",
+        "action_type": "replay",
+        "backend_pair": "ibm_kyiv->ibm_kyiv",
+        "infeasibility_reason": null,
+        "target_backend": "ibm_kyiv",
+        "technically_feasible": true
+      }
+    ],
+    "observable_feature_hash": "sha256:ed1324f4d966f618e7432c3ccedd0098925a98312d21c314b8c4b4f4ec51cc44",
+    "operating_point": null,
+    "planner_version": "phase2b3-policy-v1",
+    "policy_name": "blind_replay",
+    "rationale": "original-backend replay is technically feasible",
+    "selected_action": "replay",
+    "selected_target": "ibm_kyiv"
+  },
+  "evidence": {
+    "decision_evidence_bytes": 2705,
+    "included_classes": [
+      "semantic_identity",
+      "progress_cost",
+      "compilation_portability",
+      "backend_environment",
+      "estimator_mitigation",
+      "continuation_optimizer"
+    ],
+    "omitted_classes": [],
+    "variant_id": "full",
+    "variant_type": "full"
+  },
+  "git_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "outcome": {
+    "action": "replay",
+    "action_attempted": true,
+    "action_executed": true,
+    "action_id": "replay:ibm_kyiv",
+    "continuation_evaluated": true,
+    "continuation_metrics": {
+      "absolute_gradient_difference": 0.0,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 0.0,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 0.23129155951813585,
+          "hellinger_deviation": 0.0,
+          "normalized_gradient_disagreement": 0.0,
+          "objective_deviation": 0.0,
+          "reference_gradient_norm": 0.11606931404399695,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 0.0,
+          "gradient_direction_disagreement": 0.0,
+          "gradient_noise_floor": 0.23129155951813585,
+          "hellinger_deviation": 0.0,
+          "normalized_gradient_disagreement": 0.0,
+          "objective_deviation": 0.0,
+          "reference_gradient_norm": 1.3156780644807242,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": 0.0,
+      "gradient_noise_floor": 0.23129155951813585,
+      "hellinger_deviation": 0.0,
+      "normalized_gradient_disagreement": 0.0,
+      "objective_deviation": 0.0,
+      "reference_gradient_norm": 1.3156780644807242,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "continuation_success": true,
+    "counterfactual_id": "cf-eb295796fcafe4991c76",
+    "mechanically_recovered": true,
+    "quality": {
+      "continuation_success": true,
+      "gradient_deviation": 0.0,
+      "parameter_deviation": 0.0,
+      "prediction_accuracy": 0.5,
+      "prediction_distribution_deviation": 0.0,
+      "reference_validation_loss": 1.2171927942001268,
+      "stable_continuation": true,
+      "training_loss": 0.8012762530789693,
+      "training_loss_deviation": 0.0,
+      "validation_loss": 1.2171927942001268
+    },
+    "stable_continuation": true,
+    "target_backend": "ibm_kyiv",
+    "work_ledger": {
+      "boundary": "B5",
+      "classical": [
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_dataset_preprocess",
+          "unit_id": "qml:dataset"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_batch_plan",
+          "unit_id": "qml:batch_plan"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_compilation",
+          "unit_id": "qml:compiled_classifier"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_training_step",
+          "unit_id": "qml:training_step:0"
+        }
+      ],
+      "external": [
+        {
+          "batch_job_id": "batch:1",
+          "circuit_id": "qml-eval:1:7:50:ibm_kyiv",
+          "completed_shots": 64,
+          "completion_state": "completed",
+          "count_provenance": "measured",
+          "duration_provenance": null,
+          "group_id": "qml:sample:7",
+          "measured_duration_s": null,
+          "requested_shots": 64,
+          "retry_count": 0
+        },
+        {
+          "batch_job_id": "batch:1",
+          "circuit_id": "qml-eval:1:22:50:ibm_kyiv",
+          "completed_shots": 64,
+          "completion_state": "completed",
+          "count_provenance": "measured",
+          "duration_provenance": null,
+          "group_id": "qml:sample:22",
+          "measured_duration_s": null,
+          "requested_shots": 64,
+          "retry_count": 0
+        }
+      ],
+      "metrics": {
+        "circuit_evaluations_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 0
+        },
+        "circuit_evaluations_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 2
+        },
+        "completed_stages_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 0
+        },
+        "completed_stages_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 4
+        },
+        "group_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": 1.0
+        },
+        "measurement_groups_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 0
+        },
+        "measurement_groups_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 2
+        },
+        "qpu_time_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "qpu_work_redone_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "qpu_work_reused_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "recomputation_time_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "shot_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": 1.0
+        },
+        "shots_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 0
+        },
+        "shots_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 128
+        }
+      },
+      "recovery": [
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:dataset",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:batch_plan",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:compiled_classifier",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:training_step:0",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "qml_sample_evaluation",
+          "unit_id": "qml:sample:7",
+          "unit_type": "measurement_group"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "qml_sample_evaluation",
+          "unit_id": "qml:sample:22",
+          "unit_type": "measurement_group"
+        }
+      ],
+      "workload": "qml_vqc"
+    },
+    "work_reuse": {
+      "batches_redone": 0,
+      "batches_reused": 1,
+      "circuit_evaluations_redone": 0,
+      "circuit_evaluations_reused": 2,
+      "samples_redone": 0,
+      "samples_reused": 2,
+      "shots_redone": 0,
+      "shots_reused": 128,
+      "training_steps_redone": 0,
+      "training_steps_reused": 1
+    }
+  },
+  "parameters": {
+    "continuation_horizon_B": 2,
+    "execution_mode": "noisy_sim",
+    "seed": 6101,
+    "stable_window_steps": 1,
+    "targeted_case": {
+      "boundary": "B5",
+      "name": "same_backend_replay"
+    },
+    "workload": "qml_vqc",
+    "workload_profile": "reduced"
+  },
+  "provenance": {
+    "calibration_version": "qml-continuation-calibration-v1",
+    "campaign_id": "sigmetrics-qml-targeted-evaluation-final-v1--recommended--qml_targeted",
+    "config_hash": "sha256:b5b6a9e898984e56492feecea88f8431b2ed4f67cffba8147a5d41e9427284e6",
+    "continuation_evaluator": "checkrcq_eval.common.qml_continuation.compare_qml_trajectories",
+    "planner_version": "phase2b3-policy-v1",
+    "scenario_builder": "checkrcq_eval.benchmarks.phase2d.execute_qml_targeted_case",
+    "scientific_executor_version": "phase2d-targeted-qml-v1"
+  },
+  "quality": {
+    "block_indicator": false,
+    "continuation_evaluated": true,
+    "coverage_indicator": true,
+    "outcome_category": "proceed_success",
+    "overconservative_block_indicator": false,
+    "targeted_rq6_only": true,
+    "unsafe_indicator": false
+  },
+  "recovery": {
+    "checkpoint_bytes": {
+      "byte_semantics": "logical bytes written for this committed checkpoint",
+      "commit_record_bytes": {
+        "definition": "Serialized publication commit-record bytes.",
+        "provenance": "measured",
+        "unit": "bytes",
+        "value": 374
+      },
+      "hash_index_metadata_bytes": {
+        "definition": "Serialized immutable index bytes, including artifact hashes and metadata references.",
+        "provenance": "measured",
+        "unit": "bytes",
+        "value": 1709
+      },
+      "payload_bytes_by_group": {
+        "G0": {
+          "definition": "Serialized payload bytes for artifact group G0.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 2550
+        },
+        "GA": {
+          "definition": "Serialized payload bytes for artifact group GA.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 2349
+        },
+        "GB": {
+          "definition": "Serialized payload bytes for artifact group GB.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 476
+        },
+        "GC": {
+          "definition": "Serialized payload bytes for artifact group GC.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 2729
+        },
+        "GD": {
+          "definition": "Serialized payload bytes for artifact group GD.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 786
+        },
+        "GE": {
+          "definition": "Serialized payload bytes for artifact group GE.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 101
+        },
+        "GF": {
+          "definition": "Serialized payload bytes for artifact group GF.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 274
+        },
+        "GH": {
+          "definition": "Serialized payload bytes for artifact group GH.",
+          "provenance": "measured",
+          "unit": "bytes",
+          "value": 266
+        }
+      },
+      "serialized_payload_bytes": {
+        "definition": "Serialized artifact payload bytes.",
+        "provenance": "measured",
+        "unit": "bytes",
+        "value": 9531
+      },
+      "total_committed_checkpoint_bytes": {
+        "definition": "Payload, index/metadata, and commit-record logical bytes written for this checkpoint.",
+        "provenance": "measured",
+        "unit": "bytes",
+        "value": 11614
+      }
+    },
+    "checkpoint_id": "1790311113803238000-cf9ce20bf71445feab2cc0853111abbe",
+    "checkpoint_valid": true,
+    "mechanically_recovered": true,
+    "save_timing": {
+      "artifact_construction_latency_s": {
+        "definition": "Build semantic artifact objects from the workflow snapshot.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000275083
+      },
+      "commit_publication_latency_s": {
+        "definition": "Write, fsync, atomically publish, and directory-sync the commit record.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000244583
+      },
+      "commit_record_construction_latency_s": {
+        "definition": "Construct and serialize the publication commit record.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 7.5e-06
+      },
+      "durability_semantics": "Local payload, index, commit, and directories fsynced; no remote durability claim.",
+      "fsync_supported": true,
+      "hashing_latency_s": {
+        "definition": "Compute payload and immutable-index integrity hashes.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 1.0125e-05
+      },
+      "immutable_payload_write_latency_s": {
+        "definition": "Write immutable payload and index bytes, excluding sync calls.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000573083
+      },
+      "persistence_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/qml_targeted_evaluation/recommended/qml_targeted/raw/work/sigmetrics-qml-targeted-evaluation-final-v1--recommended--qml_targeted--55db0fbf9a11d195/checkpoint",
+      "persistence_sync_latency_s": {
+        "definition": "Flush and fsync immutable payload/index files and their directory.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000699168
+      },
+      "persistence_target": "local_filesystem",
+      "save_commit_latency_s": {
+        "definition": "Checkpoint invocation through durable commit publication on the configured backend.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.002033792
+      },
+      "serialization_latency_s": {
+        "definition": "Serialize all present semantic artifact payloads.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 4.5833e-05
+      }
+    },
+    "timing": {
+      "decision_evidence_deserialization_latency_s": {
+        "definition": "Deserialize planner evidence groups not already loaded.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.0
+      },
+      "identify_valid_boundary_latency_s": {
+        "definition": "Validate boundary and artifact-presence invariants.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 5.667e-06
+      },
+      "integrity_verification_latency_s": {
+        "definition": "Read referenced bytes and verify cryptographic hashes.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000342666
+      },
+      "locate_candidate_commit_latency_s": {
+        "definition": "Locate and order candidate commit records.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 4.5958e-05
+      },
+      "recovery_deserialization_latency_s": {
+        "definition": "Recovery-state plus decision-evidence deserialization.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 4.25e-05
+      },
+      "recovery_reconstruction_latency_s": {
+        "definition": "Reconstruct the typed recovered-checkpoint representation.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 2.875e-06
+      },
+      "recovery_state_deserialization_latency_s": {
+        "definition": "Deserialize recovery-critical artifact groups.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 4.25e-05
+      },
+      "recovery_total_latency_s": {
+        "definition": "Recovery invocation through reconstructed checkpoint availability.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000495041
+      },
+      "recovery_validation_latency_s": {
+        "definition": "Locate, structure validation, integrity verification, and boundary selection.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 0.000448999
+      },
+      "validate_commit_structure_latency_s": {
+        "definition": "Parse and validate commit/index structure.",
+        "provenance": "measured",
+        "unit": "s",
+        "value": 5.4708e-05
+      }
+    },
+    "work_ledger": {
+      "boundary": "B5",
+      "classical": [
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_dataset_preprocess",
+          "unit_id": "qml:dataset"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_batch_plan",
+          "unit_id": "qml:batch_plan"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_compilation",
+          "unit_id": "qml:compiled_classifier"
+        },
+        {
+          "completion_state": "completed",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "stage": "qml_training_step",
+          "unit_id": "qml:training_step:0"
+        }
+      ],
+      "external": [
+        {
+          "batch_job_id": "batch:1",
+          "circuit_id": "qml-eval:1:7:50:ibm_kyiv",
+          "completed_shots": 64,
+          "completion_state": "completed",
+          "count_provenance": "measured",
+          "duration_provenance": null,
+          "group_id": "qml:sample:7",
+          "measured_duration_s": null,
+          "requested_shots": 64,
+          "retry_count": 0
+        },
+        {
+          "batch_job_id": "batch:1",
+          "circuit_id": "qml-eval:1:22:50:ibm_kyiv",
+          "completed_shots": 64,
+          "completion_state": "completed",
+          "count_provenance": "measured",
+          "duration_provenance": null,
+          "group_id": "qml:sample:22",
+          "measured_duration_s": null,
+          "requested_shots": 64,
+          "retry_count": 0
+        }
+      ],
+      "metrics": {
+        "circuit_evaluations_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_redone.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 0
+        },
+        "circuit_evaluations_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: circuit_evaluations_reused.",
+          "provenance": "derived",
+          "unit": "circuit_evaluations",
+          "value": 2
+        },
+        "completed_stages_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_redone.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 0
+        },
+        "completed_stages_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: completed_stages_reused.",
+          "provenance": "derived",
+          "unit": "stages",
+          "value": 4
+        },
+        "group_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: group_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": 1.0
+        },
+        "measurement_groups_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_redone.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 0
+        },
+        "measurement_groups_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: measurement_groups_reused.",
+          "provenance": "derived",
+          "unit": "measurement_groups",
+          "value": 2
+        },
+        "qpu_time_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_time_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": null
+        },
+        "qpu_work_redone_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_redone_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "qpu_work_reused_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: qpu_work_reused_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "recomputation_time_s": {
+          "definition": "Derived exactly from ledger recovery dispositions: recomputation_time_s.",
+          "provenance": "derived",
+          "unit": "s",
+          "value": null
+        },
+        "shot_recovered_work_fraction": {
+          "definition": "Derived exactly from ledger recovery dispositions: shot_recovered_work_fraction.",
+          "provenance": "derived",
+          "unit": "fraction",
+          "value": 1.0
+        },
+        "shots_redone": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_redone.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 0
+        },
+        "shots_reused": {
+          "definition": "Derived exactly from ledger recovery dispositions: shots_reused.",
+          "provenance": "derived",
+          "unit": "shots",
+          "value": 128
+        }
+      },
+      "recovery": [
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:dataset",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:batch_plan",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:compiled_classifier",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "stage",
+          "unit_id": "qml:training_step:0",
+          "unit_type": "classical_stage"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "qml_sample_evaluation",
+          "unit_id": "qml:sample:7",
+          "unit_type": "measurement_group"
+        },
+        {
+          "disposition": "reused",
+          "duration_provenance": null,
+          "measured_duration_s": null,
+          "quantity": 1,
+          "unit": "qml_sample_evaluation",
+          "unit_id": "qml:sample:22",
+          "unit_type": "measurement_group"
+        }
+      ],
+      "workload": "qml_vqc"
+    }
+  },
+  "repetition_role": "evaluation",
+  "run_id": "sigmetrics-qml-targeted-evaluation-final-v1--recommended--qml_targeted--55db0fbf9a11d195",
+  "scenario": {
+    "checkpoint_boundary": "B5",
+    "checkpoint_contract_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+    "checkpoint_state_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+    "comparison_group_id": "qml:same_backend_replay:seed6101",
+    "comparison_state_hash": "sha256:aa8cbaeeba2c0cb89e1076e23ba344476d304e4a0aa86e97b9c77e3d49ae7cab",
+    "evidence_comparison_group_id": "qml:same_backend_replay:seed6101",
+    "failure_scenario_id": "qml:same_backend_replay:seed6101:interruption",
+    "mode": "noisy_sim",
+    "restore_environment_hash": "sha256:cc08c3064e22d5f15a1650ff39da078f222bd5fb8716d17fb1618ac1faa5bd62",
+    "scenario_id": "qml:same_backend_replay:seed6101",
+    "seed": 6101,
+    "targeted_case": "same_backend_replay",
+    "workload": "qml_vqc"
+  },
+  "schema_version": "sigmetrics-experiment-record-v4",
+  "status": "completed"
+}

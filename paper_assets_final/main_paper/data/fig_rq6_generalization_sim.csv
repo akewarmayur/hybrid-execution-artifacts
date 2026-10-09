@@ -1,0 +1,13 @@
+workload,profile,n,mechanical_n,mechanical_d,continuation_n,continuation_d
+adapt_vqe,paper,5,5,5,5,5
+adapt_vqe,reduced,5,5,5,5,5
+adapt_vqe,review_large,5,5,5,5,5
+h2_vqe,paper,5,5,5,5,5
+h2_vqe,reduced,5,5,5,5,5
+h2_vqe,review_large,5,5,5,5,5
+lih_vqe,paper,5,5,5,5,5
+lih_vqe,reduced,5,5,5,5,5
+lih_vqe,review_large,5,5,5,5,5
+qaoa_maxcut,paper,5,5,5,5,5
+qaoa_maxcut,reduced,5,5,5,5,5
+qaoa_maxcut,review_large,5,5,5,5,5

@@ -1,0 +1,4 @@
+Population,Scope,Fit executions,Held-out executions,Rule/detail
+Simulation pooled-v2,4 workloads x ideal/noisy contexts,8,4,paired repaired envelopes
+Hardware 5q,5 backends,8,4,14 fit deviations/backend
+Hardware 7q,3 backends,8,4,14 fit deviations/backend

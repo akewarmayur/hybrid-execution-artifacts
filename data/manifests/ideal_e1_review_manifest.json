@@ -1,0 +1,14 @@
+{
+  "command": "run",
+  "evaluation_question": "e1_review",
+  "inputs": [],
+  "notes": [
+    "Ideal simulation cost sweep with real Qiskit statevector execution and serialized checkpoint artifacts."
+  ],
+  "outputs": [
+    "${ARTIFACT_ROOT}/data/processed/ideal/e1_review_records.csv",
+    "${ARTIFACT_ROOT}/data/processed/ideal/e1_review_records.jsonl",
+    "${ARTIFACT_ROOT}/data/raw/ideal/e1_review_events.jsonl"
+  ],
+  "setting": "ideal"
+}

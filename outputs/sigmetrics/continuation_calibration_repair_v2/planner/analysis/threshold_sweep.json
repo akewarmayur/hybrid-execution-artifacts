@@ -1,0 +1,234 @@
+{
+  "rows": [
+    {
+      "action_counts": {
+        "block": 32,
+        "migrate": 64,
+        "replay": 64
+      },
+      "decision_coverage": {
+        "denominator": 160,
+        "numerator": 128,
+        "rate": 0.8,
+        "wilson_95": {
+          "lower": 0.7313149744396211,
+          "upper": 0.8546173084574759
+        }
+      },
+      "decision_latency_s": {
+        "count": 160,
+        "median": 0.004699333,
+        "q1": 0.003374156,
+        "q3": 0.00653725
+      },
+      "invalid_policy_decision_count": 0,
+      "maximum_observable_risk": 0.15,
+      "necessary_block_count": 32,
+      "over_conservative_block": {
+        "denominator": 32,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1071791982550706
+        }
+      },
+      "scenario_count": 160,
+      "successful_coverage": {
+        "denominator": 160,
+        "numerator": 63,
+        "rate": 0.39375,
+        "wilson_95": {
+          "lower": 0.32138750702636276,
+          "upper": 0.4710948094475822
+        }
+      },
+      "unsafe_continuation": {
+        "denominator": 128,
+        "numerator": 65,
+        "rate": 0.5078125,
+        "wilson_95": {
+          "lower": 0.422247229254785,
+          "upper": 0.5929225058034415
+        }
+      },
+      "wasted_external_work": {
+        "circuit_evaluations": 5928,
+        "measured_duration_s": 48.543384457999984,
+        "samples": 524416
+      }
+    },
+    {
+      "action_counts": {
+        "block": 32,
+        "migrate": 64,
+        "replay": 64
+      },
+      "decision_coverage": {
+        "denominator": 160,
+        "numerator": 128,
+        "rate": 0.8,
+        "wilson_95": {
+          "lower": 0.7313149744396211,
+          "upper": 0.8546173084574759
+        }
+      },
+      "decision_latency_s": {
+        "count": 160,
+        "median": 0.0046917705,
+        "q1": 0.00336990625,
+        "q3": 0.006531687749999999
+      },
+      "invalid_policy_decision_count": 0,
+      "maximum_observable_risk": 0.3,
+      "necessary_block_count": 32,
+      "over_conservative_block": {
+        "denominator": 32,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1071791982550706
+        }
+      },
+      "scenario_count": 160,
+      "successful_coverage": {
+        "denominator": 160,
+        "numerator": 63,
+        "rate": 0.39375,
+        "wilson_95": {
+          "lower": 0.32138750702636276,
+          "upper": 0.4710948094475822
+        }
+      },
+      "unsafe_continuation": {
+        "denominator": 128,
+        "numerator": 65,
+        "rate": 0.5078125,
+        "wilson_95": {
+          "lower": 0.422247229254785,
+          "upper": 0.5929225058034415
+        }
+      },
+      "wasted_external_work": {
+        "circuit_evaluations": 5928,
+        "measured_duration_s": 48.543384457999984,
+        "samples": 524416
+      }
+    },
+    {
+      "action_counts": {
+        "block": 32,
+        "migrate": 64,
+        "replay": 64
+      },
+      "decision_coverage": {
+        "denominator": 160,
+        "numerator": 128,
+        "rate": 0.8,
+        "wilson_95": {
+          "lower": 0.7313149744396211,
+          "upper": 0.8546173084574759
+        }
+      },
+      "decision_latency_s": {
+        "count": 160,
+        "median": 0.0046912915,
+        "q1": 0.0033695624999999997,
+        "q3": 0.0065312295
+      },
+      "invalid_policy_decision_count": 0,
+      "maximum_observable_risk": 0.5,
+      "necessary_block_count": 32,
+      "over_conservative_block": {
+        "denominator": 32,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1071791982550706
+        }
+      },
+      "scenario_count": 160,
+      "successful_coverage": {
+        "denominator": 160,
+        "numerator": 63,
+        "rate": 0.39375,
+        "wilson_95": {
+          "lower": 0.32138750702636276,
+          "upper": 0.4710948094475822
+        }
+      },
+      "unsafe_continuation": {
+        "denominator": 128,
+        "numerator": 65,
+        "rate": 0.5078125,
+        "wilson_95": {
+          "lower": 0.422247229254785,
+          "upper": 0.5929225058034415
+        }
+      },
+      "wasted_external_work": {
+        "circuit_evaluations": 5928,
+        "measured_duration_s": 48.543384457999984,
+        "samples": 524416
+      }
+    },
+    {
+      "action_counts": {
+        "block": 0,
+        "migrate": 32,
+        "replay": 128
+      },
+      "decision_coverage": {
+        "denominator": 160,
+        "numerator": 160,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.9765538048284949,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "count": 160,
+        "median": 0.004690812000000001,
+        "q1": 0.00336941675,
+        "q3": 0.00653031325
+      },
+      "invalid_policy_decision_count": 0,
+      "maximum_observable_risk": 0.75,
+      "necessary_block_count": 0,
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "scenario_count": 160,
+      "successful_coverage": {
+        "denominator": 160,
+        "numerator": 63,
+        "rate": 0.39375,
+        "wilson_95": {
+          "lower": 0.32138750702636276,
+          "upper": 0.4710948094475822
+        }
+      },
+      "unsafe_continuation": {
+        "denominator": 160,
+        "numerator": 97,
+        "rate": 0.60625,
+        "wilson_95": {
+          "lower": 0.5289051905524178,
+          "upper": 0.6786124929736372
+        }
+      },
+      "wasted_external_work": {
+        "circuit_evaluations": 8872,
+        "measured_duration_s": 72.16918875500004,
+        "samples": 778368
+      }
+    }
+  ],
+  "selected_operating_point": 0.15
+}

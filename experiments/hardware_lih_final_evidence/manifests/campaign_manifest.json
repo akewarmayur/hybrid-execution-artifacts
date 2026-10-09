@@ -1,0 +1,140 @@
+{
+  "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+  "config_hash": "sha256:387acdd59529ba2eb2859fec5701c88694bb05ce4c8efe20e1b5866b682b0678",
+  "created_at": "2026-09-30T18:47:55.957051Z",
+  "maximum_work_plan": {
+    "maximum_new": {
+      "circuits": 10920,
+      "jobs": 567,
+      "shots": 2096640
+    },
+    "new_campaign_budget_seconds": 2700,
+    "provider_qpu_seconds_at_4_per_job": 2268,
+    "provider_qpu_seconds_at_6_per_job": 3402,
+    "tiers": {
+      "evaluation_5q": {
+        "circuits": 3300,
+        "jobs": 225,
+        "shots": 633600
+      },
+      "evaluation_7q": {
+        "circuits": 1320,
+        "jobs": 90,
+        "shots": 253440
+      },
+      "qualification_5q": {
+        "circuits": 3000,
+        "jobs": 120,
+        "shots": 576000
+      },
+      "qualification_7q": {
+        "circuits": 1800,
+        "jobs": 72,
+        "shots": 345600
+      },
+      "temporal_diagnostics": {
+        "circuits": 1500,
+        "jobs": 60,
+        "shots": 288000
+      }
+    }
+  },
+  "new_campaign_qpu_budget_seconds": 2700.0,
+  "predecessor_audit": {
+    "campaigns": {
+      "hardware_lih_sigmetrics_2027": {
+        "final_evaluation_jobs": 0,
+        "gate_result": "failed",
+        "role": "immutable_qualification_study",
+        "stable_heldout": {
+          "ibm_boston": 4,
+          "ibm_marrakesh": 3,
+          "ibm_pittsburgh": 4
+        },
+        "tree_hash": "sha256:ff54d0290bef7e016f1ec2093a895e824e9dd64cea3739838b897db1cfc8cb75",
+        "unique_qpu_charge_seconds": 290.0
+      },
+      "hardware_lih_sigmetrics_2027_scaled_followup": {
+        "final_evaluation_jobs": 0,
+        "gate_result": "failed",
+        "role": "immutable_qualification_study",
+        "stable_heldout": {
+          "ibm_boston": 4,
+          "ibm_kingston": 2,
+          "ibm_pittsburgh": 2
+        },
+        "tree_hash": "sha256:0dc5cb70793ecf4a8266802dd497eacf656abdd49fb421c00db9b17fa4f45987",
+        "unique_qpu_charge_seconds": 288.0
+      }
+    },
+    "provider_job_ids_hash": "sha256:1d8707cbf5e858fff4009cc91cdbab8b122ff96e8daf894164f44305a7ab4be5",
+    "schema_version": "checkrcq-final-evidence-predecessor-audit-v1",
+    "unique_project_predecessor_qpu_charge_seconds": 578.0,
+    "unique_provider_job_count": 145
+  },
+  "priority_order": [
+    "qualification_5q",
+    "evaluation_5q",
+    "qualification_7q",
+    "evaluation_7q",
+    "temporal_diagnostics"
+  ],
+  "schema_version": "checkrcq-final-evidence-state-v1",
+  "stage": "complete",
+  "status": "complete",
+  "tier_status_schema": [
+    "not_started",
+    "running",
+    "complete",
+    "qualification_failed",
+    "unavailable",
+    "incomplete_budget",
+    "incomplete_operational",
+    "failed"
+  ],
+  "tiers": {
+    "evaluation_5q": {
+      "status": "complete",
+      "updated_at": "2026-10-01T00:13:14.753124Z"
+    },
+    "evaluation_7q": {
+      "reason": "zero qualified 7q sources",
+      "status": "unavailable",
+      "updated_at": "2026-10-01T07:21:11.325627Z"
+    },
+    "preflight": {
+      "design_manifest_hash": "sha256:3891917b4ab75e28199641f135063cbf319d10349713ffadfe40eb5768cc4e1c",
+      "live_jobs_submitted": 0,
+      "status": "complete",
+      "updated_at": "2026-09-30T18:49:11.941684Z"
+    },
+    "qualification_5q": {
+      "failed_backends": [
+        "ibm_boston",
+        "ibm_marrakesh",
+        "ibm_miami"
+      ],
+      "qualified_backends": [
+        "ibm_fez",
+        "ibm_pittsburgh"
+      ],
+      "status": "complete",
+      "updated_at": "2026-09-30T23:50:19.651669Z"
+    },
+    "qualification_7q": {
+      "failed_backends": [
+        "ibm_boston",
+        "ibm_marrakesh",
+        "ibm_miami"
+      ],
+      "qualified_backends": [],
+      "status": "complete",
+      "updated_at": "2026-10-01T07:21:11.324729Z"
+    },
+    "temporal_diagnostics": {
+      "status": "complete",
+      "updated_at": "2026-10-01T07:54:46.025228Z"
+    }
+  },
+  "updated_at": "2026-10-01T07:54:46.026116Z"
+}

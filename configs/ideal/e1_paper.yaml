@@ -1,0 +1,53 @@
+setting: ideal
+evaluation_question: e1
+benchmark_profile: paper
+# Scaled FAST paper preset:
+# uses the larger embedded LiH/ADAPT workloads and a wider cadence sweep so E1 is
+# substantial enough for paper-facing cost/benefit analysis.
+workloads:
+  - lih_vqe
+  - h2_vqe
+  - adapt_vqe
+boundaries:
+  - B1
+  - B2
+  - B3
+  - B4
+  - B5
+  - B6
+cadences:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+seeds:
+  - 11
+  - 17
+  - 23
+  - 31
+  - 43
+  - 59
+  - 71
+  - 83
+  - 97
+  - 101
+  - 107
+  - 113
+  - 127
+  - 131
+  - 137
+  - 149
+  - 157
+  - 163
+include_timer_baseline: true
+save_backend: parallel_fs
+restore_backend: parallel_fs
+budget_B: 12
+delays: [0.0]
+scenarios:
+  - cadence_sweep
+baselines:
+  - full_contract
+optimizer_iterations: 16
+shots_per_group: 3072

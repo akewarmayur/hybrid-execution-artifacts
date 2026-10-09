@@ -1,0 +1,8 @@
+matplotlib>=3.7
+numpy>=1.24
+pandas>=2.0
+PyYAML>=6.0
+qiskit>=2.0,<3
+qiskit-ibm-runtime>=0.33
+scipy>=1.10
+pytest>=7.4

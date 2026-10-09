@@ -1,0 +1,19 @@
+dimension,subgroup,n,independent_scenarios,safe,unsafe,safe_rate,safe_rate_wilson_low,safe_rate_wilson_high,auc_statistically_meaningful,warning,current_risk_auc,logistic_auc,shallow_tree_auc
+overall,all,256,160,66,190,0.2578125,0.20808593083982155,0.31469999961646,True,,0.9950558213716109,0.9875598086124402,0.9848484848484849
+workload,h2_vqe,64,40,16,48,0.25,0.16014926530970577,0.36816276458669694,True,,1.0,1.0,1.0
+workload,lih_vqe,64,40,16,48,0.25,0.16014926530970577,0.36816276458669694,True,,1.0,1.0,1.0
+workload,adapt_vqe,64,40,16,48,0.25,0.16014926530970577,0.36816276458669694,True,,1.0,1.0,1.0
+workload,qaoa_maxcut,64,40,18,46,0.28125,0.18593372333727837,0.40133930282207403,True,,0.9830917874396136,0.9855072463768116,0.9444444444444444
+action,replay,128,128,64,64,0.5,0.41465224626050723,0.5853477537394928,True,,1.0,1.0,1.0
+action,migrate,128,96,2,126,0.015625,0.004295449710144082,0.055180976679817195,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,
+context_scope,same_backend_no_change,32,32,32,0,1.0,0.8928208017449293,1.0,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,
+context_scope,same_backend_changed_context,96,96,32,64,0.3333333333333333,0.2470569241521054,0.43243493846711983,True,,1.0,1.0,1.0
+context_scope,cross_backend_context,128,96,2,126,0.015625,0.004295449710144082,0.055180976679817195,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,
+workload_action,h2_vqe:replay,32,32,16,16,0.5,0.33630882869327483,0.6636911713067252,True,,1.0,1.0,1.0
+workload_action,h2_vqe:migrate,32,24,0,32,0.0,0.0,0.1071791982550706,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,
+workload_action,lih_vqe:replay,32,32,16,16,0.5,0.33630882869327483,0.6636911713067252,True,,1.0,1.0,1.0
+workload_action,lih_vqe:migrate,32,24,0,32,0.0,0.0,0.1071791982550706,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,
+workload_action,adapt_vqe:replay,32,32,16,16,0.5,0.33630882869327483,0.6636911713067252,True,,1.0,1.0,1.0
+workload_action,adapt_vqe:migrate,32,24,0,32,0.0,0.0,0.1071791982550706,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,
+workload_action,qaoa_maxcut:replay,32,32,16,16,0.5,0.33630882869327483,0.6636911713067252,True,,1.0,1.0,1.0
+workload_action,qaoa_maxcut:migrate,32,24,2,30,0.0625,0.017310567031640967,0.2014712314415458,False,AUC omitted: fewer than five safe or unsafe outcomes.,,,

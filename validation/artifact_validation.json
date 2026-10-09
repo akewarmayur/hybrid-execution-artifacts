@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "anonymity": {
+      "sensitive_patterns": 0,
+      "status": "PASS"
+    },
+    "assets": {
+      "manifest_entries": 21,
+      "status": "PASS"
+    },
+    "compressed_records": {
+      "archives": 25,
+      "decompressed_hashes": "PASS"
+    },
+    "layout": {
+      "import": "PASS",
+      "missing": 0,
+      "required_files": 8
+    },
+    "science": {
+      "derivation": "PASS",
+      "headline_checks": {
+        "hardware_circuits": 7320,
+        "hardware_completed_jobs": 330,
+        "hardware_shots": 1405440,
+        "rq1_live_groups_reused": 72,
+        "rq1_live_shots_reused": 13824,
+        "rq4_scenarios": 160,
+        "rq4_successes_retained": 63,
+        "rq4_unsafe_avoided": 64,
+        "rq5_reduction_pct": 39.205702647657844,
+        "rq6_continuation": "60/60",
+        "rq6_mechanical": "60/60"
+      },
+      "rq4_weight_vectors": "57/67 exact; 10/67 degraded",
+      "scope": "all"
+    }
+  },
+  "live_jobs_submitted": 0,
+  "schema_version": "resq-anonymous-artifact-validation-v1",
+  "scientific_experiments_executed": 0,
+  "status": "PASS"
+}

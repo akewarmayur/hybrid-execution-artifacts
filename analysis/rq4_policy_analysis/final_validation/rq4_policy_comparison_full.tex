@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Policy & Coverage [95\% CI] & Successful [95\% CI] & Failed/proceeded [95\% CI] & Over-blocking [95\% CI] \\
+\midrule
+Always Block & 0/160 (0.000) [0.000,0.023] & 0/160 (0.000) [0.000,0.023] & N/A (0 proceeded) & 63/160 (0.394) [0.321,0.471] \\
+Blind Replay & 128/160 (0.800) [0.731,0.855] & 63/160 (0.394) [0.321,0.471] & 65/128 (0.508) [0.422,0.593] & 0/32 (0.000) [0.000,0.107] \\
+Replay-then-Migrate & 160/160 (1.000) [0.977,1.000] & 63/160 (0.394) [0.321,0.471] & 97/160 (0.606) [0.529,0.679] & N/A (0 blocks) \\
+Block-on-Change & 32/160 (0.200) [0.145,0.269] & 32/160 (0.200) [0.145,0.269] & 0/32 (0.000) [0.000,0.107] & 31/128 (0.242) [0.176,0.323] \\
+RES-Q $\tau=0.15$ & 128/160 (0.800) [0.731,0.855] & 63/160 (0.394) [0.321,0.471] & 65/128 (0.508) [0.422,0.593] & 0/32 (0.000) [0.000,0.107] \\
+RES-Q $\tau=0.05$ & 64/160 (0.400) [0.327,0.477] & 63/160 (0.394) [0.321,0.471] & 1/64 (0.016) [0.003,0.083] & 0/96 (0.000) [0.000,0.038] \\
+Learned Logistic & 64/160 (0.400) [0.327,0.477] & 63/160 (0.394) [0.321,0.471] & 1/64 (0.016) [0.003,0.083] & 0/96 (0.000) [0.000,0.038] \\
+Hindsight Oracle & 63/160 (0.394) [0.321,0.471] & 63/160 (0.394) [0.321,0.471] & 0/63 (0.000) [0.000,0.057] & 0/97 (0.000) [0.000,0.038] \\
+\bottomrule
+\end{tabular}
+\caption{Full RQ4 policy comparison with Wilson 95\% intervals. Failure is conditional on proceeding; Always Block is therefore N/A rather than zero.}
+\label{tab:rq4-policy-comparison-full}
+\end{table*}

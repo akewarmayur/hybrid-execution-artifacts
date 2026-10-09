@@ -1,0 +1,202 @@
+{
+  "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+  "charge": {
+    "new_campaign_qpu_charge_seconds": 2016.0,
+    "predecessor_unique_qpu_charge_seconds": 578.0,
+    "project_wide_unique_qpu_charge_seconds": 2594.0,
+    "queue_delay_included": false
+  },
+  "claim_guards": {
+    "all_qualification_failures_visible": true,
+    "existing_simulation_supports_cross_workload_generality": true,
+    "finite_observed_fractions_not_population_probabilities": true,
+    "hardware_cross_algorithm_generalization_forbidden": true,
+    "modeled_durations_not_measured_qpu_savings": true,
+    "outcome_based_stopping_used": false,
+    "predecessors_not_successful_final_evaluations": true,
+    "queue_delay_separate_from_resq_overhead": true
+  },
+  "completed_tiers": [
+    "evaluation_5q",
+    "preflight",
+    "qualification_5q",
+    "qualification_7q",
+    "temporal_diagnostics"
+  ],
+  "created_at": "2026-10-01T07:54:46.246806Z",
+  "current_qualification": {
+    "5q": {
+      "backend_results": {
+        "ibm_boston": {
+          "eligible_for_final_evaluation": false,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualification_failed",
+          "qualified": false,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 1
+        },
+        "ibm_fez": {
+          "eligible_for_final_evaluation": true,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualified",
+          "qualified": true,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 4
+        },
+        "ibm_marrakesh": {
+          "eligible_for_final_evaluation": false,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualification_failed",
+          "qualified": false,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 2
+        },
+        "ibm_miami": {
+          "eligible_for_final_evaluation": false,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualification_failed",
+          "qualified": false,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 3
+        },
+        "ibm_pittsburgh": {
+          "eligible_for_final_evaluation": true,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualified",
+          "qualified": true,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 4
+        }
+      },
+      "calibration_manifest_sha256": "sha256:b76014b4f8259f7c4f2b67c61d14132f62ce7e64f7bda200920bc43530b33219",
+      "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+      "created_at": "2026-09-30T23:50:19.533215Z",
+      "evaluation_outcomes_read": false,
+      "failed_backends": [
+        "ibm_boston",
+        "ibm_marrakesh",
+        "ibm_miami"
+      ],
+      "failed_backends_excluded_from_final_evaluation": true,
+      "failed_backends_retained_in_report": true,
+      "heldout_results_sha256": "sha256:d53f425ec910e6a4cfb48517ef289d5bff70e87108a946397e705540f119314b",
+      "migration_evaluation_available": true,
+      "profile_label": "5q",
+      "qualified_backend_count": 2,
+      "qualified_backends": [
+        "ibm_fez",
+        "ibm_pittsburgh"
+      ],
+      "schema_version": "checkrcq-final-evidence-qualification-v1",
+      "source_local_evaluation_available": true,
+      "status": "complete"
+    },
+    "7q": {
+      "backend_results": {
+        "ibm_boston": {
+          "eligible_for_final_evaluation": false,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualification_failed",
+          "qualified": false,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 2
+        },
+        "ibm_marrakesh": {
+          "eligible_for_final_evaluation": false,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualification_failed",
+          "qualified": false,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 2
+        },
+        "ibm_miami": {
+          "eligible_for_final_evaluation": false,
+          "heldout_trajectories": 4,
+          "qualification_status": "qualification_failed",
+          "qualified": false,
+          "recalibration_allowed": false,
+          "required_stable_heldout_trajectories": 4,
+          "retained_in_paper_facing_table": true,
+          "stable_heldout_trajectories": 2
+        }
+      },
+      "calibration_manifest_sha256": "sha256:c816ffba4b829d9dfd76299ba56f00f3bd684ba731c23f07c76f77447a05a772",
+      "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+      "created_at": "2026-10-01T07:21:11.188841Z",
+      "evaluation_outcomes_read": false,
+      "failed_backends": [
+        "ibm_boston",
+        "ibm_marrakesh",
+        "ibm_miami"
+      ],
+      "failed_backends_excluded_from_final_evaluation": true,
+      "failed_backends_retained_in_report": true,
+      "heldout_results_sha256": "sha256:a077d616212c8793576b83b3231b7a15f507b02eb73c984a16fa1614366c9dc2",
+      "migration_evaluation_available": false,
+      "profile_label": "7q",
+      "qualified_backend_count": 0,
+      "qualified_backends": [],
+      "schema_version": "checkrcq-final-evidence-qualification-v1",
+      "source_local_evaluation_available": false,
+      "status": "complete"
+    }
+  },
+  "evaluation_5q": {
+    "records": "raw/5q/campaign_records.json",
+    "sha256": "sha256:ca854d7e3152a3135b19dfffc21cd15bab12c58a06999d0295d2eb8cd32fc9ff"
+  },
+  "incomplete_tiers": [],
+  "paper_safe_description": "After two qualification studies revealed backend/window instability, we predeclared a larger backend-inclusive evidence campaign in which all eligible backends were independently qualified and all qualifying backend/windows were evaluated under a fixed evidence budget.",
+  "partial_tiers_excluded_from_completed_aggregates": true,
+  "predecessor_qualification_studies": {
+    "campaigns": {
+      "hardware_lih_sigmetrics_2027": {
+        "final_evaluation_jobs": 0,
+        "gate_result": "failed",
+        "role": "immutable_qualification_study",
+        "stable_heldout": {
+          "ibm_boston": 4,
+          "ibm_marrakesh": 3,
+          "ibm_pittsburgh": 4
+        },
+        "tree_hash": "sha256:ff54d0290bef7e016f1ec2093a895e824e9dd64cea3739838b897db1cfc8cb75",
+        "unique_qpu_charge_seconds": 290.0
+      },
+      "hardware_lih_sigmetrics_2027_scaled_followup": {
+        "final_evaluation_jobs": 0,
+        "gate_result": "failed",
+        "role": "immutable_qualification_study",
+        "stable_heldout": {
+          "ibm_boston": 4,
+          "ibm_kingston": 2,
+          "ibm_pittsburgh": 2
+        },
+        "tree_hash": "sha256:0dc5cb70793ecf4a8266802dd497eacf656abdd49fb421c00db9b17fa4f45987",
+        "unique_qpu_charge_seconds": 288.0
+      }
+    },
+    "provider_job_ids_hash": "sha256:1d8707cbf5e858fff4009cc91cdbab8b122ff96e8daf894164f44305a7ab4be5",
+    "schema_version": "checkrcq-final-evidence-predecessor-audit-v1",
+    "unique_project_predecessor_qpu_charge_seconds": 578.0,
+    "unique_provider_job_count": 145
+  },
+  "schema_version": "checkrcq-final-evidence-analysis-v1",
+  "temporal_diagnostics": {
+    "results": "raw/temporal_diagnostics/diagnostic_results.json",
+    "sha256": "sha256:6210d382165ad96e9fe000fdbeb7900d5cf0444b4d8e084801c147009113be12"
+  }
+}

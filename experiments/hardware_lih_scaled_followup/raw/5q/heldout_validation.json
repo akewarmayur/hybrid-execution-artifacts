@@ -1,0 +1,452 @@
+{
+  "ibm_boston": {
+    "scaled-5q-calibration-validation--ibm_boston--00": {
+      "absolute_gradient_difference": 0.8841994447951409,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 3.6186701579665317,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.21111635471256823,
+          "normalized_gradient_disagreement": 0.5758932830017616,
+          "objective_deviation": 0.0027083333333326465,
+          "reference_gradient_norm": 2.13037882700077,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 0.8841994447951409,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.1812442966638597,
+          "normalized_gradient_disagreement": 0.14071592570281397,
+          "objective_deviation": 0.03934374999999957,
+          "reference_gradient_norm": 0.04600244016214265,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 6.283577643247947,
+      "hellinger_deviation": 0.1812442966638597,
+      "normalized_gradient_disagreement": 0.14071592570281397,
+      "objective_deviation": 0.03934374999999957,
+      "reference_gradient_norm": 0.04600244016214265,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "scaled-5q-calibration-validation--ibm_boston--01": {
+      "absolute_gradient_difference": 4.2929704560961435,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 2.6880907522301962,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.1617915909692645,
+          "normalized_gradient_disagreement": 0.42779621814949625,
+          "objective_deviation": 0.03078124999999865,
+          "reference_gradient_norm": 2.13037882700077,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 4.2929704560961435,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.18251121441178486,
+          "normalized_gradient_disagreement": 0.6832048078070904,
+          "objective_deviation": 0.0736666666666661,
+          "reference_gradient_norm": 0.04600244016214265,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 6.283577643247947,
+      "hellinger_deviation": 0.18251121441178486,
+      "normalized_gradient_disagreement": 0.6832048078070904,
+      "objective_deviation": 0.0736666666666661,
+      "reference_gradient_norm": 0.04600244016214265,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "scaled-5q-calibration-validation--ibm_boston--02": {
+      "absolute_gradient_difference": 3.9413938270643967,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 5.800984726544814,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.2052603569665846,
+          "normalized_gradient_disagreement": 0.9231977475090635,
+          "objective_deviation": 0.0014895833333330444,
+          "reference_gradient_norm": 2.13037882700077,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 3.9413938270643967,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.13175656658944998,
+          "normalized_gradient_disagreement": 0.6272531431675143,
+          "objective_deviation": 0.05550000000000033,
+          "reference_gradient_norm": 0.04600244016214265,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 6.283577643247947,
+      "hellinger_deviation": 0.13175656658944998,
+      "normalized_gradient_disagreement": 0.6272531431675143,
+      "objective_deviation": 0.05550000000000033,
+      "reference_gradient_norm": 0.04600244016214265,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "scaled-5q-calibration-validation--ibm_boston--03": {
+      "absolute_gradient_difference": 3.237972832137285,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 2.2420078968003923,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.21093165771952832,
+          "normalized_gradient_disagreement": 0.35680435956887624,
+          "objective_deviation": 0.025822916666665918,
+          "reference_gradient_norm": 2.13037882700077,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 3.237972832137285,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 6.283577643247947,
+          "hellinger_deviation": 0.17371701336107156,
+          "normalized_gradient_disagreement": 0.5153072049036693,
+          "objective_deviation": 0.013958333333333073,
+          "reference_gradient_norm": 0.04600244016214265,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 6.283577643247947,
+      "hellinger_deviation": 0.17371701336107156,
+      "normalized_gradient_disagreement": 0.5153072049036693,
+      "objective_deviation": 0.013958333333333073,
+      "reference_gradient_norm": 0.04600244016214265,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    }
+  },
+  "ibm_kingston": {
+    "scaled-5q-calibration-validation--ibm_kingston--00": {
+      "absolute_gradient_difference": 5.493591355680664,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 3.0353062875158305,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.20011924853583146,
+          "normalized_gradient_disagreement": 0.4178986353266254,
+          "objective_deviation": 0.004968749999999744,
+          "reference_gradient_norm": 2.110289153765374,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 5.493591355680664,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.19570521826994275,
+          "normalized_gradient_disagreement": 0.7563534329380662,
+          "objective_deviation": 0.13789583333333422,
+          "reference_gradient_norm": 5.38461473644291,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.263259630277245,
+      "hellinger_deviation": 0.19570521826994275,
+      "normalized_gradient_disagreement": 0.7563534329380662,
+      "objective_deviation": 0.13789583333333422,
+      "reference_gradient_norm": 5.38461473644291,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "scaled-5q-calibration-validation--ibm_kingston--01": {
+      "absolute_gradient_difference": 5.218455509041803,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 2.11046402009765,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.18099777012790652,
+          "normalized_gradient_disagreement": 0.2905670632094824,
+          "objective_deviation": 0.030343749999999226,
+          "reference_gradient_norm": 2.110289153765374,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 5.218455509041803,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.178243007884895,
+          "normalized_gradient_disagreement": 0.7184729411693369,
+          "objective_deviation": 0.22114583333333382,
+          "reference_gradient_norm": 5.38461473644291,
+          "step_index": 1,
+          "within_envelope": false
+        }
+      ],
+      "continuation_success": false,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.263259630277245,
+      "hellinger_deviation": 0.178243007884895,
+      "normalized_gradient_disagreement": 0.7184729411693369,
+      "objective_deviation": 0.22114583333333382,
+      "reference_gradient_norm": 5.38461473644291,
+      "stable_continuation": false,
+      "stable_step_index": null
+    },
+    "scaled-5q-calibration-validation--ibm_kingston--02": {
+      "absolute_gradient_difference": 5.500214948981512,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 1.8718377014983711,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.2286883414393217,
+          "normalized_gradient_disagreement": 0.2577131751831542,
+          "objective_deviation": 0.09215625000000127,
+          "reference_gradient_norm": 2.110289153765374,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 5.500214948981512,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.19227799450626665,
+          "normalized_gradient_disagreement": 0.7572653641697734,
+          "objective_deviation": 0.10203124999999957,
+          "reference_gradient_norm": 5.38461473644291,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.263259630277245,
+      "hellinger_deviation": 0.19227799450626665,
+      "normalized_gradient_disagreement": 0.7572653641697734,
+      "objective_deviation": 0.10203124999999957,
+      "reference_gradient_norm": 5.38461473644291,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "scaled-5q-calibration-validation--ibm_kingston--03": {
+      "absolute_gradient_difference": 7.625080933966503,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 4.03047640794549,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.22986088870138316,
+          "normalized_gradient_disagreement": 0.5549128921599135,
+          "objective_deviation": 0.007593750000000732,
+          "reference_gradient_norm": 2.110289153765374,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 7.625080933966503,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.263259630277245,
+          "hellinger_deviation": 0.2536391741012008,
+          "normalized_gradient_disagreement": 1.0498152788289419,
+          "objective_deviation": 0.1526041666666682,
+          "reference_gradient_norm": 5.38461473644291,
+          "step_index": 1,
+          "within_envelope": false
+        }
+      ],
+      "continuation_success": false,
+      "first_step_overshoot": 0.007593750000000732,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.263259630277245,
+      "hellinger_deviation": 0.2536391741012008,
+      "normalized_gradient_disagreement": 1.0498152788289419,
+      "objective_deviation": 0.1526041666666682,
+      "reference_gradient_norm": 5.38461473644291,
+      "stable_continuation": false,
+      "stable_step_index": null
+    }
+  },
+  "ibm_pittsburgh": {
+    "scaled-5q-calibration-validation--ibm_pittsburgh--00": {
+      "absolute_gradient_difference": 8.96953255329289,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 6.302670749999416,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.16360096217126968,
+          "normalized_gradient_disagreement": 0.8260586161771003,
+          "objective_deviation": 0.11032291666666438,
+          "reference_gradient_norm": 6.164326981721976,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 8.96953255329289,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.17545199754365048,
+          "normalized_gradient_disagreement": 1.1755904667444772,
+          "objective_deviation": 0.05337500000000084,
+          "reference_gradient_norm": 2.5490592634129112,
+          "step_index": 1,
+          "within_envelope": false
+        }
+      ],
+      "continuation_success": false,
+      "first_step_overshoot": 0.11032291666666438,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.629810556504352,
+      "hellinger_deviation": 0.17545199754365048,
+      "normalized_gradient_disagreement": 1.1755904667444772,
+      "objective_deviation": 0.05337500000000084,
+      "reference_gradient_norm": 2.5490592634129112,
+      "stable_continuation": false,
+      "stable_step_index": null
+    },
+    "scaled-5q-calibration-validation--ibm_pittsburgh--01": {
+      "absolute_gradient_difference": 4.039868141431377,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 6.137472928452017,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.1552841320865376,
+          "normalized_gradient_disagreement": 0.8044069879585505,
+          "objective_deviation": 0.14755208333333325,
+          "reference_gradient_norm": 6.164326981721976,
+          "step_index": 0,
+          "within_envelope": false
+        },
+        {
+          "absolute_gradient_difference": 4.039868141431377,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.1572757097571199,
+          "normalized_gradient_disagreement": 0.5294847246223462,
+          "objective_deviation": 0.06312499999999588,
+          "reference_gradient_norm": 2.5490592634129112,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.14755208333333325,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.629810556504352,
+      "hellinger_deviation": 0.1572757097571199,
+      "normalized_gradient_disagreement": 0.5294847246223462,
+      "objective_deviation": 0.06312499999999588,
+      "reference_gradient_norm": 2.5490592634129112,
+      "stable_continuation": false,
+      "stable_step_index": null
+    },
+    "scaled-5q-calibration-validation--ibm_pittsburgh--02": {
+      "absolute_gradient_difference": 2.747722152446552,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 7.293972278946253,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.15919245241939442,
+          "normalized_gradient_disagreement": 0.9559834054763261,
+          "objective_deviation": 0.044697916666668114,
+          "reference_gradient_norm": 6.164326981721976,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 2.747722152446552,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.1681259057658038,
+          "normalized_gradient_disagreement": 0.36012980035318715,
+          "objective_deviation": 0.04236458333333193,
+          "reference_gradient_norm": 2.5490592634129112,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.0,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.629810556504352,
+      "hellinger_deviation": 0.1681259057658038,
+      "normalized_gradient_disagreement": 0.36012980035318715,
+      "objective_deviation": 0.04236458333333193,
+      "reference_gradient_norm": 2.5490592634129112,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    },
+    "scaled-5q-calibration-validation--ibm_pittsburgh--03": {
+      "absolute_gradient_difference": 2.6277929716453476,
+      "comparisons": [
+        {
+          "absolute_gradient_difference": 6.206222654659848,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.17202295784939772,
+          "normalized_gradient_disagreement": 0.8134176607267257,
+          "objective_deviation": 0.08951041666666626,
+          "reference_gradient_norm": 6.164326981721976,
+          "step_index": 0,
+          "within_envelope": true
+        },
+        {
+          "absolute_gradient_difference": 2.6277929716453476,
+          "gradient_direction_disagreement": null,
+          "gradient_noise_floor": 7.629810556504352,
+          "hellinger_deviation": 0.1865886464945337,
+          "normalized_gradient_disagreement": 0.3444112998854441,
+          "objective_deviation": 0.03756249999999817,
+          "reference_gradient_norm": 2.5490592634129112,
+          "step_index": 1,
+          "within_envelope": true
+        }
+      ],
+      "continuation_success": true,
+      "first_step_overshoot": 0.08951041666666626,
+      "gradient_direction_disagreement": null,
+      "gradient_noise_floor": 7.629810556504352,
+      "hellinger_deviation": 0.1865886464945337,
+      "normalized_gradient_disagreement": 0.3444112998854441,
+      "objective_deviation": 0.03756249999999817,
+      "reference_gradient_norm": 2.5490592634129112,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    }
+  }
+}

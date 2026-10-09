@@ -1,0 +1,46 @@
+setting: noisy
+evaluation_question: e3
+benchmark_profile: paper
+# Scaled FAST paper preset:
+# makes E3 the dominant runtime contributor, which is appropriate because replay/migration
+# under noisy changed conditions is the main heavy-weight comparison study.
+workloads:
+  - lih_vqe
+  - h2_vqe
+  - adapt_vqe
+boundaries:
+  - B3
+  - B5
+  - B6
+cadences:
+  - 1
+seeds:
+  - 101
+  - 103
+  - 107
+  - 109
+  - 113
+  - 127
+  - 131
+  - 137
+save_backend: checkpoint_store
+restore_backend: checkpoint_store
+budget_B: 8
+delays:
+  - 0.0
+  - 1.0
+  - 2.0
+  - 4.0
+scenarios:
+  - same_backend_replay
+  - cross_backend_migration
+baselines:
+  - full_contract
+  - parameter_only
+  - workflow_lite
+backend_pairs:
+  - [ibm_kyiv, ibm_brisbane]
+  - [ibm_brisbane, ibm_sherbrooke]
+  - [ibm_sherbrooke, ibm_kyiv]
+optimizer_iterations: 16
+shots_per_group: 3072

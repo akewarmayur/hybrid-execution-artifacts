@@ -1,0 +1,16 @@
+{
+  "code_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "config_hash": "sha256:f0e419ebcaec13d8f8db20435ab7e120134ba2bbf84c6119ce1a3f669b447b4f",
+  "dependency_hashes": {
+    "sigmetrics-checkpoint-primitives-calibration-v1": "sha256:faeff5fc0b103547ab028380ccff92a50bba5cf9262dec106ac80876b1bfdc48"
+  },
+  "end_time_ns": 1790305392977015000,
+  "executor_type": "boundary_placement",
+  "executor_version": "phase3a1-final-dispatcher-v1",
+  "result_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq1_boundary_placement/recommended/rq1_b1_b5_main/raw/runs/sigmetrics-rq1-boundary-placement-final-v1--recommended--rq1_b1_b5_main--a4d094a80d00332a.json",
+  "result_sha256": "sha256:87b51f961f7e6eabd8a04eee31bf1f97d2e0981e6352cb2f66db52d5e709bfb2",
+  "run_id": "sigmetrics-rq1-boundary-placement-final-v1--recommended--rq1_b1_b5_main--a4d094a80d00332a",
+  "seed_or_window": "1001",
+  "start_time_ns": 1790305391736881000,
+  "terminal_state": "COMPLETED"
+}

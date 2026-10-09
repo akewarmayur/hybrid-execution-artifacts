@@ -1,0 +1,16 @@
+{
+  "baseline_package": "${ARTIFACT_ROOT}/RES-Q-SIGMETRICS-2027-Artifact/paper_assets_final",
+  "experiments_rerun": 0,
+  "height_reduction_pct": 25.182481751824813,
+  "live_ibm_jobs_submitted": 0,
+  "main_data_hashes_unchanged": true,
+  "new_total_height_in": 10.25,
+  "old_total_height_in": 13.7,
+  "optimized_package": "${ARTIFACT_ROOT}/RES-Q-SIGMETRICS-2027-Artifact/Results/paper_assets_final",
+  "pdfs_rendered_to_png": 6,
+  "raw_processed_results_modified": 0,
+  "schema_version": "resq-main-figure-height-optimization-v1",
+  "scientific_data_modified": 0,
+  "status": "PASS",
+  "unexpected_nonfigure_changes": []
+}

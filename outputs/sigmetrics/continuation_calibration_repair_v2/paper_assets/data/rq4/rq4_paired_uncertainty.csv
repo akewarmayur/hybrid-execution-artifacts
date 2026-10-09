@@ -1,0 +1,5 @@
+metric,estimate,ci_low,ci_high,resampling_unit,bootstrap_repetitions
+coverage_difference_0_05_minus_0_15,-0.4,-0.47500000000000003,-0.325,independent_scenario,5000
+successful_coverage_difference_0_05_minus_0_15,0.0,0.0,0.0,independent_scenario,5000
+unsafe_rate_difference_0_05_minus_0_15,-0.4921875,-0.576271186440678,-0.4083250000000001,independent_scenario,5000
+unsafe_0_15_avoided_fraction_of_scenarios,0.4,0.325,0.475,independent_scenario,5000

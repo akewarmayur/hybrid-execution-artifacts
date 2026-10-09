@@ -1,0 +1,402 @@
+\begin{figure*}[!hbt]
+\centering
+
+\begin{tikzpicture}[
+    scale=0.70,
+    transform shape,
+    >=Latex,
+    font=\normalsize,
+    stage/.style={
+        draw,
+        rounded corners=5pt,
+        minimum width=2.55cm,
+        minimum height=1.0cm,
+        align=center,
+        inner sep=2pt,
+        font=\small
+    },
+    boundary/.style={
+        circle,
+        draw,
+        thick,
+        minimum size=7mm,
+        inner sep=0.5pt,
+        font=\small\bfseries
+    },
+    btitle/.style={
+        align=center,
+        text width=2.65cm,
+        font=\small\bfseries
+    },
+    bdetail/.style={
+        align=center,
+        text width=2.70cm,
+        font=\scriptsize
+    },
+    side/.style={
+        align=right,
+        font=\small\bfseries,
+        text width=1.9cm
+    },
+    mapcell/.style={
+        draw=gray!55,
+        align=center,
+        minimum height=7mm,
+        inner sep=2pt,
+        font=\scriptsize
+    }
+]
+
+% =================================================
+% Colors
+% =================================================
+\definecolor{cpu}{RGB}{199,199,245}
+\definecolor{qpu}{RGB}{224,194,220}
+
+\definecolor{bOne}{RGB}{144,183,190}
+\definecolor{bTwo}{RGB}{250,213,165}
+\definecolor{bThree}{RGB}{247,231,164}
+\definecolor{bFive}{RGB}{190,224,192}
+\definecolor{bFour}{RGB}{184,220,232}
+\definecolor{bSix}{RGB}{111,193,225}
+
+% =================================================
+% Generic HQC workflow
+% =================================================
+
+\node[stage,fill=cpu] (s1) at (0,0)
+    {problem/data\\preparation};
+
+\node[stage,fill=cpu] (s2) at (3,0)
+    {execution\\planning};
+
+\node[stage,fill=cpu] (s3) at (6,0)
+    {compile\\+ bind};
+
+\node[stage,fill=qpu] (s4) at (9,0)
+    {external QPU\\work};
+
+\node[stage,fill=cpu] (s5) at (12,0)
+    {aggregate\\+ update};
+
+\node[stage,fill=cpu] (s6) at (15,0)
+    {program evolution\\(optional)};
+
+\draw[->,thick] (s1) -- (s2);
+\draw[->,thick] (s2) -- (s3);
+\draw[->,thick] (s3) -- (s4);
+\draw[->,thick] (s4) -- (s5);
+\draw[->,thick] (s5) -- (s6);
+
+% =================================================
+% Legend
+% =================================================
+
+\begin{scope}[xshift=-2.2cm,yshift=-0.4cm]
+
+\draw[rounded corners=2pt]
+    (-0.20,1.70) rectangle (7.60,2.40);
+
+\draw[fill=cpu]
+    (0.05,1.92) rectangle (0.42,2.18);
+
+\node[anchor=west,font=\small]
+    at (0.55,2.05)
+    {classical processing};
+
+\draw[fill=qpu]
+    (3.45,1.92) rectangle (3.82,2.18);
+
+\node[anchor=west,font=\small]
+    at (3.85,2.05)
+    {quantum (QPU) processing};
+
+\end{scope}
+
+% =================================================
+% Hybrid classical--quantum loop
+% =================================================
+
+\draw[->,thick,gray]
+    (12,0.62)
+    .. controls (11.2,1.35) and (4.0,1.35) ..
+    (3,0.62);
+
+\node[
+    font=\small,
+    text=gray
+] at (7.6,1.55)
+    {hybrid classical--quantum loop};
+
+% =================================================
+% Left-side labels
+% =================================================
+
+\node[side] at (-2.4,0)
+    {HQC\\workflow};
+
+\node[side] at (-2.4,-1.75)
+    {Semantic\\restart\\boundaries};
+
+% =================================================
+% Semantic restart boundaries
+%
+% IMPORTANT:
+% IDs denote invariant types, NOT chronological stage numbers.
+% Thus B5 naturally occurs before the B4 iteration commit.
+% =================================================
+
+\node[boundary,fill=bOne] (b1)
+    at (0,-1.65) {$B_1$};
+
+\node[boundary,fill=bTwo] (b2)
+    at (3,-1.65) {$B_2$};
+
+\node[boundary,fill=bThree] (b3)
+    at (6,-1.65) {$B_3$};
+
+\node[boundary,fill=bFive] (b5)
+    at (9,-1.65) {$B_5$};
+
+\node[boundary,fill=bFour] (b4)
+    at (12,-1.65) {$B_4$};
+
+\node[boundary,fill=bSix] (b6)
+    at (15,-1.65) {$B_6$};
+
+\draw[dashed,thick] (s1.south) -- (b1.north);
+\draw[dashed,thick] (s2.south) -- (b2.north);
+\draw[dashed,thick] (s3.south) -- (b3.north);
+\draw[dashed,thick] (s4.south) -- (b5.north);
+\draw[dashed,thick] (s5.south) -- (b4.north);
+\draw[dashed,thick] (s6.south) -- (b6.north);
+
+% =================================================
+% Boundary meaning:
+%   1. work protected
+%   2. evidence gained
+% =================================================
+
+% -----------------------
+% B1
+% -----------------------
+
+\node[btitle]
+    at (0,-2.40)
+    {Problem\\State};
+
+\node[bdetail]
+    at (0,-3.30)
+    {\textbf{Protects:} problem/ data preparation\\
+     \textbf{Evidence:\\} semantic identity};
+
+% -----------------------
+% B2
+% -----------------------
+
+\node[btitle]
+    at (3,-2.40)
+    {Execution\\Plan};
+
+\node[bdetail]
+    at (3,-3.30)
+    {\textbf{Protects:} grouping, batching, planning\\
+     \textbf{Evidence:\\} execution/shot plan};
+
+% -----------------------
+% B3
+% -----------------------
+
+\node[btitle]
+    at (6,-2.40)
+    {Device\\Binding};
+
+\node[bdetail]
+    at (6,-3.30)
+    {\textbf{Protects:\\} compilation and mapping\\
+     \textbf{Evidence:\\} portability};
+
+% -----------------------
+% B5
+% -----------------------
+
+\node[btitle]
+    at (9,-2.40)
+    {Partial\\External Work};
+
+\node[bdetail]
+    at (9,-3.30)
+    {\textbf{Protects:} completed\\QPU work\\
+     \textbf{Evidence:} progress ledger / exact reuse};
+
+% -----------------------
+% B4
+% -----------------------
+
+\node[btitle]
+    at (12,-2.40)
+    {Iteration\\Commit};
+
+\node[bdetail]
+    at (12,-3.30)
+    {\textbf{Protects:} completed optimizer/training update\\
+     \textbf{Evidence:\\} continuation state};
+
+% -----------------------
+% B6
+% -----------------------
+
+\node[btitle]
+    at (15,-2.40)
+    {Program\\Evolution};
+
+\node[bdetail]
+    at (15,-3.30)
+    {\textbf{Protects:} adaptive program construction\\
+     \textbf{Evidence:} program identity/history};
+
+% =================================================
+% Important semantic note
+% =================================================
+
+\node[
+    font=\small\itshape,
+    text=gray!70!black,
+    align=center
+] at (7.5,-4.10)
+{
+Boundary IDs denote reusable invariant types, not chronological stage
+numbers; therefore $B_5$ can occur before the $B_4$ iteration commit.
+};
+
+% =================================================
+% Decision-role callout
+% =================================================
+
+\node[
+    draw=gray!50,
+    rounded corners=3pt,
+    fill=gray!7,
+    font=\small,
+    align=center,
+    text width=17.2cm,
+    inner sep=3pt
+] at (7.5,-4.80)
+{
+\textbf{Decision roles:}
+$B_1$ gates semantic identity;
+$B_3$ enables portability checks;
+$B_5$ enables exact reuse/reissue accounting;
+$B_4$ supports stable iterative re-entry; and
+$B_6$ preserves evolving program identity.
+};
+\end{tikzpicture}
+
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.95}
+
+\begin{tabularx}{\textwidth}{
+    >{\raggedright\arraybackslash\bfseries}p{1.50cm}
+    >{\centering\arraybackslash}X
+    >{\centering\arraybackslash}X
+    >{\centering\arraybackslash}X
+    >{\centering\arraybackslash}X
+    >{\centering\arraybackslash}X
+    >{\centering\arraybackslash}X
+}
+\toprule
+Workload
+&
+\shortstack{$B_1$ (Problem)}
+&
+\shortstack{$B_2$ (Plan)}
+&
+\shortstack{$B_3$ (Binding)}
+&
+\shortstack{$B_4$ (Iteration)}
+&
+\shortstack{$B_5$ (Partial work)}
+&
+\shortstack{$B_6$ (Evolution)}
+\\
+\midrule
+
+VQE
+&
+Hamiltonian
+&
+groups/shots
+&
+compiled ansatz
+&
+optimizer state
+&
+measured groups
+&
+-- 
+\\
+
+ADAPT-VQE
+&
+Hamiltonian
+&
+groups/shots
+&
+compiled ansatz
+&
+optimizer state
+&
+measured groups
+&
+operator history
+\\
+
+QAOA
+&
+graph/cost
+&
+eval./shot plan
+&
+compiled QAOA
+&
+optimizer state
+&
+completed evals.
+&
+--
+\\
+
+VQC
+&
+dataset/encoding
+&
+batch/shot plan
+&
+compiled classifier
+&
+training state
+&
+samples/batches
+&
+--
+\\
+
+\bottomrule
+\end{tabularx}
+}
+
+\caption{
+\textbf{Semantic restart-boundary taxonomy and workload mapping.}
+Semantic restart boundaries are defined by reusable workflow invariants
+rather than algorithm-specific stage names. Each boundary protects a
+different prefix of work and exposes evidence used in subsequent
+restart decisions. VQE, ADAPT-VQE, QAOA, and the targeted VQC
+instantiate the same invariant types differently; workloads may omit
+or repeat boundary types. Boundary identifiers denote semantic
+invariant types rather than chronological stage numbers, so the
+partial-external-work boundary $B_5$ can occur before the
+iteration-commit boundary $B_4$.
+}
+\label{fig:semantic_boundary_taxonomy}
+\end{figure*}

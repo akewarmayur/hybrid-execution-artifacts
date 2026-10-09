@@ -1,0 +1,20 @@
+{
+  "case_count": 4,
+  "config_path": "additional_hardware_experiments/configs/resume_spotcheck_live.yaml",
+  "description": "Clean live-only same-backend replay spot-checks on IBM hardware. This config is intended for paper reporting when you want replay-on-hardware evidence without mixing in any deterministic fallback windows.\n",
+  "experiment_name": "resume_spotcheck_live",
+  "hardware_windows": [
+    "2026-03-17T02:07:28Z"
+  ],
+  "notes": [
+    "Live IBM Runtime jobs were submitted for 4 supplemental cases."
+  ],
+  "outputs": {
+    "output_dir": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/resume_spotcheck_live/outputs",
+    "processed_csv": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/resume_spotcheck_live/processed/records.csv",
+    "processed_jsonl": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/resume_spotcheck_live/processed/records.jsonl",
+    "raw_jsonl": "${ARTIFACT_ROOT}/additional_hardware_experiments/results/resume_spotcheck_live/raw/events.jsonl"
+  },
+  "processed_rows": 12,
+  "results_subdir": "resume_spotcheck_live"
+}
