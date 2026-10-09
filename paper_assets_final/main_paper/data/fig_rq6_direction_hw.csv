@@ -1,5 +1,0 @@
-direction,label,action,trajectories,success,stable,objective_median,hellinger_median,gradient_median
-ibm_fez->ibm_fez,Fez -> Fez,replay,3,3,2,0.013343750000003318,0.18284294270849075,0.506396149271334
-ibm_pittsburgh->ibm_pittsburgh,Pittsburgh -> Pittsburgh,replay,3,3,3,0.059427083333333464,0.15922563224512606,0.3018938074291822
-ibm_fez->ibm_pittsburgh,Fez -> Pittsburgh,migrate,3,2,1,0.034874999999999545,0.18442721882033444,0.4975449523269747
-ibm_pittsburgh->ibm_fez,Pittsburgh -> Fez,migrate,3,1,1,0.0870416666666669,0.203831280215342,0.5124770739370528

@@ -1,5 +1,0 @@
-action_0_15,action_0_05,outcome_0_15,paired_consequence,scenario_count
-block,block,block,unchanged_block,32
-migrate,block,unsafe,unsafe_continuation_avoided_by_block,64
-replay,replay,safe,successful_continuation_retained,63
-replay,replay,unsafe,unsafe_continuation_not_avoided,1

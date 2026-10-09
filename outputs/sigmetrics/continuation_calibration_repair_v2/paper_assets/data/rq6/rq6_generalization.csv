@@ -1,5 +1,0 @@
-workload,scope,n,mechanical_n,mechanical_d,mechanical_rate,continuation_n,continuation_d,continuation_rate,checkpoint_kb,save_ms
-ADAPT-VQE,main matrix,5,5,5,1.0,5,5,1.0,11.0966796875,2.642458
-H2 VQE,main matrix,5,5,5,1.0,5,5,1.0,11.306640625,2.509875
-LiH VQE,main matrix,5,5,5,1.0,5,5,1.0,14.396484375,3.375833
-QAOA MaxCut,main matrix,5,5,5,1.0,5,5,1.0,29.796875,4.335208

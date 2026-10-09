@@ -1,9 +1,0 @@
-project_name: checkrcq_eval
-schema_version: "1.0"
-default_confidence_level: 0.95
-stable_window_steps: 3
-post_restore_budget: 8
-io_bandwidth_mb_s: 250.0
-plot_dpi: 220
-figure_font_size: 10
-seed_stride: 9973

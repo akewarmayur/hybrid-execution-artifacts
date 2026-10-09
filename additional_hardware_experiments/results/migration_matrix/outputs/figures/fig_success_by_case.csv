@@ -1,5 +1,0 @@
-case_id,case_label,rate_success,ci_low_success,ci_high_success
-lih_b5_pittsburgh_to_marrakesh,LiH Pitt→Marr,1.0,0.5101091635454028,0.9999999999999999
-lih_b5_pittsburgh_to_fez,LiH Pitt→Fez,0.25,0.04558726080970055,0.699358157417598
-h2_b3_marrakesh_to_pittsburgh,H2 Marr→Pitt,0.75,0.3006418425824019,0.9544127391902993
-h2_b3_fez_to_pittsburgh,H2 Fez→Pitt,0.5,0.15003898915214958,0.8499610108478504

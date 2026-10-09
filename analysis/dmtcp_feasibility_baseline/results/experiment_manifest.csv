@@ -1,6 +1,0 @@
-experiment_id,phase,status,entry_point,reason,live_ibm_jobs_submitted,authoritative_results_modified
-C1_python_state,C,NOT_RUN,scripts/run_feasibility.sh,No suitable Linux runtime or DMTCP installation on audit host,0,false
-C2_lih_vqe,C,NOT_RUN,scripts/run_feasibility.sh,Blocked by C1/Linux environment gate,0,false
-C3_non_idempotent,C,NOT_RUN,scripts/run_external_mock.sh,Blocked by C1/C2/Linux environment gate,0,false
-C3_idempotent,C,NOT_RUN,scripts/run_external_mock.sh,Blocked by C1/C2/Linux environment gate,0,false
-D_controlled_overhead,D,NOT_RUN,scripts/run_comparison.sh,Feasibility gate did not pass,0,false

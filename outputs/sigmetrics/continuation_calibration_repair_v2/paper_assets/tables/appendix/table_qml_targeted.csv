@@ -1,6 +1,0 @@
-Targeted VQC case,Runs,Seeds,Mechanical,Continuation,Selected actions
-Boundary overhead,2,"6101,6102",2/2 (1.000),N/A,not_applicable:2
-Partial batch,2,"6101,6102",2/2 (1.000),N/A,recover_partial_batch:2
-Same-backend replay,2,"6101,6102",2/2 (1.000),2/2 (1.000),replay:2
-Four-policy comparison,2,"6101,6102",2/2 (1.000),2/2 (1.000),replay:2
-Simulated migration,2,"6101,6102",2/2 (1.000),2/2 (1.000),migrate:2

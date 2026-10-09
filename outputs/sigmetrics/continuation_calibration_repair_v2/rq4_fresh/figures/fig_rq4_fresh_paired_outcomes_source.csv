@@ -1,8 +1,0 @@
-category,label,count
-unsafe_to_block,Unsafe avoided by block,64
-unsafe_to_different_safe_action,Unsafe changed to safe action,0
-successful_retained,Successful retained,63
-successful_to_block,Successful blocked,0
-unsafe_not_avoided,Unsafe not avoided,1
-unchanged_block,Unchanged block,32
-other_action_changes,Other,0

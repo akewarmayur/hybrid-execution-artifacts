@@ -1,4 +1,0 @@
-Study,Cases,Windows,Success,Median obj. gap,Median Hellinger,Takeaway
-Replay spot-checks,LiH B3/B5 on Pittsburgh; H$_2$ B3/B5 on Marrakesh,3 each,12/12,0.020--0.037,0.092--0.184,Same-backend replay remained robust across all tested windows.
-Migration matrix,LiH Pitt$\rightarrow$Marr; LiH Pitt$\rightarrow$Fez; H$_2$ Marr$\rightarrow$Pitt; H$_2$ Fez$\rightarrow$Pitt,4 each,4/4; 1/4; 3/4; 2/4,0.037--0.049,0.093--0.200,Migration is viable but clearly backend-pair dependent.
-Ablation spot-check,Full contract; no backend snapshot; no measurement ledger,4 each,4/4; 0/4; block 4/4,0.019; 0.048; block,0.141; 0.173; block,Missing backend or measurement state materially changes restore behavior.

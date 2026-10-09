@@ -1,9 +1,0 @@
-profile,backend_id,backend,stable,heldout,required,qualified,result
-5q,ibm_boston,Boston,1,4,4,False,failed
-5q,ibm_fez,Fez,4,4,4,True,qualified
-5q,ibm_marrakesh,Marrakesh,2,4,4,False,failed
-5q,ibm_miami,Miami,3,4,4,False,failed
-5q,ibm_pittsburgh,Pittsburgh,4,4,4,True,qualified
-7q,ibm_boston,Boston,2,4,4,False,failed
-7q,ibm_marrakesh,Marrakesh,2,4,4,False,failed
-7q,ibm_miami,Miami,2,4,4,False,failed

@@ -1,5 +1,0 @@
-experiment_id,status,environment,dmtcp_version,dmtcp_revision,workload,compression,checkpoint_size_bytes,checkpoint_latency_s,restart_latency_s,steady_state_overhead_s,total_interruption_to_continuation_s,final_result_match,external_submission_attempts,external_unique_jobs,notes
-C1_python_state,NOT_RUN,macOS_arm64_no_linux_runtime,v4.2.0_target,f8009ce_target,deterministic_python_numpy,,,,,,,,,,DMTCP was not available on a suitable Linux host
-C2_lih_vqe,NOT_RUN,macOS_arm64_no_linux_runtime,v4.2.0_target,f8009ce_target,lih_vqe_primary_ideal_local,,,,,,,,,,Feasibility gate not executed; no overhead comparison permitted
-C3_non_idempotent,NOT_RUN,macOS_arm64_no_linux_runtime,v4.2.0_target,f8009ce_target,loopback_remote_work_mock,,,,,,,,,,Prepared but not executed
-C3_idempotent,NOT_RUN,macOS_arm64_no_linux_runtime,v4.2.0_target,f8009ce_target,loopback_remote_work_mock,,,,,,,,,,Prepared but not executed

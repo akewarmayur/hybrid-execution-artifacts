@@ -1,6 +1,0 @@
-case,runs,seeds,mechanical_rate,continuation_rate,continuation_n,selected_actions
-Boundary overhead,2,"6101,6102",1.0,,0,not_applicable:2
-Partial batch,2,"6101,6102",1.0,,0,recover_partial_batch:2
-Same-backend replay,2,"6101,6102",1.0,1.0,2,replay:2
-Four-policy comparison,2,"6101,6102",1.0,1.0,2,replay:2
-Simulated migration,2,"6101,6102",1.0,1.0,2,migrate:2

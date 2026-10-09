@@ -1,7 +1,0 @@
-metric,count
-net_reduction_unsafe_proceeded,64
-reduction_successful_proceeded,0
-successful_retained,63
-unchanged_block,32
-unsafe_not_avoided,1
-unsafe_to_block,64

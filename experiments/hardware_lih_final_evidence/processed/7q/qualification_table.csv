@@ -1,4 +1,0 @@
-backend,eligible_for_final_evaluation,heldout_trajectories,qualification_status,qualified,recalibration_allowed,required_stable_heldout_trajectories,retained_in_paper_facing_table,stable_heldout_trajectories
-ibm_boston,False,4,qualification_failed,False,False,4,True,2
-ibm_marrakesh,False,4,qualification_failed,False,False,4,True,2
-ibm_miami,False,4,qualification_failed,False,False,4,True,2

@@ -1,5 +1,0 @@
-policy,scenarios,coverage_n,coverage_d,coverage_rate,successful_n,successful_d,successful_rate,unsafe_n,unsafe_d,unsafe_rate,overblock_n,overblock_d,overblock_rate,replay,migrate,block
-Blind replay,160,128,160,0.8,64,160,0.4,64,128,0.5,1,32,0.03125,128,0,32
-Replay then migrate,160,160,160,1.0,65,160,0.40625,95,160,0.59375,0,0,,128,32,0
-Block on change,160,32,160,0.2,32,160,0.2,0,32,0.0,34,128,0.265625,32,0,128
-CheckRC-Q (0.15),160,128,160,0.8,66,160,0.4125,62,128,0.484375,0,32,0.0,64,64,32

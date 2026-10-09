@@ -1,6 +1,0 @@
-capability,classical_checkpoint,checkrc_q
-Ordinary numerical state,Yes,Yes
-Exact external-work ledger,No,Yes
-Backend/context evidence,No,Yes
-Replay/migration/block decision,No,Yes
-Process/QPU image,No,No
