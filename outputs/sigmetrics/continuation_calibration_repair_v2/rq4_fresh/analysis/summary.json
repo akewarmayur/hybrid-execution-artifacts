@@ -1,0 +1,1227 @@
+{
+  "rows": [
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "cross_backend",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00040908450000000027,
+        "median": 0.006478978999999999,
+        "n": 16,
+        "q1": 0.00622975975,
+        "q3": 0.00663884425
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 4352.0,
+        "median": 2176.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 4352.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "adapt_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 16
+      },
+      "changed_context_class": "high_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00022790599999999907,
+        "median": 0.006292187500000001,
+        "n": 16,
+        "q1": 0.006186385250000001,
+        "q3": 0.00641429125
+      },
+      "over_conservative_block": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "workload": "adapt_vqe"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "no_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.000127458,
+        "median": 0.003288,
+        "n": 16,
+        "q1": 0.00325519825,
+        "q3": 0.00338265625
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "adapt_vqe"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "safe_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00027703250000000014,
+        "median": 0.0034488755000000003,
+        "n": 16,
+        "q1": 0.00332576,
+        "q3": 0.0036027925000000002
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "adapt_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "same_backend_delay",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.0001511142499999998,
+        "median": 0.006230792,
+        "n": 16,
+        "q1": 0.0061821355,
+        "q3": 0.00633324975
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 4352.0,
+        "median": 2176.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 4352.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "adapt_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "cross_backend",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00020356249999999975,
+        "median": 0.0050330205,
+        "n": 16,
+        "q1": 0.00487080225,
+        "q3": 0.00507436475
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 4992.0,
+        "median": 2496.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 4992.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "h2_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 16
+      },
+      "changed_context_class": "high_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 5.2103750000000865e-05,
+        "median": 0.004861125,
+        "n": 16,
+        "q1": 0.004841729249999999,
+        "q3": 0.004893833
+      },
+      "over_conservative_block": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "workload": "h2_vqe"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "no_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.0002559480000000002,
+        "median": 0.002536542,
+        "n": 16,
+        "q1": 0.0024818124999999996,
+        "q3": 0.0027377605
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "h2_vqe"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "safe_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 6.153124999999995e-05,
+        "median": 0.0025264375,
+        "n": 16,
+        "q1": 0.002516145,
+        "q3": 0.00257767625
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "h2_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "same_backend_delay",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00011001049999999953,
+        "median": 0.004861438,
+        "n": 16,
+        "q1": 0.00482603175,
+        "q3": 0.00493604225
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 4992.0,
+        "median": 2496.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 4992.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "h2_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "cross_backend",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00040258299999999976,
+        "median": 0.006975208,
+        "n": 16,
+        "q1": 0.00681559375,
+        "q3": 0.007218176749999999
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 5664.0,
+        "median": 2752.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 5664.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "lih_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 16
+      },
+      "changed_context_class": "high_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00024991649999999994,
+        "median": 0.006944833500000001,
+        "n": 16,
+        "q1": 0.006818386,
+        "q3": 0.0070683025
+      },
+      "over_conservative_block": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "workload": "lih_vqe"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "no_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00010863624999999993,
+        "median": 0.00365975,
+        "n": 16,
+        "q1": 0.0036275417500000002,
+        "q3": 0.003736178
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "lih_vqe"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "safe_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 2.8572499999999883e-05,
+        "median": 0.003654896,
+        "n": 16,
+        "q1": 0.00364350025,
+        "q3": 0.00367207275
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "lih_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "same_backend_delay",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.0002603952500000008,
+        "median": 0.0071208535,
+        "n": 16,
+        "q1": 0.00694943775,
+        "q3": 0.0072098330000000006
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 5664.0,
+        "median": 2752.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 5664.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "lih_vqe"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "cross_backend",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00030589499999999874,
+        "median": 0.0087448335,
+        "n": 16,
+        "q1": 0.008569417250000001,
+        "q3": 0.00887531225
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 16512.0,
+        "median": 8128.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 16512.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "action_counts": {
+        "block": 16
+      },
+      "changed_context_class": "high_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00034214550000000003,
+        "median": 0.008834604499999999,
+        "n": 16,
+        "q1": 0.00876914575,
+        "q3": 0.00911129125
+      },
+      "over_conservative_block": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "no_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 7.44577499999996e-05,
+        "median": 0.0046093125000000006,
+        "n": 16,
+        "q1": 0.00456931275,
+        "q3": 0.0046437705
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "action_counts": {
+        "replay": 16
+      },
+      "changed_context_class": "safe_change",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 16,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.8063923194655636,
+          "upper": 1.0
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00013209375000000113,
+        "median": 0.0045823325,
+        "n": 16,
+        "q1": 0.00454198925,
+        "q3": 0.004674083000000001
+      },
+      "over_conservative_block": {
+        "denominator": 0,
+        "numerator": 0,
+        "rate": null,
+        "wilson_95": null
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 0.0,
+        "median": 0.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 0.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 14,
+        "rate": 0.875,
+        "wilson_95": {
+          "lower": 0.6397717273424133,
+          "upper": 0.9650225122567595
+        }
+      },
+      "target_counts": {
+        "ibm_kyiv": 16
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 16,
+        "numerator": 2,
+        "rate": 0.125,
+        "wilson_95": {
+          "lower": 0.0349774877432405,
+          "upper": 0.36022827265758683
+        }
+      },
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "action_counts": {
+        "block": 8,
+        "migrate": 8
+      },
+      "changed_context_class": "same_backend_delay",
+      "coverage": {
+        "denominator": 16,
+        "numerator": 8,
+        "rate": 0.5,
+        "wilson_95": {
+          "lower": 0.2799956361032602,
+          "upper": 0.7200043638967397
+        }
+      },
+      "decision_latency_s": {
+        "iqr": 0.00022308299999999719,
+        "median": 0.009098500499999999,
+        "n": 16,
+        "q1": 0.008982937750000001,
+        "q3": 0.009206020749999998
+      },
+      "over_conservative_block": {
+        "denominator": 8,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.3244075648838801
+        }
+      },
+      "policy": "not_applicable",
+      "repeated_qpu_work": {
+        "iqr": 16512.0,
+        "median": 8128.0,
+        "n": 16,
+        "q1": 0.0,
+        "q3": 16512.0
+      },
+      "successful_coverage": {
+        "denominator": 16,
+        "numerator": 0,
+        "rate": 0.0,
+        "wilson_95": {
+          "lower": 0.0,
+          "upper": 0.1936076805344364
+        }
+      },
+      "target_counts": {
+        "None": 8,
+        "ibm_sherbrooke": 8
+      },
+      "unknown_proceed_outcome_count": 0,
+      "unsafe_continuation": {
+        "denominator": 8,
+        "numerator": 8,
+        "rate": 1.0,
+        "wilson_95": {
+          "lower": 0.67559243511612,
+          "upper": 1.0
+        }
+      },
+      "workload": "qaoa_maxcut"
+    }
+  ],
+  "rq": "RQ4",
+  "schema_version": "checkrcq-plan-analysis-v1",
+  "winner_selected": false
+}

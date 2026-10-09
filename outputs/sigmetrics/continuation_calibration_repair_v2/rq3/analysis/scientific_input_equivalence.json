@@ -1,0 +1,336 @@
+{
+  "allowed_semantic_change": "classical recovered application-state execution semantics only",
+  "checks": {
+    "all_dependencies_present": true,
+    "all_protected_files_unchanged": true,
+    "expanded_parameter_matrix_identical": true,
+    "mandatory_hardware_jobs_zero": true,
+    "old_and_repair_outputs_distinct": true,
+    "old_output_present": true,
+    "old_run_count_is_480": true,
+    "repair_run_count_is_480": true,
+    "scientific_inputs_identical": true,
+    "simulation_shot_budget_identical": true
+  },
+  "dependency_artifacts": {
+    "sigmetrics-continuation-calibration-final-v1": {
+      "path": "${ARTIFACT_ROOT}/outputs/sigmetrics/dependencies/sigmetrics-continuation-calibration-final-v1.json",
+      "present": true,
+      "recalibration_requested": false,
+      "sha256": "sha256:f79e9dcb3d111eb55e82e696ad751264e5ce80d0375d1addba3c16eb376115a4"
+    }
+  },
+  "equivalent": true,
+  "old": {
+    "artifact_hashes_before_repair_run": {
+      "manifests/campaign.json": "sha256:5f7faffa69280ef8177170f3dcc1496d25173f29585ca5fbbe66b6d074faaeb3",
+      "manifests/identity.json": "sha256:b4fe6ec56970fbfb6ed34d9230c4ed9a9defb063db816037735a93f477b0355f",
+      "processed/records.jsonl": "sha256:d4619f050af286d170ea0c2d7abcf4dc3fa9056c17031f01988e9d721d1e0b91",
+      "processed/validation_report.json": "sha256:e4a8fa283a64687715a88445ee980dd6e542e15a9d2df3a6f702b6e24e133158",
+      "raw/records.jsonl": "sha256:29eab70feca6cfb7fb96780481e12bc60a8c36cf566fa08f086902c5c1c369bc"
+    },
+    "campaign_id": "sigmetrics-rq3-recovery-efficiency-final-v1--recommended--rq3_recommended",
+    "config_hash": "sha256:f6aad06e33cad7810b65eba13dc8700b41f74fa0c6a2f2b100bce4abbf699bae",
+    "dry_run": {
+      "backend_pairs": [],
+      "campaign_id": "sigmetrics-rq3-recovery-efficiency-final-v1--recommended--rq3_recommended",
+      "config_hash": "sha256:f6aad06e33cad7810b65eba13dc8700b41f74fa0c6a2f2b100bce4abbf699bae",
+      "dry_run": true,
+      "estimated_hardware_jobs": 0,
+      "estimated_hardware_shots": 0,
+      "estimated_simulation_shots": 1474560,
+      "expanded_runs": 480,
+      "expected_checkpoint_count": 1440,
+      "live_hardware_requested": false,
+      "optional_targeted_workloads": [],
+      "output_root": "outputs/sigmetrics/rq3_recovery_efficiency/recommended/rq3_recommended",
+      "required_dependencies": [
+        "sigmetrics-continuation-calibration-final-v1"
+      ],
+      "seeds": [
+        1201,
+        1202,
+        1203,
+        1204,
+        1205
+      ],
+      "wall_clock_estimate": null,
+      "windows": [],
+      "workload_profiles": [
+        "paper"
+      ],
+      "workloads": [
+        "adapt_vqe",
+        "h2_vqe",
+        "lih_vqe",
+        "qaoa_maxcut"
+      ]
+    },
+    "output_root": "outputs/sigmetrics/rq3_recovery_efficiency/recommended/rq3_recommended",
+    "scientific_inputs": {
+      "checkpoint_boundaries": [
+        "B5"
+      ],
+      "continuation_envelope_dependencies": [
+        {
+          "campaign_id": "sigmetrics-continuation-calibration-final-v1",
+          "config_hash": "sha256:bf88ee31bb9b2db7d465fbf4495ddd2a85582cae9e815e6298e009b61402232e",
+          "execution_modes": [
+            "ideal_sim",
+            "noisy_sim"
+          ],
+          "role": "continuation_envelope",
+          "schema_version": "sigmetrics-experiment-record-v4",
+          "workloads": [
+            "h2_vqe",
+            "lih_vqe",
+            "adapt_vqe",
+            "qaoa_maxcut"
+          ]
+        }
+      ],
+      "continuation_horizons_B": [
+        2,
+        4
+      ],
+      "evaluation_seeds": [
+        1201,
+        1202,
+        1203,
+        1204,
+        1205
+      ],
+      "execution_modes": [
+        "ideal_sim",
+        "noisy_sim"
+      ],
+      "expected_checkpoint_count_per_run": 3,
+      "failure_selector": "checkrcq_eval.execution.scientific._failure_for_recovery",
+      "failure_selector_sha256": "sha256:219755a98a719b5db920b26ad7b8d73aff884a4bc517cfc2ae90d0574c05fbf8",
+      "failure_timings": [
+        "optimizer_early",
+        "external_middle",
+        "external_late"
+      ],
+      "persistence_modes": [
+        "local_durable"
+      ],
+      "persistence_targets": {
+        "local_durable": {
+          "durability_semantics": "fsync payload, commit record, and containing directory",
+          "path": "outputs/checkpoints",
+          "type": "local_durable_filesystem"
+        }
+      },
+      "recovery_policies": [
+        "full_contract",
+        "classical_application_checkpoint"
+      ],
+      "seed_roles": {
+        "calibration_seeds": [
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          3009,
+          3010,
+          3011,
+          3012
+        ],
+        "evaluation_seeds": [
+          1201,
+          1202,
+          1203,
+          1204,
+          1205
+        ],
+        "planner_calibration_seeds": [],
+        "smoke_seeds": [
+          3
+        ]
+      },
+      "shot_count_per_group": 512,
+      "source_backend": "ibm_kyiv",
+      "stable_window_steps": [
+        2
+      ],
+      "workload_profiles": [
+        "paper"
+      ],
+      "workload_set": [
+        "h2_vqe",
+        "lih_vqe",
+        "adapt_vqe",
+        "qaoa_maxcut"
+      ]
+    }
+  },
+  "protected_files": {
+    "configs/campaigns/execution_plan.yaml": {
+      "current_sha256": "sha256:e45e141101af5f6c4ed3dfb9815bd5229789ffd63361dcb911fc2a8e9474c1e1",
+      "head_sha256": "sha256:e45e141101af5f6c4ed3dfb9815bd5229789ffd63361dcb911fc2a8e9474c1e1",
+      "unchanged": true
+    },
+    "configs/campaigns/final/rq3_recovery_efficiency.yaml": {
+      "current_sha256": "sha256:a47095eff967a726b98f15c8050bdefa5314f7ae1c986fe696d1865d5a8904eb",
+      "head_sha256": "sha256:a47095eff967a726b98f15c8050bdefa5314f7ae1c986fe696d1865d5a8904eb",
+      "unchanged": true
+    },
+    "src/checkrcq_eval/common/calibration.py": {
+      "current_sha256": "sha256:8d5d1b1fd2d5a7c1da642eb60d2796fcc099ebd8fb683b1d134f80de22abf1c6",
+      "head_sha256": "sha256:8d5d1b1fd2d5a7c1da642eb60d2796fcc099ebd8fb683b1d134f80de22abf1c6",
+      "unchanged": true
+    },
+    "src/checkrcq_eval/common/quantum_execution.py": {
+      "current_sha256": "sha256:e60531ea185317674165eee764aec98b82287c2b4a89c4d4cd2fc3f5205eaf68",
+      "head_sha256": "sha256:e60531ea185317674165eee764aec98b82287c2b4a89c4d4cd2fc3f5205eaf68",
+      "unchanged": true
+    }
+  },
+  "repair": {
+    "campaign_id": "sigmetrics-rq3-recovery-efficiency-final-v1--fair-classical-v2",
+    "config_hash": "sha256:b609ddad1cab9c3896032575a218ab4ed6fbaf20feabcdc393540189c01e0d0b",
+    "dry_run": {
+      "backend_pairs": [],
+      "campaign_id": "sigmetrics-rq3-recovery-efficiency-final-v1--fair-classical-v2",
+      "config_hash": "sha256:b609ddad1cab9c3896032575a218ab4ed6fbaf20feabcdc393540189c01e0d0b",
+      "dry_run": true,
+      "estimated_hardware_jobs": 0,
+      "estimated_hardware_shots": 0,
+      "estimated_simulation_shots": 1474560,
+      "expanded_runs": 480,
+      "expected_checkpoint_count": 1440,
+      "live_hardware_requested": false,
+      "optional_targeted_workloads": [],
+      "output_root": "outputs/sigmetrics/rq3_recovery_efficiency_fair_classical_v2",
+      "required_dependencies": [
+        "sigmetrics-continuation-calibration-final-v1"
+      ],
+      "seeds": [
+        1201,
+        1202,
+        1203,
+        1204,
+        1205
+      ],
+      "wall_clock_estimate": null,
+      "windows": [],
+      "workload_profiles": [
+        "paper"
+      ],
+      "workloads": [
+        "adapt_vqe",
+        "h2_vqe",
+        "lih_vqe",
+        "qaoa_maxcut"
+      ]
+    },
+    "output_root": "outputs/sigmetrics/rq3_recovery_efficiency_fair_classical_v2",
+    "scientific_inputs": {
+      "checkpoint_boundaries": [
+        "B5"
+      ],
+      "continuation_envelope_dependencies": [
+        {
+          "campaign_id": "sigmetrics-continuation-calibration-final-v1",
+          "config_hash": "sha256:bf88ee31bb9b2db7d465fbf4495ddd2a85582cae9e815e6298e009b61402232e",
+          "execution_modes": [
+            "ideal_sim",
+            "noisy_sim"
+          ],
+          "role": "continuation_envelope",
+          "schema_version": "sigmetrics-experiment-record-v4",
+          "workloads": [
+            "h2_vqe",
+            "lih_vqe",
+            "adapt_vqe",
+            "qaoa_maxcut"
+          ]
+        }
+      ],
+      "continuation_horizons_B": [
+        2,
+        4
+      ],
+      "evaluation_seeds": [
+        1201,
+        1202,
+        1203,
+        1204,
+        1205
+      ],
+      "execution_modes": [
+        "ideal_sim",
+        "noisy_sim"
+      ],
+      "expected_checkpoint_count_per_run": 3,
+      "failure_selector": "checkrcq_eval.execution.scientific._failure_for_recovery",
+      "failure_selector_sha256": "sha256:219755a98a719b5db920b26ad7b8d73aff884a4bc517cfc2ae90d0574c05fbf8",
+      "failure_timings": [
+        "optimizer_early",
+        "external_middle",
+        "external_late"
+      ],
+      "persistence_modes": [
+        "local_durable"
+      ],
+      "persistence_targets": {
+        "local_durable": {
+          "durability_semantics": "fsync payload, commit record, and containing directory",
+          "path": "outputs/checkpoints",
+          "type": "local_durable_filesystem"
+        }
+      },
+      "recovery_policies": [
+        "full_contract",
+        "classical_application_checkpoint"
+      ],
+      "seed_roles": {
+        "calibration_seeds": [
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          3009,
+          3010,
+          3011,
+          3012
+        ],
+        "evaluation_seeds": [
+          1201,
+          1202,
+          1203,
+          1204,
+          1205
+        ],
+        "planner_calibration_seeds": [],
+        "smoke_seeds": [
+          3
+        ]
+      },
+      "shot_count_per_group": 512,
+      "source_backend": "ibm_kyiv",
+      "stable_window_steps": [
+        2
+      ],
+      "workload_profiles": [
+        "paper"
+      ],
+      "workload_set": [
+        "h2_vqe",
+        "lih_vqe",
+        "adapt_vqe",
+        "qaoa_maxcut"
+      ]
+    }
+  },
+  "schema_version": "checkrcq-rq3-fair-classical-input-audit-v1"
+}

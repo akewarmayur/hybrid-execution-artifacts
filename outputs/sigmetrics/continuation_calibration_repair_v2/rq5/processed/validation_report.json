@@ -1,0 +1,11 @@
+{
+  "accepted_count": 832,
+  "expected_run_count": 832,
+  "repair_version": "continuation-calibration-repair-v2",
+  "source": {
+    "path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq5_evidence_sufficiency/recommended/rq5_full_frontier_representative/processed/records.jsonl",
+    "record_count": 832,
+    "sha256": "sha256:2f124418434a21a6978b969c09ac4789a285ffd796c523139b6195b7c2b5168e"
+  },
+  "valid": true
+}

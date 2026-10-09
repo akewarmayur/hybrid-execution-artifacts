@@ -1,0 +1,15 @@
+{
+  "accepted_count": 10,
+  "campaign_id": "sigmetrics-qml-targeted-evaluation-final-v1--recommended--qml_targeted",
+  "config_hash": "sha256:b5b6a9e898984e56492feecea88f8431b2ed4f67cffba8147a5d41e9427284e6",
+  "duplicate_run_count": 0,
+  "expected_run_count": 10,
+  "issues": [],
+  "missing_run_ids": [],
+  "observed_run_count": 10,
+  "processed_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/qml_targeted_evaluation/recommended/qml_targeted/processed/records.jsonl",
+  "quarantined_count": 0,
+  "unexpected_run_ids": [],
+  "valid": true,
+  "validation_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/qml_targeted_evaluation/recommended/qml_targeted/processed/validation_report.json"
+}

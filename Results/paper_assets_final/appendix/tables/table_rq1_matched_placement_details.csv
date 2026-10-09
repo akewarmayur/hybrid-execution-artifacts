@@ -1,0 +1,13 @@
+Workload,Placement,n,"Shots redone, median [IQR]","Shots reused, median"
+ADAPT-VQE,Periodic (count),5,"2304 [2304, 2304]",0
+ADAPT-VQE,Periodic (overhead),5,"2304 [2304, 2304]",0
+ADAPT-VQE,Semantic,5,"0 [0, 0]",2304
+H2 VQE,Periodic (count),5,"1856 [1856, 1856]",0
+H2 VQE,Periodic (overhead),5,"1856 [1856, 1856]",0
+H2 VQE,Semantic,5,"0 [0, 0]",1856
+LiH VQE,Periodic (count),5,"3648 [3264, 3648]",0
+LiH VQE,Periodic (overhead),5,"3168 [1344, 3648]",0
+LiH VQE,Semantic,5,"0 [0, 0]",3648
+QAOA MaxCut,Periodic (count),5,"4096 [4096, 4128]",0
+QAOA MaxCut,Periodic (overhead),5,"0 [0, 0]",4096
+QAOA MaxCut,Semantic,5,"0 [0, 0]",4096

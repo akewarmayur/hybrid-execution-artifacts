@@ -1,0 +1,9 @@
+threshold,metric,value,numerator,denominator
+0.15,successful coverage,0.39375,63,160
+0.15,unsafe continuation,0.5078125,65,128
+0.15,block fraction,0.2,32,160
+0.15,overblock among blocks,0.0,0,32
+0.05,successful coverage,0.39375,63,160
+0.05,unsafe continuation,0.015625,1,64
+0.05,block fraction,0.6,96,160
+0.05,overblock among blocks,0.0,0,96

@@ -1,0 +1,46 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-qml-targeted-evaluation-final-v1
+status: planned
+profile: paper_small
+rqs: [RQ6]
+repetition_role: evaluation
+output_root: outputs/sigmetrics/qml_targeted_evaluation
+shots_per_evaluation: 64
+estimated_evaluations_per_run: 80
+axes:
+  workload: [qml_vqc]
+  workload_profile: [reduced]
+  execution_mode: [noisy_sim]
+  targeted_case:
+    - {name: boundary_checkpoint_overhead, boundary: B1-B5}
+    - {name: partial_batch_classical_vs_resq, boundary: B5}
+    - {name: same_backend_replay, boundary: B5}
+    - {name: same_state_four_policy, boundary: B5}
+    - {name: simulated_single_pair_migration, boundary: B5}
+  continuation_horizon_B: [2]
+  stable_window_steps: [1]
+  seed: [6101, 6102]
+seed_roles:
+  smoke_seeds: [501]
+  calibration_seeds: [5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112]
+  planner_calibration_seeds: [5201, 5202, 5203, 5204]
+  evaluation_seeds: [6101, 6102]
+dependencies:
+  - role: qml_continuation_envelope
+    campaign_id: sigmetrics-qml-continuation-calibration-final-v1
+    config_hash: sha256:a7f4feec4cd75d0bc7f1bd766cc230ae4bc3cce11c0c37908174c441df11d213
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [qml_vqc]
+    execution_modes: [noisy_sim]
+  - role: qml_planner_operating_point
+    campaign_id: sigmetrics-qml-planner-calibration-final-v1
+    config_hash: sha256:56f2bd3eff85b3ac824fd96de1fef9ca8dac946bb67bfadb99b58ba7ccc35160
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [qml_vqc]
+    execution_modes: [noisy_sim]
+persistence_targets: {}
+budgets:
+  max_runs: 10
+  max_simulation_shots: 51200
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

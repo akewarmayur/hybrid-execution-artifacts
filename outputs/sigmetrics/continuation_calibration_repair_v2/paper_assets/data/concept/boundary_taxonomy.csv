@@ -1,0 +1,7 @@
+boundary,invariant,examples,workloads
+B1,Problem/data semantics,"Hamiltonian, graph, dataset/split",VQE; ADAPT; QAOA; VQC
+B2,Measurement/work plan,"Groups, shots, batch/sample order",VQE; ADAPT; QAOA; VQC
+B3,Compiled executable,"Circuit, binding, compiler lineage",VQE; ADAPT; QAOA; VQC
+B4,Committed optimizer state,"Parameters, memory, iteration",VQE; ADAPT; QAOA; VQC
+B5,External-work progress,Completed groups/shots/samples,VQE; ADAPT; QAOA; VQC
+B6,Program evolution,Selected operator/ansatz expansion,ADAPT only

@@ -1,0 +1,7 @@
+threshold,action,scenario_count,replay_count,migration_count,block_count,coverage_numerator,coverage_denominator,coverage_rate,coverage_ci_low,coverage_ci_high,successful_coverage_numerator,successful_coverage_denominator,successful_coverage_rate,successful_coverage_ci_low,successful_coverage_ci_high,unsafe_numerator,unsafe_denominator,unsafe_rate,unsafe_ci_low,unsafe_ci_high,overblock_numerator,overblock_denominator,overblock_rate,overblock_ci_low,overblock_ci_high,successful_continuation_count,unsuccessful_proceeded_count
+0.15,replay,64,64,0,0,64,64,1.0,0.9433759402071946,1.0,63,64,0.984375,0.9166589839990573,0.9972364580766624,1,64,0.015625,0.002763541923337505,0.08334101600094265,0,0,,,,63,1
+0.15,migrate,64,0,64,0,64,64,1.0,0.9433759402071946,1.0,0,64,0.0,0.0,0.05662405979280534,64,64,1.0,0.9433759402071946,1.0,0,0,,,,0,64
+0.15,block,32,0,0,32,0,32,0.0,0.0,0.1071791982550706,0,32,0.0,0.0,0.1071791982550706,0,0,,,,0,32,0.0,0.0,0.1071791982550706,0,0
+0.05,replay,64,64,0,0,64,64,1.0,0.9433759402071946,1.0,63,64,0.984375,0.9166589839990573,0.9972364580766624,1,64,0.015625,0.002763541923337505,0.08334101600094265,0,0,,,,63,1
+0.05,migrate,0,0,0,0,0,0,,,,0,0,,,,0,0,,,,0,0,,,,0,0
+0.05,block,96,0,0,96,0,96,0.0,3.469446951953614e-18,0.038475587857675686,0,96,0.0,3.469446951953614e-18,0.038475587857675686,0,0,,,,0,96,0.0,3.469446951953614e-18,0.038475587857675686,0,0

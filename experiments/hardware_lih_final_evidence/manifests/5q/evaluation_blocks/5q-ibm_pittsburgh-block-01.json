@@ -1,0 +1,30 @@
+{
+  "block": "5q-ibm_pittsburgh-block-01",
+  "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+  "counterfactual_cache_sha256": "sha256:361aef6a550e5547e246b7599b1513e0aeb027e77726bbb6d5454964225046b5",
+  "execution_keys": [
+    "5q-ibm_pittsburgh-block-01--b5-returned-groups-0-1",
+    "5q-ibm_pittsburgh-block-01--b5-returned-groups-2-3",
+    "5q-ibm_pittsburgh-block-01--b5-returned-groups-4-5",
+    "5q-ibm_pittsburgh-block-01--fair-classical-reissue-groups-0-1",
+    "5q-ibm_pittsburgh-block-01--fair-classical-reissue-groups-0-3",
+    "5q-ibm_pittsburgh-block-01--fair-classical-reissue-groups-0-5",
+    "5q-ibm_pittsburgh-block-01--migrate--ibm_fez--step-0",
+    "5q-ibm_pittsburgh-block-01--migrate--ibm_fez--step-1",
+    "5q-ibm_pittsburgh-block-01--resq-pending-groups-6-7",
+    "5q-ibm_pittsburgh-block-01--same-source-replay--step-0",
+    "5q-ibm_pittsburgh-block-01--same-source-replay--step-1",
+    "5q-ibm_pittsburgh-block-01--uninterrupted-reference--step-0",
+    "5q-ibm_pittsburgh-block-01--uninterrupted-reference--step-1"
+  ],
+  "job_count": 13,
+  "profile_label": "5q",
+  "records_sha256": "sha256:af7f0136fb656dc66acaab8e2de5fd485e4d713d4dd64113adeaf15147ff2ad4",
+  "rq3_pair_order": "classical_first_resq_second",
+  "schema_version": "checkrcq-final-evidence-block-v1",
+  "scientific_outcomes_used_to_schedule": false,
+  "source": "ibm_pittsburgh",
+  "targets": [
+    "ibm_fez"
+  ]
+}

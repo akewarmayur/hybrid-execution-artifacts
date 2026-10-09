@@ -1,0 +1,32 @@
+{
+  "axes_sha256": "sha256:d1a8bd6fb483ba083c897c8148618a421049de9e6bfc026f18f5cb37dfba905b",
+  "campaign_id": "sigmetrics-rq1-boundary-placement-final-v1--recommended--rq1_adapt_b6_main",
+  "config_hash": "sha256:845b80739411c6841131b707f2436fff3a9b10e0ecfea03bd4367d88f547fa32",
+  "dependency_artifacts": [
+    {
+      "campaign_id": "sigmetrics-checkpoint-primitives-calibration-v1",
+      "present": true,
+      "sha256": "sha256:faeff5fc0b103547ab028380ccff92a50bba5cf9262dec106ac80876b1bfdc48"
+    }
+  ],
+  "dependency_specs": [
+    {
+      "campaign_id": "sigmetrics-checkpoint-primitives-calibration-v1",
+      "config_hash": "sha256:a5b92b07ec7eae7fa4aca8ca594a5cd34d429b6861741daf085f59d86eb678bb",
+      "schema_version": "sigmetrics-experiment-record-v4"
+    }
+  ],
+  "execution_freeze_tag": "sigmetrics-2027-execution-v4",
+  "execution_plan_hash": "sha256:e757e9858f9e577cc311220ab5aa99116aeabf3bce622a3daf1f779d2a0c45db",
+  "expected_run_count": 15,
+  "expected_run_ids_sha256": "sha256:00ea28683570d871c7d92ab84d12861c7bd695048fdb092ec73391459cf8d24a",
+  "git_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "output_root": "outputs/sigmetrics/rq1_boundary_placement/recommended/rq1_adapt_b6_main",
+  "plan_item_id": "rq1_adapt_b6_main",
+  "plan_name": "recommended",
+  "schema_version": "checkrcq-campaign-output-identity-v1",
+  "scientific_record_schema": "sigmetrics-experiment-record-v4",
+  "workloads": [
+    "adapt_vqe"
+  ]
+}

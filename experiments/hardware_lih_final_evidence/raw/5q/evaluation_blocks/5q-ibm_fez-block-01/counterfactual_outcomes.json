@@ -1,0 +1,101 @@
+{
+  "block": "5q-ibm_fez-block-01",
+  "outcomes": {
+    "migrate:ibm_pittsburgh": {
+      "comparison_details": {
+        "absolute_gradient_difference": 4.555660608419106,
+        "comparisons": [
+          {
+            "absolute_gradient_difference": 4.389514188579461,
+            "gradient_direction_disagreement": null,
+            "gradient_noise_floor": 9.156279421814402,
+            "hellinger_deviation": 0.24084102329859106,
+            "normalized_gradient_disagreement": 0.4793993265563359,
+            "objective_deviation": 0.01777083333333085,
+            "reference_gradient_norm": 4.10295181496447,
+            "step_index": 0,
+            "within_envelope": false
+          },
+          {
+            "absolute_gradient_difference": 4.555660608419106,
+            "gradient_direction_disagreement": null,
+            "gradient_noise_floor": 9.156279421814402,
+            "hellinger_deviation": 0.24920156828975512,
+            "normalized_gradient_disagreement": 0.4975449523269747,
+            "objective_deviation": 0.07458333333333567,
+            "reference_gradient_norm": 3.924765148007449,
+            "step_index": 1,
+            "within_envelope": false
+          }
+        ],
+        "continuation_success": false,
+        "first_step_overshoot": 0.0,
+        "gradient_direction_disagreement": null,
+        "gradient_noise_floor": 9.156279421814402,
+        "hellinger_deviation": 0.24920156828975512,
+        "normalized_gradient_disagreement": 0.4975449523269747,
+        "objective_deviation": 0.07458333333333567,
+        "reference_gradient_norm": 3.924765148007449,
+        "stable_continuation": false,
+        "stable_step_index": null
+      },
+      "continuation_success": false,
+      "gradient_noise_floor": 9.156279421814402,
+      "hellinger_deviation": 0.24920156828975512,
+      "normalized_gradient_disagreement": 0.4975449523269747,
+      "objective_deviation": 0.07458333333333567,
+      "stable_continuation": false,
+      "stable_step_index": null
+    },
+    "replay:ibm_fez": {
+      "comparison_details": {
+        "absolute_gradient_difference": 3.957482015515736,
+        "comparisons": [
+          {
+            "absolute_gradient_difference": 4.318119225915872,
+            "gradient_direction_disagreement": null,
+            "gradient_noise_floor": 7.814992316213807,
+            "hellinger_deviation": 0.20817134243326982,
+            "normalized_gradient_disagreement": 0.5525429905998815,
+            "objective_deviation": 0.034114583333331616,
+            "reference_gradient_norm": 4.10295181496447,
+            "step_index": 0,
+            "within_envelope": true
+          },
+          {
+            "absolute_gradient_difference": 3.957482015515736,
+            "gradient_direction_disagreement": null,
+            "gradient_noise_floor": 7.814992316213807,
+            "hellinger_deviation": 0.17446016488779675,
+            "normalized_gradient_disagreement": 0.506396149271334,
+            "objective_deviation": 0.0827187500000024,
+            "reference_gradient_norm": 3.924765148007449,
+            "step_index": 1,
+            "within_envelope": true
+          }
+        ],
+        "continuation_success": true,
+        "first_step_overshoot": 0.034114583333331616,
+        "gradient_direction_disagreement": null,
+        "gradient_noise_floor": 7.814992316213807,
+        "hellinger_deviation": 0.17446016488779675,
+        "normalized_gradient_disagreement": 0.506396149271334,
+        "objective_deviation": 0.0827187500000024,
+        "reference_gradient_norm": 3.924765148007449,
+        "stable_continuation": true,
+        "stable_step_index": 0
+      },
+      "continuation_success": true,
+      "gradient_noise_floor": 7.814992316213807,
+      "hellinger_deviation": 0.17446016488779675,
+      "normalized_gradient_disagreement": 0.506396149271334,
+      "objective_deviation": 0.0827187500000024,
+      "stable_continuation": true,
+      "stable_step_index": 0
+    }
+  },
+  "per_policy_duplicate_jobs": 0,
+  "schema_version": "checkrcq-final-evidence-counterfactual-cache-v1",
+  "shared_across_five_policies": true,
+  "source": "ibm_fez"
+}

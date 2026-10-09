@@ -1,0 +1,30 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-continuation-calibration-final-v1
+status: planned
+profile: paper_main
+rqs: [RQ3, RQ4, RQ6]
+repetition_role: calibration
+output_root: outputs/sigmetrics/calibration/continuation_envelopes
+shots_per_group: 512
+axes:
+  workload: [h2_vqe, lih_vqe, adapt_vqe, qaoa_maxcut]
+  workload_profile: [paper]
+  execution_mode: [ideal_sim, noisy_sim]
+  continuation_horizon_B: [2, 4, 8]
+  stable_window_steps: [2]
+  seed: [3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009, 3010, 3011, 3012]
+calibration_assignment:
+  envelope_fit_seeds: [3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008]
+  heldout_sanity_seeds: [3009, 3010, 3011, 3012]
+seed_roles:
+  smoke_seeds: []
+  calibration_seeds: [3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009, 3010, 3011, 3012]
+  planner_calibration_seeds: []
+  evaluation_seeds: []
+dependencies: []
+persistence_targets: {}
+budgets:
+  max_runs: 288
+  max_simulation_shots: 10000000
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

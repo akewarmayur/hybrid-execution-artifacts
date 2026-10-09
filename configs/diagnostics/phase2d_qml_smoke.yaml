@@ -1,0 +1,29 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-phase2d-qml-generalization-smoke-v1
+status: smoke
+profile: smoke
+rqs: [RQ6]
+repetition_role: smoke
+output_root: outputs/diagnostics/phase2d/sigmetrics-phase2d-qml-generalization-smoke-v1
+shots_per_evaluation: 32
+estimated_evaluations_per_run: 40
+axes:
+  workload: [qml_vqc]
+  workload_profile: [reduced]
+  execution_mode: [noisy_sim]
+  targeted_case: [reference, b4_restore, b5_partial, replay, four_policy, evidence, migration]
+  continuation_horizon_B: [2]
+  stable_window_steps: [1]
+  seed: [701]
+seed_roles:
+  smoke_seeds: [701]
+  calibration_seeds: [7101, 7102, 7103]
+  planner_calibration_seeds: [7201]
+  evaluation_seeds: [7301]
+dependencies: []
+persistence_targets: {}
+budgets:
+  max_runs: 7
+  max_simulation_shots: 8960
+  max_hardware_jobs: 0
+  max_hardware_shots: 0

@@ -1,0 +1,22 @@
+{
+  "authoritative": false,
+  "campaign_id": "sigmetrics-rq1-boundary-placement-final-v1--recommended--rq1_cadence_sensitivity",
+  "code_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "completed": 40,
+  "config_hash": "sha256:4bc9ac42c4df4c66de47fb1951f5b140a1df28a8d0f952cd7fad97db0daaf210",
+  "dependency_hashes": {
+    "sigmetrics-checkpoint-primitives-calibration-v1": "sha256:faeff5fc0b103547ab028380ccff92a50bba5cf9262dec106ac80876b1bfdc48"
+  },
+  "end_time_ns": 1790306688671492000,
+  "executor_type": "boundary_placement",
+  "executor_version": "phase3a1-final-dispatcher-v1",
+  "failed": 0,
+  "lifecycle_state": "completed",
+  "output_identity": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq1_boundary_placement/recommended/rq1_cadence_sensitivity/manifests/identity.json",
+  "planned_runs": 40,
+  "raw_records": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq1_boundary_placement/recommended/rq1_cadence_sensitivity/raw/records.jsonl",
+  "schema_version": "checkrcq-execution-manifest-v1",
+  "start_time_ns": 1790306605825129000,
+  "terminal_total": 40,
+  "valid_resumed_skipped": 0
+}

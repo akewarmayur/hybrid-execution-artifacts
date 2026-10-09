@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "checkrcq-eval"
+version = "0.1.0"
+description = "Anonymous artifact for RES-Q semantic restart experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Anonymous Authors" }
+]
+dependencies = [
+  "matplotlib>=3.7",
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+  "qiskit>=2.0,<3",
+  "qiskit-ibm-runtime>=0.33",
+  "scipy>=1.10"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,53 @@
+{
+  "backend_results": {
+    "ibm_boston": {
+      "eligible_for_final_evaluation": false,
+      "heldout_trajectories": 4,
+      "qualification_status": "qualification_failed",
+      "qualified": false,
+      "recalibration_allowed": false,
+      "required_stable_heldout_trajectories": 4,
+      "retained_in_paper_facing_table": true,
+      "stable_heldout_trajectories": 2
+    },
+    "ibm_marrakesh": {
+      "eligible_for_final_evaluation": false,
+      "heldout_trajectories": 4,
+      "qualification_status": "qualification_failed",
+      "qualified": false,
+      "recalibration_allowed": false,
+      "required_stable_heldout_trajectories": 4,
+      "retained_in_paper_facing_table": true,
+      "stable_heldout_trajectories": 2
+    },
+    "ibm_miami": {
+      "eligible_for_final_evaluation": false,
+      "heldout_trajectories": 4,
+      "qualification_status": "qualification_failed",
+      "qualified": false,
+      "recalibration_allowed": false,
+      "required_stable_heldout_trajectories": 4,
+      "retained_in_paper_facing_table": true,
+      "stable_heldout_trajectories": 2
+    }
+  },
+  "calibration_manifest_sha256": "sha256:c816ffba4b829d9dfd76299ba56f00f3bd684ba731c23f07c76f77447a05a772",
+  "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+  "created_at": "2026-10-01T07:21:11.188841Z",
+  "evaluation_outcomes_read": false,
+  "failed_backends": [
+    "ibm_boston",
+    "ibm_marrakesh",
+    "ibm_miami"
+  ],
+  "failed_backends_excluded_from_final_evaluation": true,
+  "failed_backends_retained_in_report": true,
+  "heldout_results_sha256": "sha256:a077d616212c8793576b83b3231b7a15f507b02eb73c984a16fa1614366c9dc2",
+  "migration_evaluation_available": false,
+  "profile_label": "7q",
+  "qualified_backend_count": 0,
+  "qualified_backends": [],
+  "schema_version": "checkrcq-final-evidence-qualification-v1",
+  "source_local_evaluation_available": false,
+  "status": "complete"
+}

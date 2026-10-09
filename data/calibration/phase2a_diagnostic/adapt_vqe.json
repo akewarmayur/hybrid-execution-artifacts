@@ -1,0 +1,22 @@
+{
+  "backend_context_class": "same_backend_noisy_window",
+  "calibration_method": "99th empirical upper quantile of paired equivalent uninterrupted runs; noisy mode pairs independent calibration-window backend snapshots",
+  "calibration_seeds_or_windows": [
+    "401",
+    "409",
+    "419"
+  ],
+  "calibration_version": "phase2a-v1",
+  "evaluation_seeds_or_windows": [
+    "101"
+  ],
+  "execution_mode": "noisy",
+  "gradient_noise_floor": 6.905789204682267e-06,
+  "hellinger_threshold": 0.04688117385384643,
+  "normalized_gradient_threshold": 0.0001282722790851438,
+  "objective_threshold": 8.101497353862896e-05,
+  "sample_count": 12,
+  "stable_window_definition": "Consecutive aligned post-checkpoint steps whose objective, Hellinger, and normalized-gradient deviations all remain within the calibrated envelope.",
+  "stable_window_steps": 3,
+  "workload": "adapt_vqe"
+}

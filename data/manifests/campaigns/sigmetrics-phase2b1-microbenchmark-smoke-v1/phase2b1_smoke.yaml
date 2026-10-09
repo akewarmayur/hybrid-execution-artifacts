@@ -1,0 +1,27 @@
+setting: noisy
+evaluation_question: phase2b1_measurement_smoke
+benchmark_profile: reduced
+workloads:
+  - lih_vqe
+  - h2_vqe
+  - qaoa_maxcut
+  - adapt_vqe
+boundaries: [B5, B6]
+cadences: [1]
+seeds: [701]
+held_out_seeds: [503]
+source_backend: ibm_kyiv
+target_backend: ibm_brisbane
+save_backend: ibm_kyiv
+restore_backend: ibm_brisbane
+budget_B: 4
+continuation_horizon_B: 4
+sanity_boundary: B5
+changed_context_delay: 1.0
+delays: [0.0, 1.0]
+scenarios: [measurement_smoke, calibration_sanity]
+baselines: [full_contract]
+warmup_runs: 1
+repetitions: 3
+optimizer_iterations: 2
+shots_per_group: 256

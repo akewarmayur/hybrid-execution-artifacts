@@ -1,0 +1,15 @@
+{
+  "accepted_count": 160,
+  "campaign_id": "sigmetrics-planner-calibration-final-v1",
+  "config_hash": "sha256:e6a06faed51f4ea9d810727b1ea3911d1b8a4fb2958afda0cd601ccaed306d7a",
+  "duplicate_run_count": 0,
+  "expected_run_count": 160,
+  "issues": [],
+  "missing_run_ids": [],
+  "observed_run_count": 160,
+  "processed_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/calibration/planner_operating_point/processed/records.jsonl",
+  "quarantined_count": 0,
+  "unexpected_run_ids": [],
+  "valid": true,
+  "validation_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/calibration/planner_operating_point/processed/validation_report.json"
+}

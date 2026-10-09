@@ -1,0 +1,11 @@
+{
+  "accepted_count": 320,
+  "expected_run_count": 320,
+  "repair_version": "continuation-calibration-repair-v2",
+  "source": {
+    "path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq4_fresh_confirmation/processed/records.jsonl",
+    "record_count": 320,
+    "sha256": "sha256:fe273785037cc39286fa14eb58e32fe49a90318bbda8796bc7f55aa5c483e18d"
+  },
+  "valid": true
+}

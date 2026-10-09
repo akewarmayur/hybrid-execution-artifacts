@@ -1,0 +1,15 @@
+{
+  "accepted_count": 480,
+  "campaign_id": "sigmetrics-rq2-overhead-scaling-final-v1--recommended--rq2_full_scale",
+  "config_hash": "sha256:110c0c6a52e289495986bdb19fdf8f5c52feae0af01ab2503d5fd0e51d7f59b1",
+  "duplicate_run_count": 0,
+  "expected_run_count": 480,
+  "issues": [],
+  "missing_run_ids": [],
+  "observed_run_count": 480,
+  "processed_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq2_overhead_scaling/recommended/rq2_full_scale/processed/records.jsonl",
+  "quarantined_count": 0,
+  "unexpected_run_ids": [],
+  "valid": true,
+  "validation_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq2_overhead_scaling/recommended/rq2_full_scale/processed/validation_report.json"
+}

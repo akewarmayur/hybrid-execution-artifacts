@@ -1,0 +1,24 @@
+workload: qml_vqc
+profile: reduced
+dataset:
+  generator: balanced_gaussian_binary-v1
+  size: 24
+  feature_count: 2
+  classes: 2
+  generation_seed: 310
+  split_seed: 311
+  split: {train: 16, validation: 4, test: 4}
+preprocessing:
+  method: train_standardize_then_clip
+  clip: [-2.5, 2.5]
+  epsilon: 1.0e-8
+encoding: angle_ry_rz_two_feature-v1
+classifier: two_qubit_vqc_binary-v1
+qubits: 2
+variational_layers: 1
+parameters: 4
+batch_size: 4
+training_steps: 2
+shots_per_evaluation: 64
+remote_downloads: false
+live_hardware: false

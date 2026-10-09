@@ -1,0 +1,5 @@
+population,threshold,coverage_rate,successful_coverage_rate,unsafe_numerator,unsafe_denominator,unsafe_rate,overblock_numerator,overblock_denominator
+previous_diagnostic,0.15,0.8,0.325,76,128,0.59375,0,32
+independent_confirmation,0.15,0.8,0.39375,65,128,0.5078125,0,32
+previous_diagnostic,0.05,0.4,0.3125,14,64,0.21875,2,96
+independent_confirmation,0.05,0.4,0.39375,1,64,0.015625,0,96

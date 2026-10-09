@@ -1,0 +1,9 @@
+policy,successful_continuations_missed,unsafe_continuations_incurred,unnecessary_blocks_where_oracle_succeeds,action_disagreement,coverage_gap,successful_coverage_gap
+always_block,63,0,63,63,0.39375,0.39375
+blind_replay,0,65,0,65,-0.40625000000000006,0.0
+replay_then_migrate,0,97,0,97,-0.60625,0.0
+block_on_change,31,0,31,31,0.19374999999999998,0.19374999999999998
+resq_tau_0_15,0,65,0,65,-0.40625000000000006,0.0
+resq_tau_0_05,0,1,0,1,-0.006250000000000033,0.0
+learned_logistic,0,1,0,1,-0.006250000000000033,0.0
+oracle,0,0,0,0,0.0,0.0

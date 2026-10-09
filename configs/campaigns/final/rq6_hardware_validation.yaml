@@ -1,0 +1,41 @@
+schema_version: checkrcq-campaign-v1
+campaign_id: sigmetrics-rq6-hardware-validation-final-v1
+status: planned
+profile: hardware_validation
+rqs: [RQ6]
+repetition_role: hardware_window
+output_root: outputs/sigmetrics/rq6_hardware_validation
+expected_checkpoint_count_per_run: 1
+hardware_jobs_per_run: 1
+shots_per_job: 192
+axes:
+  workload: [lih_vqe]
+  workload_profile: [paper]
+  execution_mode: [hardware_live]
+  checkpoint_boundary: [B5]
+  hardware_case:
+    - {case: same_backend_replay, save_backend: ibm_pittsburgh, restore_backend: ibm_pittsburgh}
+    - {case: same_backend_replay, save_backend: ibm_marrakesh, restore_backend: ibm_marrakesh}
+    - {case: cross_backend_migration, save_backend: ibm_pittsburgh, restore_backend: ibm_marrakesh}
+  evidence_subset: [full]
+  continuation_horizon_B: [2]
+  stable_window_steps: [2]
+  window_id: [planned-window-01, planned-window-02]
+seed_roles:
+  smoke_seeds: [7]
+  calibration_seeds: []
+  planner_calibration_seeds: []
+  evaluation_seeds: []
+dependencies:
+  - role: hardware_provenance_validation
+    campaign_id: sigmetrics-hardware-provenance-calibration-v1
+    config_hash: sha256:af3fa9220f6f449bf1477399a701cde06f695112da402bba5c38a161c8c075da
+    schema_version: sigmetrics-experiment-record-v4
+    workloads: [lih_vqe]
+    execution_modes: [hardware_live]
+persistence_targets: {}
+budgets:
+  max_runs: 6
+  max_simulation_shots: 0
+  max_hardware_jobs: 6
+  max_hardware_shots: 1152

@@ -1,0 +1,14 @@
+{
+  "command": "run",
+  "evaluation_question": "e3_review",
+  "inputs": [],
+  "notes": [
+    "Noisy replay and migration study with density-matrix channel simulation and real transpiled circuits."
+  ],
+  "outputs": [
+    "${ARTIFACT_ROOT}/data/processed/noisy/e3_review_records.csv",
+    "${ARTIFACT_ROOT}/data/processed/noisy/e3_review_records.jsonl",
+    "${ARTIFACT_ROOT}/data/raw/noisy/e3_review_events.jsonl"
+  ],
+  "setting": "noisy"
+}

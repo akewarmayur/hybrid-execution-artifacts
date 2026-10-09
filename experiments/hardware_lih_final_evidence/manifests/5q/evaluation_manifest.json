@@ -1,0 +1,27 @@
+{
+  "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+  "completed_at": "2026-10-01T00:13:14.655745Z",
+  "completed_blocks": 6,
+  "completed_jobs": 78,
+  "descriptive_finite_sample_only": true,
+  "freeze_manifest_hash": "sha256:420bf2eec1f3dfd3c2b39dadb901461c65a73956ca45e8930d3cf49907e43f7d",
+  "migration_graph": {
+    "ibm_fez": [
+      "ibm_pittsburgh"
+    ],
+    "ibm_pittsburgh": [
+      "ibm_fez"
+    ]
+  },
+  "planned_blocks": 6,
+  "planned_jobs": 78,
+  "profile_label": "5q",
+  "qualified_sources": [
+    "ibm_fez",
+    "ibm_pittsburgh"
+  ],
+  "records_sha256": "sha256:ca854d7e3152a3135b19dfffc21cd15bab12c58a06999d0295d2eb8cd32fc9ff",
+  "schema_version": "checkrcq-final-evidence-evaluation-v1",
+  "status": "complete",
+  "stopped_on_scientific_outcomes": false
+}

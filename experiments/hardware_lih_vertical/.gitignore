@@ -1,0 +1,16 @@
+raw/
+processed/
+manifests/*.json
+!manifests/pre_evaluation_design_manifest_v2.json
+!manifests/pre_evaluation_design_manifest_v2.sha256
+logs/
+dry_run/raw/
+dry_run/processed/
+dry_run/manifests/
+dry_run/logs/
+optional_scale/raw/
+optional_scale/processed/
+optional_scale/manifests/
+optional_scale/logs/
+!scripts/
+!config/

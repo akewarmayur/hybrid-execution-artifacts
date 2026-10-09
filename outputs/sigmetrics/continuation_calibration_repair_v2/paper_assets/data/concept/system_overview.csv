@@ -1,0 +1,5 @@
+order,stage,detail
+1,Recover,Reconstruct boundary-valid classical and external-work state
+2,Evaluate evidence,"Compare saved semantics, environment, portability, and progress"
+3,Select,"Choose replay, migration, or block"
+4,Continue,Resume and evaluate against the frozen continuation envelope

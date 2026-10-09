@@ -1,0 +1,47 @@
+setting: ideal
+evaluation_question: e2
+benchmark_profile: paper
+# Scaled FAST paper preset:
+# heavier than the runnable reduced setup while still staying within a multi-hour batch budget.
+workloads:
+  - lih_vqe
+  - h2_vqe
+  - adapt_vqe
+boundaries:
+  - B1
+  - B2
+  - B5
+  - B6
+cadences:
+  - 1
+  - 4
+  - 8
+seeds:
+  - 11
+  - 17
+  - 23
+  - 31
+  - 43
+  - 59
+  - 71
+  - 83
+  - 97
+  - 101
+  - 107
+  - 113
+save_backend: parallel_fs
+restore_backend: parallel_fs
+budget_B: 12
+delays:
+  - 0.0
+scenarios:
+  - hpc_preemption
+  - grouped_measurement_failure
+baselines:
+  - full_contract
+  - no_checkpoint
+  - parameter_only
+  - workflow_lite
+  - no_measurement_ledger
+optimizer_iterations: 16
+shots_per_group: 3072

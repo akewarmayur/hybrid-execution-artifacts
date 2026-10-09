@@ -1,0 +1,40 @@
+setting: ideal
+evaluation_question: e1_review
+benchmark_profile: review_large
+# Review-only extension:
+# adds QAOA plus larger chemistry circuits for checkpoint-size and overhead scaling.
+workloads:
+  - qaoa_maxcut
+  - h2_vqe
+  - lih_vqe
+boundaries:
+  - B1
+  - B2
+  - B3
+  - B4
+  - B5
+cadences:
+  - 1
+  - 4
+  - 8
+  - 16
+seeds:
+  - 11
+  - 17
+  - 23
+  - 31
+  - 43
+  - 59
+  - 71
+  - 83
+include_timer_baseline: true
+save_backend: parallel_fs
+restore_backend: parallel_fs
+budget_B: 14
+delays: [0.0]
+scenarios:
+  - cadence_sweep
+baselines:
+  - full_contract
+optimizer_iterations: 18
+shots_per_group: 4096

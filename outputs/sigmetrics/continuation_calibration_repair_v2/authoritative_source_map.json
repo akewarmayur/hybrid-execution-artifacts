@@ -1,0 +1,13 @@
+{
+  "rq3_corrected_table": "outputs/sigmetrics/continuation_calibration_repair_v2/rq3/analysis/paper_artifacts/table_rq3_fair_classical.csv",
+  "rq3_validation": "outputs/sigmetrics/continuation_calibration_repair_v2/rq3/processed/validation_report.json",
+  "rq4_four_policy_summary": "outputs/sigmetrics/continuation_calibration_repair_v2/rq4/analysis/summary.json",
+  "rq4_fresh_summary": "outputs/sigmetrics/continuation_calibration_repair_v2/rq4_fresh/analysis/confirmation_summary.json",
+  "rq4_paired_uncertainty": "outputs/sigmetrics/continuation_calibration_repair_v2/rq4_fresh/analysis/rq4_paired_uncertainty.csv",
+  "rq4_paired_transitions": "outputs/sigmetrics/continuation_calibration_repair_v2/rq4_fresh/tables/table_rq4_paired_transitions.csv",
+  "rq4_discrimination": "outputs/sigmetrics/continuation_calibration_repair_v2/rq4_discriminability/heldout_model_comparison.csv",
+  "rq4_calibration_tradeoff": "outputs/sigmetrics/continuation_calibration_repair_v2/paper_sources/table_rq4_threshold_tradeoff.csv",
+  "rq5_evidence": "outputs/sigmetrics/continuation_calibration_repair_v2/paper_sources/table_rq5_evidence_sufficiency.csv",
+  "rq5_validation": "outputs/sigmetrics/continuation_calibration_repair_v2/rq5/processed/validation_report.json",
+  "rq6_summary": "outputs/sigmetrics/continuation_calibration_repair_v2/rq6/analysis/summary.json"
+}

@@ -1,0 +1,292 @@
+schema_version: checkrcq-execution-plan-v1
+scientific_record_schema: sigmetrics-experiment-record-v4
+frozen_implementation_commit: 113aeadf315a1545a0cf3418d97018703d4289f5
+tag_recommendation: sigmetrics-2027-execution-v4
+execution_freeze_tag: sigmetrics-2027-execution-v4
+executor_status: bound
+executor_note: Bound by the Phase-3A.1 canonical dispatcher; final execution still requires a clean tagged worktree.
+
+campaigns:
+  checkpoint_calibration:
+    config: configs/campaigns/calibration/checkpoint_primitives.yaml
+    priority: P0
+    claims: [C2, C4]
+  continuation_calibration:
+    config: configs/campaigns/calibration/continuation_envelopes.yaml
+    priority: P0
+    claims: [C3, C5, C6, C9]
+  planner_calibration:
+    config: configs/campaigns/calibration/planner_operating_point.yaml
+    priority: P0
+    claims: [C5, C6, C7, C8]
+  hardware_provenance_validation:
+    config: configs/campaigns/calibration/hardware_provenance_validation.yaml
+    priority: P1
+    claims: [C11]
+  qml_calibration:
+    config: configs/campaigns/qml/qml_continuation_calibration.yaml
+    priority: P1
+    claims: [C10]
+  qml_planner_calibration:
+    config: configs/campaigns/qml/qml_planner_calibration.yaml
+    priority: P1
+    claims: [C10]
+  rq1:
+    config: configs/campaigns/final/rq1_boundary_placement.yaml
+    priority: P0
+    claims: [C1, C2]
+  rq2:
+    config: configs/campaigns/final/rq2_measured_overhead_scaling.yaml
+    priority: P0
+    claims: [C4, C12]
+  rq3:
+    config: configs/campaigns/final/rq3_recovery_efficiency.yaml
+    priority: P0
+    claims: [C3]
+  rq4:
+    config: configs/campaigns/final/rq4_policy_decision.yaml
+    priority: P0
+    claims: [C5, C6]
+  rq5:
+    config: configs/campaigns/final/rq5_evidence_sufficiency.yaml
+    priority: P0
+    claims: [C7, C8]
+  rq6:
+    config: configs/campaigns/final/rq6_generalization.yaml
+    priority: P1
+    claims: [C9, C12]
+  qml_evaluation:
+    config: configs/campaigns/qml/qml_targeted_evaluation.yaml
+    priority: P1
+    claims: [C10]
+  hardware_evaluation:
+    config: configs/campaigns/final/rq6_hardware_validation.yaml
+    priority: P3
+    claims: [C11]
+
+plans:
+  core:
+    label: Plan A - core minimum defensible
+    items:
+      - {id: checkpoint_calibration, campaign: checkpoint_calibration, stage: 1, required: true}
+      - {id: continuation_calibration, campaign: continuation_calibration, stage: 1, required: true}
+      - {id: planner_calibration, campaign: planner_calibration, stage: 2, required: true}
+      - id: rq1_b1_b5_main
+        campaign: rq1
+        stage: 4
+        required: true
+        axes:
+          checkpoint_boundary: [B1, B2, B3, B4, B5]
+          checkpoint_cadence: [1]
+          placement_policy: [semantic, periodic_equal_count, periodic_equal_overhead]
+          failure_timing: [external_middle]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq1_adapt_b6_main
+        campaign: rq1
+        stage: 4
+        required: true
+        axes:
+          workload: [adapt_vqe]
+          checkpoint_boundary: [B6]
+          checkpoint_cadence: [1]
+          placement_policy: [semantic, periodic_equal_count, periodic_equal_overhead]
+          failure_timing: [external_middle]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq2_sparse_scale
+        campaign: rq2
+        stage: 4
+        required: true
+        axes:
+          execution_mode: [noisy_sim]
+          persistence_target: [local_durable]
+          seed: [1101, 1102, 1103, 1104, 1105]
+      - id: rq3_paired_core
+        campaign: rq3
+        stage: 4
+        required: true
+        axes:
+          workload_profile: [paper]
+          execution_mode: [noisy_sim]
+          continuation_horizon_B: [4]
+          seed: [1201, 1202, 1203, 1204, 1205]
+      - id: rq4_same_state_core
+        campaign: rq4
+        stage: 5
+        required: true
+        axes:
+          seed: [1301, 1302, 1303, 1304, 1305]
+      - id: rq5_leave_one_out_core
+        campaign: rq5
+        stage: 6
+        required: true
+        axes:
+          workload: [lih_vqe, qaoa_maxcut]
+          evidence_subset: [full, full_minus_semantic_identity, full_minus_progress_cost, full_minus_compilation_portability, full_minus_backend_environment, full_minus_estimator_mitigation, full_minus_continuation_optimizer]
+          seed: [1401, 1402, 1403, 1404, 1405]
+    optional_hardware: []
+
+  recommended:
+    label: Plan B - recommended full paper
+    items:
+      - {id: checkpoint_calibration, campaign: checkpoint_calibration, stage: 1, required: true}
+      - {id: continuation_calibration, campaign: continuation_calibration, stage: 1, required: true}
+      - {id: qml_calibration, campaign: qml_calibration, stage: 1, required: true}
+      - {id: qml_planner_calibration, campaign: qml_planner_calibration, stage: 2, required: true}
+      - {id: planner_calibration, campaign: planner_calibration, stage: 2, required: true}
+      - id: rq1_b1_b5_main
+        campaign: rq1
+        stage: 4
+        required: true
+        axes:
+          checkpoint_boundary: [B1, B2, B3, B4, B5]
+          checkpoint_cadence: [1]
+          placement_policy: [semantic, periodic_equal_count, periodic_equal_overhead]
+          failure_timing: [external_middle]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq1_adapt_b6_main
+        campaign: rq1
+        stage: 4
+        required: true
+        axes:
+          workload: [adapt_vqe]
+          checkpoint_boundary: [B6]
+          checkpoint_cadence: [1]
+          placement_policy: [semantic, periodic_equal_count, periodic_equal_overhead]
+          failure_timing: [external_middle]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq1_cadence_sensitivity
+        campaign: rq1
+        stage: 4
+        required: false
+        axes:
+          checkpoint_boundary: [B5]
+          checkpoint_cadence: [2, 4]
+          placement_policy: [semantic]
+          failure_timing: [external_middle]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq1_failure_timing_sensitivity
+        campaign: rq1
+        stage: 4
+        required: false
+        axes:
+          checkpoint_boundary: [B5]
+          checkpoint_cadence: [1]
+          placement_policy: [semantic]
+          failure_timing: [after_static_preprocessing, after_compilation, optimizer_middle, seeded_random]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq2_full_scale
+        campaign: rq2
+        stage: 4
+        required: true
+        axes:
+          seed: [1101, 1102, 1103, 1104, 1105]
+      - id: rq3_recommended
+        campaign: rq3
+        stage: 4
+        required: true
+        axes:
+          workload_profile: [paper]
+          continuation_horizon_B: [2, 4]
+          seed: [1201, 1202, 1203, 1204, 1205]
+      - id: rq4_same_state_recommended
+        campaign: rq4
+        stage: 5
+        required: true
+        axes:
+          seed: [1301, 1302, 1303, 1304, 1305, 1306, 1307, 1308]
+      - id: rq5_full_frontier_representative
+        campaign: rq5
+        stage: 6
+        required: true
+        axes:
+          workload: [lih_vqe, qaoa_maxcut]
+          seed: [1401, 1402, 1403, 1404, 1405, 1406, 1407, 1408]
+      - id: rq6_noisy_generalization
+        campaign: rq6
+        stage: 7
+        required: true
+        axes:
+          execution_mode: [noisy_sim]
+          seed: [1501, 1502, 1503, 1504, 1505]
+      - {id: qml_targeted, campaign: qml_evaluation, stage: 7, required: true}
+    optional_hardware:
+      - {id: hardware_provenance_validation, campaign: hardware_provenance_validation, stage: 9, required: true, live_authorization_required: false}
+      - id: hardware_lih_marrakesh_replay
+        campaign: hardware_evaluation
+        stage: 10
+        required: false
+        live_authorization_required: true
+        axes:
+          hardware_case:
+            - {case: same_backend_replay, save_backend: ibm_marrakesh, restore_backend: ibm_marrakesh}
+
+  exhaustive:
+    label: Plan C - exhaustive
+    items:
+      - {id: checkpoint_calibration, campaign: checkpoint_calibration, stage: 1, required: true}
+      - {id: continuation_calibration, campaign: continuation_calibration, stage: 1, required: true}
+      - {id: qml_calibration, campaign: qml_calibration, stage: 1, required: true}
+      - {id: qml_planner_calibration, campaign: qml_planner_calibration, stage: 2, required: true}
+      - {id: planner_calibration, campaign: planner_calibration, stage: 2, required: true}
+      - id: rq1_existing_full
+        campaign: rq1
+        stage: 4
+        required: true
+        axes:
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq1_add_b2_b4
+        campaign: rq1
+        stage: 4
+        required: false
+        axes:
+          checkpoint_boundary: [B2, B4]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq1_add_adapt_b6
+        campaign: rq1
+        stage: 4
+        required: false
+        axes:
+          workload: [adapt_vqe]
+          checkpoint_boundary: [B6]
+          seed: [1001, 1002, 1003, 1004, 1005]
+      - id: rq2_full
+        campaign: rq2
+        stage: 4
+        required: true
+        axes:
+          seed: [1101, 1102, 1103, 1104, 1105]
+      - id: rq3_full
+        campaign: rq3
+        stage: 4
+        required: true
+        axes:
+          seed: [1201, 1202, 1203, 1204, 1205]
+      - id: rq4_full_with_rate_seeds
+        campaign: rq4
+        stage: 5
+        required: true
+        axes:
+          seed: [1301, 1302, 1303, 1304, 1305, 1306, 1307, 1308]
+      - id: rq5_full_with_rate_seeds
+        campaign: rq5
+        stage: 6
+        required: true
+        axes:
+          seed: [1401, 1402, 1403, 1404, 1405, 1406, 1407, 1408]
+      - id: rq6_full
+        campaign: rq6
+        stage: 7
+        required: true
+        axes:
+          seed: [1501, 1502, 1503, 1504, 1505]
+      - {id: qml_targeted, campaign: qml_evaluation, stage: 7, required: true}
+    optional_hardware:
+      - {id: hardware_provenance_validation, campaign: hardware_provenance_validation, stage: 9, required: true, live_authorization_required: false}
+      - id: hardware_lih_marrakesh_replay
+        campaign: hardware_evaluation
+        stage: 10
+        required: false
+        live_authorization_required: true
+        axes:
+          hardware_case:
+            - {case: same_backend_replay, save_backend: ibm_marrakesh, restore_backend: ibm_marrakesh}

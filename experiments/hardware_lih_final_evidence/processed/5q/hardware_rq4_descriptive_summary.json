@@ -1,0 +1,482 @@
+{
+  "finite_sample_descriptive_only": true,
+  "per_architecture": {
+    "heron-r2": {
+      "categorical_counts": {
+        "decision_coverage": {
+          "true": 45
+        },
+        "over_conservative_block": {
+          "false": 45
+        },
+        "policy": {
+          "blind_replay": 9,
+          "block_on_change": 9,
+          "replay_then_migrate": 9,
+          "resq": 18
+        },
+        "selected_action": {
+          "replay": 45
+        },
+        "shared_counterfactual_outcome": {
+          "true": 45
+        },
+        "stable_continuation": {
+          "false": 15,
+          "true": 30
+        },
+        "successful_coverage": {
+          "false": 15,
+          "true": 30
+        },
+        "technically_feasible": {
+          "true": 45
+        },
+        "unsafe_continuation": {
+          "false": 30,
+          "true": 15
+        }
+      },
+      "numeric_distributions": {
+        "completed_groups": {
+          "count": 45,
+          "max": 6.0,
+          "median": 4.0,
+          "min": 2.0,
+          "p95": 6.0
+        },
+        "decision_latency_s": {
+          "count": 45,
+          "max": 0.025159749999999998,
+          "median": 0.016266833999999997,
+          "min": 0.015660792,
+          "p95": 0.025149266799999997
+        },
+        "feature_extraction_latency_s": {
+          "count": 45,
+          "max": 0.02514625,
+          "median": 0.016264959,
+          "min": 0.015660042,
+          "p95": 0.02514625
+        },
+        "hellinger_deviation": {
+          "count": 45,
+          "max": 0.19669461488894138,
+          "median": 0.18284294270849075,
+          "min": 0.17446016488779675,
+          "p95": 0.19669461488894138
+        },
+        "normalized_gradient_disagreement": {
+          "count": 45,
+          "max": 0.6171716547614335,
+          "median": 0.506396149271334,
+          "min": 0.10674008151904926,
+          "p95": 0.6171716547614335
+        },
+        "objective_deviation": {
+          "count": 45,
+          "max": 0.0827187500000024,
+          "median": 0.013343750000003318,
+          "min": 0.00013541666666583296,
+          "p95": 0.0827187500000024
+        },
+        "operating_point": {
+          "count": 18,
+          "max": 0.15,
+          "median": 0.1,
+          "min": 0.05,
+          "p95": 0.15
+        },
+        "planner_latency_s": {
+          "count": 45,
+          "max": 1.35e-05,
+          "median": 2.333e-06,
+          "min": 7.5e-07,
+          "p95": 1.1316399999999999e-05
+        }
+      },
+      "row_count": 45
+    },
+    "heron-r3": {
+      "categorical_counts": {
+        "decision_coverage": {
+          "true": 45
+        },
+        "over_conservative_block": {
+          "false": 45
+        },
+        "policy": {
+          "blind_replay": 9,
+          "block_on_change": 9,
+          "replay_then_migrate": 9,
+          "resq": 18
+        },
+        "selected_action": {
+          "replay": 45
+        },
+        "shared_counterfactual_outcome": {
+          "true": 45
+        },
+        "stable_continuation": {
+          "true": 45
+        },
+        "successful_coverage": {
+          "true": 45
+        },
+        "technically_feasible": {
+          "true": 45
+        },
+        "unsafe_continuation": {
+          "false": 45
+        }
+      },
+      "numeric_distributions": {
+        "completed_groups": {
+          "count": 45,
+          "max": 6.0,
+          "median": 4.0,
+          "min": 2.0,
+          "p95": 6.0
+        },
+        "decision_latency_s": {
+          "count": 45,
+          "max": 0.017844707999999997,
+          "median": 0.016221875,
+          "min": 0.01585775,
+          "p95": 0.017838833399999997
+        },
+        "feature_extraction_latency_s": {
+          "count": 45,
+          "max": 0.017833875,
+          "median": 0.016220292,
+          "min": 0.015857,
+          "p95": 0.017833875
+        },
+        "hellinger_deviation": {
+          "count": 45,
+          "max": 0.17988236390211437,
+          "median": 0.15922563224512606,
+          "min": 0.13348888952725094,
+          "p95": 0.17988236390211437
+        },
+        "normalized_gradient_disagreement": {
+          "count": 45,
+          "max": 0.41649463642217627,
+          "median": 0.3018938074291822,
+          "min": 0.07291129409431604,
+          "p95": 0.41649463642217627
+        },
+        "objective_deviation": {
+          "count": 45,
+          "max": 0.065500000000001,
+          "median": 0.059427083333333464,
+          "min": 0.007906249999996007,
+          "p95": 0.065500000000001
+        },
+        "operating_point": {
+          "count": 18,
+          "max": 0.15,
+          "median": 0.1,
+          "min": 0.05,
+          "p95": 0.15
+        },
+        "planner_latency_s": {
+          "count": 45,
+          "max": 1.1083e-05,
+          "median": 1.959e-06,
+          "min": 7.09e-07,
+          "p95": 1.0474399999999996e-05
+        }
+      },
+      "row_count": 45
+    }
+  },
+  "per_source": {
+    "ibm_fez": {
+      "categorical_counts": {
+        "decision_coverage": {
+          "true": 45
+        },
+        "over_conservative_block": {
+          "false": 45
+        },
+        "policy": {
+          "blind_replay": 9,
+          "block_on_change": 9,
+          "replay_then_migrate": 9,
+          "resq": 18
+        },
+        "selected_action": {
+          "replay": 45
+        },
+        "shared_counterfactual_outcome": {
+          "true": 45
+        },
+        "stable_continuation": {
+          "false": 15,
+          "true": 30
+        },
+        "successful_coverage": {
+          "false": 15,
+          "true": 30
+        },
+        "technically_feasible": {
+          "true": 45
+        },
+        "unsafe_continuation": {
+          "false": 30,
+          "true": 15
+        }
+      },
+      "numeric_distributions": {
+        "completed_groups": {
+          "count": 45,
+          "max": 6.0,
+          "median": 4.0,
+          "min": 2.0,
+          "p95": 6.0
+        },
+        "decision_latency_s": {
+          "count": 45,
+          "max": 0.025159749999999998,
+          "median": 0.016266833999999997,
+          "min": 0.015660792,
+          "p95": 0.025149266799999997
+        },
+        "feature_extraction_latency_s": {
+          "count": 45,
+          "max": 0.02514625,
+          "median": 0.016264959,
+          "min": 0.015660042,
+          "p95": 0.02514625
+        },
+        "hellinger_deviation": {
+          "count": 45,
+          "max": 0.19669461488894138,
+          "median": 0.18284294270849075,
+          "min": 0.17446016488779675,
+          "p95": 0.19669461488894138
+        },
+        "normalized_gradient_disagreement": {
+          "count": 45,
+          "max": 0.6171716547614335,
+          "median": 0.506396149271334,
+          "min": 0.10674008151904926,
+          "p95": 0.6171716547614335
+        },
+        "objective_deviation": {
+          "count": 45,
+          "max": 0.0827187500000024,
+          "median": 0.013343750000003318,
+          "min": 0.00013541666666583296,
+          "p95": 0.0827187500000024
+        },
+        "operating_point": {
+          "count": 18,
+          "max": 0.15,
+          "median": 0.1,
+          "min": 0.05,
+          "p95": 0.15
+        },
+        "planner_latency_s": {
+          "count": 45,
+          "max": 1.35e-05,
+          "median": 2.333e-06,
+          "min": 7.5e-07,
+          "p95": 1.1316399999999999e-05
+        }
+      },
+      "row_count": 45
+    },
+    "ibm_pittsburgh": {
+      "categorical_counts": {
+        "decision_coverage": {
+          "true": 45
+        },
+        "over_conservative_block": {
+          "false": 45
+        },
+        "policy": {
+          "blind_replay": 9,
+          "block_on_change": 9,
+          "replay_then_migrate": 9,
+          "resq": 18
+        },
+        "selected_action": {
+          "replay": 45
+        },
+        "shared_counterfactual_outcome": {
+          "true": 45
+        },
+        "stable_continuation": {
+          "true": 45
+        },
+        "successful_coverage": {
+          "true": 45
+        },
+        "technically_feasible": {
+          "true": 45
+        },
+        "unsafe_continuation": {
+          "false": 45
+        }
+      },
+      "numeric_distributions": {
+        "completed_groups": {
+          "count": 45,
+          "max": 6.0,
+          "median": 4.0,
+          "min": 2.0,
+          "p95": 6.0
+        },
+        "decision_latency_s": {
+          "count": 45,
+          "max": 0.017844707999999997,
+          "median": 0.016221875,
+          "min": 0.01585775,
+          "p95": 0.017838833399999997
+        },
+        "feature_extraction_latency_s": {
+          "count": 45,
+          "max": 0.017833875,
+          "median": 0.016220292,
+          "min": 0.015857,
+          "p95": 0.017833875
+        },
+        "hellinger_deviation": {
+          "count": 45,
+          "max": 0.17988236390211437,
+          "median": 0.15922563224512606,
+          "min": 0.13348888952725094,
+          "p95": 0.17988236390211437
+        },
+        "normalized_gradient_disagreement": {
+          "count": 45,
+          "max": 0.41649463642217627,
+          "median": 0.3018938074291822,
+          "min": 0.07291129409431604,
+          "p95": 0.41649463642217627
+        },
+        "objective_deviation": {
+          "count": 45,
+          "max": 0.065500000000001,
+          "median": 0.059427083333333464,
+          "min": 0.007906249999996007,
+          "p95": 0.065500000000001
+        },
+        "operating_point": {
+          "count": 18,
+          "max": 0.15,
+          "median": 0.1,
+          "min": 0.05,
+          "p95": 0.15
+        },
+        "planner_latency_s": {
+          "count": 45,
+          "max": 1.1083e-05,
+          "median": 1.959e-06,
+          "min": 7.09e-07,
+          "p95": 1.0474399999999996e-05
+        }
+      },
+      "row_count": 45
+    }
+  },
+  "pooled": {
+    "categorical_counts": {
+      "decision_coverage": {
+        "true": 90
+      },
+      "over_conservative_block": {
+        "false": 90
+      },
+      "policy": {
+        "blind_replay": 18,
+        "block_on_change": 18,
+        "replay_then_migrate": 18,
+        "resq": 36
+      },
+      "selected_action": {
+        "replay": 90
+      },
+      "shared_counterfactual_outcome": {
+        "true": 90
+      },
+      "stable_continuation": {
+        "false": 15,
+        "true": 75
+      },
+      "successful_coverage": {
+        "false": 15,
+        "true": 75
+      },
+      "technically_feasible": {
+        "true": 90
+      },
+      "unsafe_continuation": {
+        "false": 75,
+        "true": 15
+      }
+    },
+    "numeric_distributions": {
+      "completed_groups": {
+        "count": 90,
+        "max": 6.0,
+        "median": 4.0,
+        "min": 2.0,
+        "p95": 6.0
+      },
+      "decision_latency_s": {
+        "count": 90,
+        "max": 0.025159749999999998,
+        "median": 0.0162354795,
+        "min": 0.015660792,
+        "p95": 0.021861152299999978
+      },
+      "feature_extraction_latency_s": {
+        "count": 90,
+        "max": 0.02514625,
+        "median": 0.016230646,
+        "min": 0.015660042,
+        "p95": 0.021855681249999977
+      },
+      "hellinger_deviation": {
+        "count": 90,
+        "max": 0.19669461488894138,
+        "median": 0.17717126439495556,
+        "min": 0.13348888952725094,
+        "p95": 0.19669461488894138
+      },
+      "normalized_gradient_disagreement": {
+        "count": 90,
+        "max": 0.6171716547614335,
+        "median": 0.35919422192567924,
+        "min": 0.07291129409431604,
+        "p95": 0.6171716547614335
+      },
+      "objective_deviation": {
+        "count": 90,
+        "max": 0.0827187500000024,
+        "median": 0.03638541666666839,
+        "min": 0.00013541666666583296,
+        "p95": 0.0827187500000024
+      },
+      "operating_point": {
+        "count": 36,
+        "max": 0.15,
+        "median": 0.1,
+        "min": 0.05,
+        "p95": 0.15
+      },
+      "planner_latency_s": {
+        "count": 90,
+        "max": 1.35e-05,
+        "median": 2.0835e-06,
+        "min": 7.09e-07,
+        "p95": 1.09705e-05
+      }
+    },
+    "row_count": 90
+  },
+  "schema_version": "checkrcq-final-evidence-descriptive-summary-v1"
+}

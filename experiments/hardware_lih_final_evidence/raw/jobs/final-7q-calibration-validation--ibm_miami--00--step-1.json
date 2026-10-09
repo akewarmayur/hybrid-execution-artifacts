@@ -1,0 +1,2855 @@
+{
+  "accounted_budget_seconds": 21.0,
+  "backend": "ibm_miami",
+  "backend_context": {
+    "backend_name": "ibm_miami",
+    "backend_version": "1.0.3",
+    "calibration_timestamp": "2026-10-01T01:03:00-04:00",
+    "captured_at": "2026-10-01T07:18:07.523139Z",
+    "coupling_edge_count": 436,
+    "coupling_map": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        17
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        18
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        20
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        23
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        14,
+        24
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        25
+      ],
+      [
+        16,
+        6
+      ],
+      [
+        16,
+        15
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        16,
+        26
+      ],
+      [
+        17,
+        7
+      ],
+      [
+        17,
+        16
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        17,
+        27
+      ],
+      [
+        18,
+        8
+      ],
+      [
+        18,
+        17
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        18,
+        28
+      ],
+      [
+        19,
+        9
+      ],
+      [
+        19,
+        18
+      ],
+      [
+        19,
+        29
+      ],
+      [
+        20,
+        10
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        20,
+        30
+      ],
+      [
+        21,
+        11
+      ],
+      [
+        21,
+        20
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        21,
+        31
+      ],
+      [
+        22,
+        12
+      ],
+      [
+        22,
+        21
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        22,
+        32
+      ],
+      [
+        23,
+        13
+      ],
+      [
+        23,
+        22
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        23,
+        33
+      ],
+      [
+        24,
+        14
+      ],
+      [
+        24,
+        23
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        24,
+        34
+      ],
+      [
+        25,
+        15
+      ],
+      [
+        25,
+        24
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        25,
+        35
+      ],
+      [
+        26,
+        16
+      ],
+      [
+        26,
+        25
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        26,
+        36
+      ],
+      [
+        27,
+        17
+      ],
+      [
+        27,
+        26
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        27,
+        37
+      ],
+      [
+        28,
+        18
+      ],
+      [
+        28,
+        27
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        28,
+        38
+      ],
+      [
+        29,
+        19
+      ],
+      [
+        29,
+        28
+      ],
+      [
+        29,
+        39
+      ],
+      [
+        30,
+        20
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        30,
+        40
+      ],
+      [
+        31,
+        21
+      ],
+      [
+        31,
+        30
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        31,
+        41
+      ],
+      [
+        32,
+        22
+      ],
+      [
+        32,
+        31
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        32,
+        42
+      ],
+      [
+        33,
+        23
+      ],
+      [
+        33,
+        32
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        33,
+        43
+      ],
+      [
+        34,
+        24
+      ],
+      [
+        34,
+        33
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        34,
+        44
+      ],
+      [
+        35,
+        25
+      ],
+      [
+        35,
+        34
+      ],
+      [
+        35,
+        36
+      ],
+      [
+        35,
+        45
+      ],
+      [
+        36,
+        26
+      ],
+      [
+        36,
+        35
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        36,
+        46
+      ],
+      [
+        37,
+        27
+      ],
+      [
+        37,
+        36
+      ],
+      [
+        37,
+        38
+      ],
+      [
+        37,
+        47
+      ],
+      [
+        38,
+        28
+      ],
+      [
+        38,
+        37
+      ],
+      [
+        38,
+        39
+      ],
+      [
+        38,
+        48
+      ],
+      [
+        39,
+        29
+      ],
+      [
+        39,
+        38
+      ],
+      [
+        39,
+        49
+      ],
+      [
+        40,
+        30
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        40,
+        50
+      ],
+      [
+        41,
+        31
+      ],
+      [
+        41,
+        40
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        41,
+        51
+      ],
+      [
+        42,
+        32
+      ],
+      [
+        42,
+        41
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        42,
+        52
+      ],
+      [
+        43,
+        33
+      ],
+      [
+        43,
+        42
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        43,
+        53
+      ],
+      [
+        44,
+        34
+      ],
+      [
+        44,
+        43
+      ],
+      [
+        44,
+        45
+      ],
+      [
+        44,
+        54
+      ],
+      [
+        45,
+        35
+      ],
+      [
+        45,
+        44
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        45,
+        55
+      ],
+      [
+        46,
+        36
+      ],
+      [
+        46,
+        45
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        46,
+        56
+      ],
+      [
+        47,
+        37
+      ],
+      [
+        47,
+        46
+      ],
+      [
+        47,
+        48
+      ],
+      [
+        47,
+        57
+      ],
+      [
+        48,
+        38
+      ],
+      [
+        48,
+        47
+      ],
+      [
+        48,
+        49
+      ],
+      [
+        48,
+        58
+      ],
+      [
+        49,
+        39
+      ],
+      [
+        49,
+        48
+      ],
+      [
+        49,
+        59
+      ],
+      [
+        50,
+        40
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        50,
+        60
+      ],
+      [
+        51,
+        41
+      ],
+      [
+        51,
+        50
+      ],
+      [
+        51,
+        52
+      ],
+      [
+        51,
+        61
+      ],
+      [
+        52,
+        42
+      ],
+      [
+        52,
+        51
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        52,
+        62
+      ],
+      [
+        53,
+        43
+      ],
+      [
+        53,
+        52
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        53,
+        63
+      ],
+      [
+        54,
+        44
+      ],
+      [
+        54,
+        53
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        54,
+        64
+      ],
+      [
+        55,
+        45
+      ],
+      [
+        55,
+        54
+      ],
+      [
+        55,
+        56
+      ],
+      [
+        55,
+        65
+      ],
+      [
+        56,
+        46
+      ],
+      [
+        56,
+        55
+      ],
+      [
+        56,
+        57
+      ],
+      [
+        56,
+        66
+      ],
+      [
+        57,
+        47
+      ],
+      [
+        57,
+        56
+      ],
+      [
+        57,
+        58
+      ],
+      [
+        57,
+        67
+      ],
+      [
+        58,
+        48
+      ],
+      [
+        58,
+        57
+      ],
+      [
+        58,
+        59
+      ],
+      [
+        58,
+        68
+      ],
+      [
+        59,
+        49
+      ],
+      [
+        59,
+        58
+      ],
+      [
+        59,
+        69
+      ],
+      [
+        60,
+        50
+      ],
+      [
+        60,
+        61
+      ],
+      [
+        60,
+        70
+      ],
+      [
+        61,
+        51
+      ],
+      [
+        61,
+        60
+      ],
+      [
+        61,
+        62
+      ],
+      [
+        61,
+        71
+      ],
+      [
+        62,
+        52
+      ],
+      [
+        62,
+        61
+      ],
+      [
+        62,
+        63
+      ],
+      [
+        62,
+        72
+      ],
+      [
+        63,
+        53
+      ],
+      [
+        63,
+        62
+      ],
+      [
+        63,
+        64
+      ],
+      [
+        63,
+        73
+      ],
+      [
+        64,
+        54
+      ],
+      [
+        64,
+        63
+      ],
+      [
+        64,
+        65
+      ],
+      [
+        64,
+        74
+      ],
+      [
+        65,
+        55
+      ],
+      [
+        65,
+        64
+      ],
+      [
+        65,
+        66
+      ],
+      [
+        65,
+        75
+      ],
+      [
+        66,
+        56
+      ],
+      [
+        66,
+        65
+      ],
+      [
+        66,
+        67
+      ],
+      [
+        66,
+        76
+      ],
+      [
+        67,
+        57
+      ],
+      [
+        67,
+        66
+      ],
+      [
+        67,
+        68
+      ],
+      [
+        67,
+        77
+      ],
+      [
+        68,
+        58
+      ],
+      [
+        68,
+        67
+      ],
+      [
+        68,
+        69
+      ],
+      [
+        68,
+        78
+      ],
+      [
+        69,
+        59
+      ],
+      [
+        69,
+        68
+      ],
+      [
+        69,
+        79
+      ],
+      [
+        70,
+        60
+      ],
+      [
+        70,
+        71
+      ],
+      [
+        70,
+        80
+      ],
+      [
+        71,
+        61
+      ],
+      [
+        71,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        71,
+        81
+      ],
+      [
+        72,
+        62
+      ],
+      [
+        72,
+        71
+      ],
+      [
+        72,
+        73
+      ],
+      [
+        72,
+        82
+      ],
+      [
+        73,
+        63
+      ],
+      [
+        73,
+        72
+      ],
+      [
+        73,
+        74
+      ],
+      [
+        73,
+        83
+      ],
+      [
+        74,
+        64
+      ],
+      [
+        74,
+        73
+      ],
+      [
+        74,
+        75
+      ],
+      [
+        74,
+        84
+      ],
+      [
+        75,
+        65
+      ],
+      [
+        75,
+        74
+      ],
+      [
+        75,
+        76
+      ],
+      [
+        75,
+        85
+      ],
+      [
+        76,
+        66
+      ],
+      [
+        76,
+        75
+      ],
+      [
+        76,
+        77
+      ],
+      [
+        76,
+        86
+      ],
+      [
+        77,
+        67
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        77,
+        78
+      ],
+      [
+        77,
+        87
+      ],
+      [
+        78,
+        68
+      ],
+      [
+        78,
+        77
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        78,
+        88
+      ],
+      [
+        79,
+        69
+      ],
+      [
+        79,
+        78
+      ],
+      [
+        79,
+        89
+      ],
+      [
+        80,
+        70
+      ],
+      [
+        80,
+        81
+      ],
+      [
+        80,
+        90
+      ],
+      [
+        81,
+        71
+      ],
+      [
+        81,
+        80
+      ],
+      [
+        81,
+        82
+      ],
+      [
+        81,
+        91
+      ],
+      [
+        82,
+        72
+      ],
+      [
+        82,
+        81
+      ],
+      [
+        82,
+        83
+      ],
+      [
+        82,
+        92
+      ],
+      [
+        83,
+        73
+      ],
+      [
+        83,
+        82
+      ],
+      [
+        83,
+        84
+      ],
+      [
+        83,
+        93
+      ],
+      [
+        84,
+        74
+      ],
+      [
+        84,
+        83
+      ],
+      [
+        84,
+        85
+      ],
+      [
+        84,
+        94
+      ],
+      [
+        85,
+        75
+      ],
+      [
+        85,
+        84
+      ],
+      [
+        85,
+        86
+      ],
+      [
+        85,
+        95
+      ],
+      [
+        86,
+        76
+      ],
+      [
+        86,
+        85
+      ],
+      [
+        86,
+        87
+      ],
+      [
+        86,
+        96
+      ],
+      [
+        87,
+        77
+      ],
+      [
+        87,
+        86
+      ],
+      [
+        87,
+        88
+      ],
+      [
+        87,
+        97
+      ],
+      [
+        88,
+        78
+      ],
+      [
+        88,
+        87
+      ],
+      [
+        88,
+        89
+      ],
+      [
+        88,
+        98
+      ],
+      [
+        89,
+        79
+      ],
+      [
+        89,
+        88
+      ],
+      [
+        89,
+        99
+      ],
+      [
+        90,
+        80
+      ],
+      [
+        90,
+        91
+      ],
+      [
+        90,
+        100
+      ],
+      [
+        91,
+        81
+      ],
+      [
+        91,
+        90
+      ],
+      [
+        91,
+        92
+      ],
+      [
+        91,
+        101
+      ],
+      [
+        92,
+        82
+      ],
+      [
+        92,
+        91
+      ],
+      [
+        92,
+        93
+      ],
+      [
+        92,
+        102
+      ],
+      [
+        93,
+        83
+      ],
+      [
+        93,
+        92
+      ],
+      [
+        93,
+        94
+      ],
+      [
+        93,
+        103
+      ],
+      [
+        94,
+        84
+      ],
+      [
+        94,
+        93
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        94,
+        104
+      ],
+      [
+        95,
+        85
+      ],
+      [
+        95,
+        94
+      ],
+      [
+        95,
+        96
+      ],
+      [
+        95,
+        105
+      ],
+      [
+        96,
+        86
+      ],
+      [
+        96,
+        95
+      ],
+      [
+        96,
+        97
+      ],
+      [
+        96,
+        106
+      ],
+      [
+        97,
+        87
+      ],
+      [
+        97,
+        96
+      ],
+      [
+        97,
+        98
+      ],
+      [
+        97,
+        107
+      ],
+      [
+        98,
+        88
+      ],
+      [
+        98,
+        97
+      ],
+      [
+        98,
+        99
+      ],
+      [
+        98,
+        108
+      ],
+      [
+        99,
+        89
+      ],
+      [
+        99,
+        98
+      ],
+      [
+        99,
+        109
+      ],
+      [
+        100,
+        90
+      ],
+      [
+        100,
+        101
+      ],
+      [
+        100,
+        110
+      ],
+      [
+        101,
+        91
+      ],
+      [
+        101,
+        100
+      ],
+      [
+        101,
+        102
+      ],
+      [
+        101,
+        111
+      ],
+      [
+        102,
+        92
+      ],
+      [
+        102,
+        101
+      ],
+      [
+        102,
+        103
+      ],
+      [
+        102,
+        112
+      ],
+      [
+        103,
+        93
+      ],
+      [
+        103,
+        102
+      ],
+      [
+        103,
+        104
+      ],
+      [
+        103,
+        113
+      ],
+      [
+        104,
+        94
+      ],
+      [
+        104,
+        103
+      ],
+      [
+        104,
+        105
+      ],
+      [
+        104,
+        114
+      ],
+      [
+        105,
+        95
+      ],
+      [
+        105,
+        104
+      ],
+      [
+        105,
+        106
+      ],
+      [
+        105,
+        115
+      ],
+      [
+        106,
+        96
+      ],
+      [
+        106,
+        105
+      ],
+      [
+        106,
+        107
+      ],
+      [
+        106,
+        116
+      ],
+      [
+        107,
+        97
+      ],
+      [
+        107,
+        106
+      ],
+      [
+        107,
+        108
+      ],
+      [
+        107,
+        117
+      ],
+      [
+        108,
+        98
+      ],
+      [
+        108,
+        107
+      ],
+      [
+        108,
+        109
+      ],
+      [
+        108,
+        118
+      ],
+      [
+        109,
+        99
+      ],
+      [
+        109,
+        108
+      ],
+      [
+        109,
+        119
+      ],
+      [
+        110,
+        100
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        111,
+        101
+      ],
+      [
+        111,
+        110
+      ],
+      [
+        111,
+        112
+      ],
+      [
+        112,
+        102
+      ],
+      [
+        112,
+        111
+      ],
+      [
+        112,
+        113
+      ],
+      [
+        113,
+        103
+      ],
+      [
+        113,
+        112
+      ],
+      [
+        113,
+        114
+      ],
+      [
+        114,
+        104
+      ],
+      [
+        114,
+        113
+      ],
+      [
+        114,
+        115
+      ],
+      [
+        115,
+        105
+      ],
+      [
+        115,
+        114
+      ],
+      [
+        115,
+        116
+      ],
+      [
+        116,
+        106
+      ],
+      [
+        116,
+        115
+      ],
+      [
+        116,
+        117
+      ],
+      [
+        117,
+        107
+      ],
+      [
+        117,
+        116
+      ],
+      [
+        117,
+        118
+      ],
+      [
+        118,
+        108
+      ],
+      [
+        118,
+        117
+      ],
+      [
+        118,
+        119
+      ],
+      [
+        119,
+        109
+      ],
+      [
+        119,
+        118
+      ]
+    ],
+    "num_qubits": 120,
+    "one_qubit_error": {
+      "count": 600,
+      "max": 0.010464607006686758,
+      "median": 0.0002276034264733388,
+      "min": 0.0
+    },
+    "operation_names": [
+      "cz",
+      "delay",
+      "id",
+      "measure",
+      "measure_reset",
+      "rz",
+      "sx",
+      "x",
+      "xslow"
+    ],
+    "operational": true,
+    "pending_jobs": 2,
+    "readout_error": {
+      "count": 120,
+      "max": 0.2645263671875,
+      "median": 0.0196533203125,
+      "min": 0.006591796875
+    },
+    "status_message": "active",
+    "t1_seconds": {
+      "count": 120,
+      "max": 0.0005459835615367431,
+      "median": 0.000330374922431215,
+      "min": 6.482121058779724e-06
+    },
+    "t2_seconds": {
+      "count": 120,
+      "max": 0.0005733573208585563,
+      "median": 0.00022691702639383708,
+      "min": 1.2195416122776425e-06
+    },
+    "target_summary": {
+      "basis_or_target_hash": "sha256:0356a0ec2c5a09faa28933c225a5bebf8534fc8ac8935bb36e01722a3590c081",
+      "dt": 4e-09,
+      "instruction_count": 1396
+    },
+    "topology_hash": "sha256:5ee67cd448116b67cff621337f90536ce892f39f846d2e0589d813e3ff667919",
+    "two_qubit_error": {
+      "count": 436,
+      "max": 1.0,
+      "median": 0.002935647449067852,
+      "min": 0.0009360164488034228
+    }
+  },
+  "budget_accounting_basis": "provider_reported_qpu_seconds",
+  "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+  "circuit_count": 25,
+  "circuit_reconstruction_latency_s": 0.005031583,
+  "compilation": {
+    "aggregate": {
+      "max_depth": 19,
+      "total_gates": 2459,
+      "total_swaps": 0,
+      "total_two_qubit_gates": 225
+    },
+    "backend": "ibm_miami",
+    "circuit_count": 25,
+    "circuits": [
+      {
+        "compiled_circuit_hash": "sha256:281c30dac16595cb0c78074865b599e97e284f2f6919ae555080900aa21da468",
+        "depth": 19,
+        "name": "objective_group_0",
+        "one_qubit_gates": 94,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 46,
+          "sx": 41
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 103,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:df2faaa96f2b63aa25009bb1dd682e545bad7c18d904b9b8dc3278ed7769e033",
+        "depth": 19,
+        "name": "objective_group_1",
+        "one_qubit_gates": 90,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 44,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 99,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:34a0a8f390bdee06ecb428dcf5e3e6a6eae5161cc0dfb8083f9a9f638f04d8ec",
+        "depth": 19,
+        "name": "objective_group_2",
+        "one_qubit_gates": 92,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 45,
+          "sx": 40
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 101,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:37605f894f903d917a1b8d328f97a020c1703c7ae8327f3ebff52a6208f1ef07",
+        "depth": 19,
+        "name": "objective_group_3",
+        "one_qubit_gates": 94,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 46,
+          "sx": 41
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 103,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:8b9790c9162509b1d369d0bd7c13a4ee0dd4d1687065027388aa6e159d06ccac",
+        "depth": 19,
+        "name": "objective_group_4",
+        "one_qubit_gates": 90,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 44,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 99,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:c7b7cf4ce3f076af6f9a0194057528a9b776ec1c2f64296ed36da22b728dbec5",
+        "depth": 19,
+        "name": "objective_group_5",
+        "one_qubit_gates": 89,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 43,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 98,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:77420a1ade4372bddfeccb6172bc4a02e35c358da3a39d6c7ee23f37571cc930",
+        "depth": 17,
+        "name": "objective_group_6",
+        "one_qubit_gates": 83,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 40,
+          "sx": 36
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 92,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:66feeeb7d79d747359036462761719b40f919f59cda9c9e7d3d3589f856ebb16",
+        "depth": 19,
+        "name": "objective_group_7",
+        "one_qubit_gates": 85,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 41,
+          "sx": 37
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 94,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:fdf03073cfadda1904d085c8cd055820fe89eafc90174e466783d318586e5ec4",
+        "depth": 17,
+        "name": "objective_z_distribution",
+        "one_qubit_gates": 83,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 40,
+          "sx": 36
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 92,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:ba118148c5e8fb808a27aea65a361d38a7f4aecb54ba9ea551a2ef1bea5d5736",
+        "depth": 19,
+        "name": "gradient_plus_group_0",
+        "one_qubit_gates": 94,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 46,
+          "sx": 41
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 103,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:704ecde240b93eeba4d170367f977f3b54ed2204c14cc38122644e18d8967bd1",
+        "depth": 19,
+        "name": "gradient_plus_group_1",
+        "one_qubit_gates": 90,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 44,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 99,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:612ac485114a176c67591eb90bcc949a38c13ae7fbad2f80ccbcc3662aa2bf53",
+        "depth": 19,
+        "name": "gradient_plus_group_2",
+        "one_qubit_gates": 92,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 45,
+          "sx": 40
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 101,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:d63a6d0ec8f3d687721c129269e116e5f56cf0e339f056847b914eaf69937d6f",
+        "depth": 19,
+        "name": "gradient_plus_group_3",
+        "one_qubit_gates": 94,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 46,
+          "sx": 41
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 103,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:73e30708ffce59a6fff76488d710de14f7be01ea8a14fcdbbe9e877f6c47e61b",
+        "depth": 19,
+        "name": "gradient_plus_group_4",
+        "one_qubit_gates": 90,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 44,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 99,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:5dcf6158d04b2ce7a0d842b238da818be73ba8afccc87ab4cb50f6dc96db91f5",
+        "depth": 19,
+        "name": "gradient_plus_group_5",
+        "one_qubit_gates": 89,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 43,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 98,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:6c79705744b0beff0083357791fbbd87c6ffcbf7a74c265d8b79ddf8206e0486",
+        "depth": 17,
+        "name": "gradient_plus_group_6",
+        "one_qubit_gates": 83,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 40,
+          "sx": 36
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 92,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:2930e4f0aa14d183dde62bfa02f61be64b0cac140a725ba8a176cf1fb2555bf8",
+        "depth": 19,
+        "name": "gradient_plus_group_7",
+        "one_qubit_gates": 85,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 41,
+          "sx": 37
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 94,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:5a6c638364b6245e0d4b70893e3a887c6f1145bdc423d2ecf080978f172daf28",
+        "depth": 19,
+        "name": "gradient_minus_group_0",
+        "one_qubit_gates": 94,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 46,
+          "sx": 41
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 103,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:c04069666e6549934c5bf74cc22916d5190bdbee277a6667a143de4e8fa9ad23",
+        "depth": 19,
+        "name": "gradient_minus_group_1",
+        "one_qubit_gates": 90,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 44,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 99,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:7e796d32308dd79a70559740e1bd834460a57c32ce79f8fb7ef00a11ca786bdc",
+        "depth": 19,
+        "name": "gradient_minus_group_2",
+        "one_qubit_gates": 92,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 45,
+          "sx": 40
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 101,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:9ac51c029dca33e172f6c090170b3a8c1ef8c6b247b1d19d3f1ee65dd8242120",
+        "depth": 19,
+        "name": "gradient_minus_group_3",
+        "one_qubit_gates": 94,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 46,
+          "sx": 41
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 103,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:7b6cc44537e199ed61bc4c8d9c99fa1b31e80dc722dcc89551bbbe327f6d0c0e",
+        "depth": 19,
+        "name": "gradient_minus_group_4",
+        "one_qubit_gates": 90,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 44,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 99,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:2ed9399787ca00737c8a517888558bac1b72e8ed6ff2dac5d964263b622eaf26",
+        "depth": 19,
+        "name": "gradient_minus_group_5",
+        "one_qubit_gates": 89,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 43,
+          "sx": 39
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 98,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:d8376eed3af836d6ff382d517dff51d7fb83b80f2c8265d3ff4650d194893edc",
+        "depth": 17,
+        "name": "gradient_minus_group_6",
+        "one_qubit_gates": 83,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 40,
+          "sx": 36
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 92,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      },
+      {
+        "compiled_circuit_hash": "sha256:a973628eb079d3fb62238989ab8c7bc6f6dc6f3c53f4b1e14c8b070a5343421c",
+        "depth": 19,
+        "name": "gradient_minus_group_7",
+        "one_qubit_gates": 85,
+        "operation_counts": {
+          "barrier": 1,
+          "cz": 9,
+          "measure": 7,
+          "rz": 41,
+          "sx": 37
+        },
+        "physical_layout": {
+          "final_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "initial_logical_to_physical": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "logical_qubits": 7
+        },
+        "qubits": 120,
+        "size": 94,
+        "swap_gates": 0,
+        "two_qubit_gates": 9
+      }
+    ],
+    "compilation_latency_s": 0.048248,
+    "optimization_level": 1,
+    "transpiler_seed": 73
+  },
+  "compiled_qpy": {
+    "path": "raw/runtime_payloads/final-7q-calibration-validation--ibm_miami--00--step-1--compiled.qpy",
+    "sha256": "sha256:0cbaf57ac0f16890bc06b5c3acf3bb0b14c23c5b3ab6560378ddc9574c8d0f3b"
+  },
+  "completed_at": "2026-10-01T07:18:32.367547Z",
+  "config_hash": "sha256:387acdd59529ba2eb2859fec5701c88694bb05ce4c8efe20e1b5866b682b0678",
+  "configured_conservative_estimate_s": 15.0,
+  "excluded_from_calibration": false,
+  "excluded_from_evaluation": false,
+  "excluded_from_paper_aggregates": false,
+  "execution_key": "final-7q-calibration-validation--ibm_miami--00--step-1",
+  "git_commit": "eaa0dbb2ba89a2f015f1e9511d25654b13c7aea7",
+  "loaded_from_cache": false,
+  "planner_version": "phase2b3-policy-v1/phase2b4-evidence-adapter-v1",
+  "provenance": "live_ibm",
+  "provider": "ibm_quantum_platform",
+  "provider_execution_wall_time_s": 23.394983,
+  "provider_job_id": "dav0ibjojkfs738t0ge0",
+  "provider_metrics": {
+    "caller": "qiskit_ibm_runtime~sampler.py",
+    "circuits_execution_time_ns": 19211386112,
+    "qiskit_version": "qiskit_ibm_runtime-0.49.0,qiskit-2.5.2*",
+    "timestamps": {
+      "created": "2026-10-01T07:18:07.147034Z",
+      "finished": "2026-10-01T07:18:31.618426Z",
+      "running": "2026-10-01T07:18:08.223443Z"
+    },
+    "usage": {
+      "details": [
+        {
+          "metric": {
+            "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+            "value": 21
+          },
+          "unit": "resource_units",
+          "value": 0.3494
+        }
+      ],
+      "qpu_charge_time_seconds": 21,
+      "status": "complete",
+      "unit": "resource_units",
+      "value": 0.3494
+    }
+  },
+  "provider_qpu_seconds": 21.0,
+  "provider_qpu_seconds_provenance": "provider_metrics.usage.qpu_charge_time_seconds",
+  "provider_qpu_time_group_allocation": "unavailable_batch_level_only",
+  "provider_queue_time_s": 1.076409,
+  "provider_timestamps": {
+    "created": "2026-10-01T07:18:07.147034Z",
+    "finished": "2026-10-01T07:18:31.618426Z",
+    "running": "2026-10-01T07:18:08.223443Z"
+  },
+  "provider_wall_time_s": 24.471392,
+  "queue_time_included": false,
+  "retry_count": 0,
+  "role": "final_evidence_7q_calibration_validation:uninterrupted:step-1",
+  "runtime_options": {
+    "mode": "job",
+    "primitive": "SamplerV2",
+    "primitive_package": "qiskit-ibm-runtime",
+    "primitive_package_version": "0.49.0",
+    "shots": 192
+  },
+  "schema_version": "checkrcq-hardware-job-v1",
+  "scientific_context": {
+    "campaign_id": "hardware_lih_sigmetrics_2027_final_evidence_campaign",
+    "continuation_horizon_B": 2,
+    "exactly_one_population_per_backend": true,
+    "fit_executions": 8,
+    "heldout_executions": 4,
+    "profile_label": "7q",
+    "tier": "qualification_7q"
+  },
+  "session_id": null,
+  "shots": 192,
+  "status": "DONE",
+  "submitted_at": "2026-10-01T07:18:06.551225Z"
+}

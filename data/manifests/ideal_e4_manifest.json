@@ -1,0 +1,14 @@
+{
+  "command": "run",
+  "evaluation_question": "e4",
+  "inputs": [],
+  "notes": [
+    "Ideal ablation study using real checkpoint continuation on reduced LiH benchmark circuits."
+  ],
+  "outputs": [
+    "${ARTIFACT_ROOT}/data/processed/ideal/e4_records.csv",
+    "${ARTIFACT_ROOT}/data/processed/ideal/e4_records.jsonl",
+    "${ARTIFACT_ROOT}/data/raw/ideal/e4_events.jsonl"
+  ],
+  "setting": "ideal"
+}

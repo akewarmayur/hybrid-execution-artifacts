@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Secondary post-hoc analysis over six reconstructed changed-backend contexts using already-executed hardware counterfactuals. Selected block actions have no continuation outcome; primary and secondary RQ4 populations are not pooled.}
+\label{tab:hardware-rq4-secondary}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+\textbf{Policy} & \textbf{Replay} & \textbf{Migrate} & \textbf{Block} & \textbf{Known live} & \textbf{Stable} & \textbf{Unsafe} & \textbf{Conservative blocks} \\
+\midrule
+Blind replay & 6 & 0 & 0 & 6/6 & 5/6 & 1/6 & 0/6 \\
+Replay-then-migrate & 6 & 0 & 0 & 6/6 & 5/6 & 1/6 & 0/6 \\
+Block-on-change & 0 & 0 & 6 & 0/6 & 0/0 & 0/0 & 2/6 \\
+RES-Q tau=0.15 & 6 & 0 & 0 & 6/6 & 5/6 & 1/6 & 0/6 \\
+RES-Q tau=0.05 & 6 & 0 & 0 & 6/6 & 5/6 & 1/6 & 0/6 \\
+\bottomrule
+\end{tabular}
+\end{table*}

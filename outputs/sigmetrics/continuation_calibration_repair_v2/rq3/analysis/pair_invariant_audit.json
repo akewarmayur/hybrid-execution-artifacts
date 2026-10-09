@@ -1,0 +1,321 @@
+{
+  "before_after_csv": "${ARTIFACT_ROOT}/outputs/sigmetrics/continuation_calibration_repair_v2/rq3/analysis/rq3_before_after.csv",
+  "changed_classical_breakdown": [
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "adapt_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "adapt_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "ideal_sim",
+      "workload": "adapt_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "noisy_sim",
+      "workload": "adapt_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "noisy_sim",
+      "workload": "adapt_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "noisy_sim",
+      "workload": "adapt_vqe"
+    },
+    {
+      "continuation_B": 2,
+      "count": 2,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 2,
+      "count": 2,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "ideal_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "noisy_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "noisy_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "noisy_sim",
+      "workload": "h2_vqe"
+    },
+    {
+      "continuation_B": 2,
+      "count": 1,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 2,
+      "count": 1,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "ideal_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "noisy_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "noisy_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "noisy_sim",
+      "workload": "lih_vqe"
+    },
+    {
+      "continuation_B": 2,
+      "count": 2,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "ideal_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 2,
+      "count": 2,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "ideal_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "ideal_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_late",
+      "mode": "noisy_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "external_middle",
+      "mode": "noisy_sim",
+      "workload": "qaoa_maxcut"
+    },
+    {
+      "continuation_B": 4,
+      "count": 5,
+      "failure_timing": "optimizer_early",
+      "mode": "noisy_sim",
+      "workload": "qaoa_maxcut"
+    }
+  ],
+  "classical_continuation_metrics_changed": 240,
+  "classical_continuation_outcomes_changed": 130,
+  "corrected_continuation_rates": {
+    "adapt_vqe": {
+      "classical_application_checkpoint": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      },
+      "full_contract": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      }
+    },
+    "h2_vqe": {
+      "classical_application_checkpoint": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      },
+      "full_contract": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      }
+    },
+    "lih_vqe": {
+      "classical_application_checkpoint": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      },
+      "full_contract": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      }
+    },
+    "qaoa_maxcut": {
+      "classical_application_checkpoint": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      },
+      "full_contract": {
+        "denominator": 60,
+        "numerator": 60,
+        "rate": 1.0,
+        "wilson_high": 0.9999999999999998,
+        "wilson_low": 0.93982814785791
+      }
+    }
+  },
+  "full_contract_metrics_changed": 240,
+  "full_contract_outcomes_changed": 0,
+  "input_equivalence": {
+    "all_dependencies_present": true,
+    "all_protected_files_unchanged": true,
+    "expanded_parameter_matrix_identical": true,
+    "mandatory_hardware_jobs_zero": true,
+    "old_and_repair_outputs_distinct": true,
+    "old_output_present": true,
+    "old_run_count_is_480": true,
+    "repair_run_count_is_480": true,
+    "scientific_inputs_identical": true,
+    "simulation_shot_budget_identical": true
+  },
+  "old_outputs_unchanged": true,
+  "pair_checks": {
+    "checkpoint_state_hash_mismatches": 0,
+    "continuation_metric_mismatches": 0,
+    "exact_work_metric_differences": 120,
+    "failure_id_mismatches": 0,
+    "ordinary_application_state_hash_mismatches": 0,
+    "pair_count": 240,
+    "workflow_seed_mismatches": 0
+  },
+  "paper_table": "${ARTIFACT_ROOT}/outputs/sigmetrics/continuation_calibration_repair_v2/rq3/analysis/paper_artifacts/table_rq3_fair_classical.csv",
+  "safe_to_replace_old_rq3_results": false,
+  "schema_version": "checkrcq-rq3-fair-classical-analysis-v1",
+  "validation": {
+    "accepted_count": 480,
+    "expected_run_count": 480,
+    "repair_version": "continuation-calibration-repair-v2",
+    "source": {
+      "path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq3_recovery_efficiency_fair_classical_v2/processed/records.jsonl",
+      "record_count": 480,
+      "sha256": "sha256:512ede281c2d4f66f660d0d3c934313c1bea6d26e70fe4f94500ff7cf44b2f04"
+    },
+    "valid": true
+  }
+}

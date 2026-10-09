@@ -1,0 +1,14 @@
+{
+  "code_commit": "466403e2b109c25447961d51ffd936d2daafaac3",
+  "config_hash": "sha256:110c0c6a52e289495986bdb19fdf8f5c52feae0af01ab2503d5fd0e51d7f59b1",
+  "dependency_hashes": {},
+  "end_time_ns": 1790307138466178000,
+  "executor_type": "overhead_scaling",
+  "executor_version": "phase3a1-final-dispatcher-v1",
+  "result_path": "${ARTIFACT_ROOT}/outputs/sigmetrics/rq2_overhead_scaling/recommended/rq2_full_scale/raw/runs/sigmetrics-rq2-overhead-scaling-final-v1--recommended--rq2_full_scale--acc19b65619acb59.json",
+  "result_sha256": "sha256:dedb9606139c9afac224e394c85b1f228ffa39109ba9823b7d7df123ba43e9bc",
+  "run_id": "sigmetrics-rq2-overhead-scaling-final-v1--recommended--rq2_full_scale--acc19b65619acb59",
+  "seed_or_window": "1104",
+  "start_time_ns": 1790307133548778000,
+  "terminal_state": "COMPLETED"
+}
